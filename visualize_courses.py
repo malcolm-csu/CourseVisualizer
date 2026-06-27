@@ -43,7 +43,27 @@ OLLAMA_MODEL    = os.environ.get('OLLAMA_MODEL',    'qwen2.5:7b-instruct-q4_K_M'
 #   units  code|type  title  grade
 _NAV_LINE  = re.compile(r'^(\d+)\s+([A-Z]+\d+[A-Z0-9]*)\|[A-Z]+\s+.+?\s{2,}(\S+)\s*$')
 _NAV_FUTURE = re.compile(r'^--\s')          # future / enrolled
-_NAV_SKIP_GRADES = {'', '-', 'NC', 'E', 'W', 'WU', 'I', 'RD', 'RP'}
+_NAV_SKIP_GRADES = {'', '-', 'NC', 'E', 'W', 'WU', 'I', 'RD', 'RP', 'F'}
+
+# Navigate360 header: two consecutive lines identify the degree.
+# (program keyword, degree-level keyword, degree code)
+# Listed longest-match first; first match wins.
+_NAV_DEGREE_PAIRS = [
+    ('information technology', 'bachelor',    'BSIT'),
+    ('computer science',       'bachelor',    'BSCS'),
+    ('computer science',       'master',      None),      # ambiguous: MSCSDSN vs MSCSSE
+    ('computer technology',    'certificate', 'CERTIT'),
+    ('computer technology',    'minor',       'MINORIT'),
+    ('computer technology',    'bachelor',    'BAITG'),   # General track default
+    ('computer science',       'minor',       'MINORCS'),
+]
+
+def _nav_degree_from_lines(prev_low, curr_low):
+    """Return degree code when two consecutive header lines match a known program+level pair."""
+    for prog, level, code in _NAV_DEGREE_PAIRS:
+        if prog in prev_low and level in curr_low:
+            return code
+    return ''
 
 def _is_navigate_format(lines):
     """Return True if the file looks like a Navigate360 export."""
@@ -58,19 +78,50 @@ def _parse_navigate(lines):
     """Parse Navigate360 export; return (name, sid, degree, completed)."""
     name = sid = degree = ''
     completed = []
-    for line in lines:
-        line = line.strip()
+
+    # Pre-scan header: pick up Navigate360's unlabelled identity block
+    #   "Computer Science"   ← program name (no key: prefix)
+    #   "Bachelor of Science"
+    #   "Coll Natural & Behav Science"
+    #   "Student ID"         ← literal keyword
+    #   "213240835"          ← bare digits
+    stripped = [l.strip() for l in lines]
+    prev_non_blank = ''
+    for i, s in enumerate(stripped):
+        if not s:
+            continue
+        low = s.lower()
+        # Key:value labels (advisor-prepended or explicit in file) — highest priority
+        if low.startswith('name:') and not name:
+            name = s.split(':', 1)[1].strip()
+        elif low.startswith('id:') and not sid:
+            sid = s.split(':', 1)[1].strip()
+        elif low.startswith('degree:') and not degree:
+            degree = s.split(':', 1)[1].strip().upper()
+        # Navigate360 "Student ID" patterns — independent of the above
+        if not sid:
+            # "Student ID: 212062723"  (inline, web-paste format)
+            m_id = re.match(r'^student\s+id[:\s]+(\d{6,12})\s*$', low)
+            if m_id:
+                sid = m_id.group(1)
+            # "Student ID" / "212062723"  (two-line export format)
+            elif low == 'student id':
+                for nxt in stripped[i + 1:]:
+                    if nxt:
+                        if re.match(r'^\d{6,12}$', nxt):
+                            sid = nxt
+                        break
+        # Degree from consecutive program+level lines
+        if not degree and prev_non_blank:
+            code = _nav_degree_from_lines(prev_non_blank, low)
+            if code:
+                degree = code
+        prev_non_blank = low
+
+    # Main loop: collect completed courses
+    for line in stripped:
         if not line or line.startswith('#'):
             continue
-        low = line.lower()
-        # Optional metadata header lines (advisor can prepend these)
-        if low.startswith('name:'):
-            name = line.split(':', 1)[1].strip(); continue
-        if low.startswith('id:'):
-            sid  = line.split(':', 1)[1].strip(); continue
-        if low.startswith('degree:'):
-            degree = line.split(':', 1)[1].strip().upper(); continue
-        # Skip future/enrolled lines
         if _NAV_FUTURE.match(line):
             continue
         m = _NAV_LINE.match(line)
@@ -420,7 +471,7 @@ HTML_TEMPLATE = """\
         #graph-col {{ flex: 1 1 0; min-width: 0; }}
         #mynetwork {{ width: 100%; height: 80vh; border: 2px solid #ccc; border-radius: 4px;
                       resize: vertical; overflow: hidden; }}
-        #sidebar {{ width: 260px; flex-shrink: 0; font-size: 13px; }}
+        #sidebar {{ width: 310px; flex-shrink: 0; font-size: 13px; }}
         #info-panels h3 {{ margin: 8px 0 2px; font-size: 13px; }}
         #info-panels ul {{ margin: 0 0 6px; padding-left: 16px; }}
         .button-container {{ margin-top: 6px; display: flex; flex-wrap: wrap; gap: 4px; }}
@@ -455,7 +506,9 @@ HTML_TEMPLATE = """\
     </div>
   </div>
   <div id="sidebar">
-    <div id="legend"></div>
+    <div id="legend">
+      <strong style="font-size:13px;">Legend</strong>
+    </div>
     <div id="info-panels">
       <h3>Completed Courses</h3>
       <ul id="completedCoursesList"></ul>
@@ -771,6 +824,51 @@ function updateNeededCoursesDisplay() {{
 updateNodesColors();
 updateCompletedCoursesDisplay();
 updateNeededCoursesDisplay();
+
+// ── Legend ───────────────────────────────────────────────────────────────────
+(function() {{
+    var leg = document.getElementById('legend');
+    function addEntry(color, label, bold) {{
+        var item = document.createElement('div');
+        item.className = 'leg-item';
+        var dot = document.createElement('div');
+        dot.className = 'leg-dot';
+        dot.style.background = color;
+        var txt = document.createElement('span');
+        txt.textContent = label;
+        if (bold) txt.style.fontWeight = 'bold';
+        item.appendChild(dot);
+        item.appendChild(txt);
+        leg.appendChild(item);
+    }}
+    addEntry(colors['completed']         || '#ffcc00',  'Completed');
+    addEntry('navajowhite',                             'Satisfied via equivalent');
+    addEntry(colors['can_take_now']      || '#ff6600',  'Take next — required & ready', true);
+    addEntry(colors['optional_available']|| '#b8b8b8',  'Can take — optional/elective');
+    // Muted groups: one entry per distinct color per division tier
+    var mutedGroups = [
+        {{ tier: 'Lower Division',
+           keys: ['Lower Division Muted','Lower Division Required Muted',
+                  'Lower Division Core Muted','Non Credit Muted'],
+           label: 'Lower Div — prereqs not met' }},
+        {{ tier: 'Upper Division',
+           keys: ['Upper Division Muted','Upper Division Required Muted',
+                  'Upper Division Core Muted','Elective Muted'],
+           label: 'Upper Div — prereqs not met' }},
+        {{ tier: 'Graduate',
+           keys: ['Graduate Muted','Graduate Core Muted',
+                  'Graduate Required Muted','Graduate Elective Muted'],
+           label: 'Graduate — prereqs not met' }},
+    ];
+    var seenColors = {{}};
+    mutedGroups.forEach(function(g) {{
+        var c = null;
+        for (var i = 0; i < g.keys.length; i++) {{
+            if (colors[g.keys[i]]) {{ c = colors[g.keys[i]]; break; }}
+        }}
+        if (c && !seenColors[c]) {{ seenColors[c] = true; addEntry(c, g.label); }}
+    }});
+}})();
 </script>
 </body>
 </html>
