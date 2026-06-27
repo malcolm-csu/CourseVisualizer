@@ -1,0 +1,645 @@
+Computer Technology
+College of Natural and Behavioral and Sciences
+Department of Computer Science
+Program Description
+Computer Technology forms the technological infrastructure of modern
+commerce. It's the driving force of every industry and permeates
+everyday life. The ability to combine the power of computing with the
+management of multimedia information is arguable the key to obtaining
+ascendancy in any field.
+Computer Technology is an ever-evolving, expanding field. The
+proposed Computer Technology Program will provide students with the
+background, knowledge and skills they'll need to adapt to the dynamic
+nature of the marketplace. Program faculty will consist of traditional
+academics as well as industry professionals in order to provide curricular
+content that is on the cutting edge of industry trends.
+The BACT degree provides a high-quality degree program in computer
+technology that will prepare students for lifelong learning as they pursue
+professional careers in computer technology and leadership roles in
+the society in which they serve. It provides our students with a strong
+foundational base, state-of-the-art techniques, methodologies, and tools
+to specify, design, and develop technology-based solutions to complex
+system problems. This program prepares our students to communicate
+well, both orally and in wiring, on moral and ethical development, in the
+knowledge of the liberal arts, and commitment to services to others.
+CT provides opportunities for students to contribute to the body of
+knowledge that serves the profession, by engaging in activities that
+support their interests and are in agreement with the goals and objectives
+of the College, and the university.
+Features
+The University's location in the South Bay area of greater Los Angeles
+provides direct access to many major government contractors,
+manufacturers, and international centers of commerce and finance. This
+provides excellent opportunities for work-study and early job placement.
+Our highly qualified full-time faculty are supplemented by talented and
+dedicated part-time faculty drawn from local firms and schools. Good
+teaching and easy on-campus access to professional quality computing
+systems enhance a degree program with a solid core curriculum and a
+broad range of electives.
+All courses are offered alternatively day and evening so that students
+may complete their programs by enrolling at either time exclusively.
+Graduation with Honors
+An undergraduate student may be a candidate for graduation with Honors
+in Computer Technology provided he or she meets the following criteria:
+1. A minimum of 36 units in residence at CSU Dominguez Hills at least
+24 of which taken in Computer Technology major;
+2. A minimum GPA of 3.5 in all upper-division courses in the Computer
+Technology major completed in residence at CSUDH.
+490 Computer Technology
+Students who achieve Honors in Computer Technology will have the
+information recorded on their transcripts and diplomas.
+Academic Advisement
+Faculty guidance in the development of career goals and program
+planning to achieve those goals is available to all majors.
+Preparation
+Students entering the computer technology program should have
+completed high school mathematics through trigonometry. Remediation
+is available but will delay the student's progress towards a Computer
+Technology Degree.
+This is a program that places a premium on the student's initiative and
+effort.
+Student Organizations
+Contact the departmental office for membership information, or visit the
+websites:
+Association for Computing Machinery (ACM) ACM@csudh.edu
+Institute of Electrical and Electronics Engineers (IEEE) IEEE@csudh.edu
+Cyber Security CyberSec@csudh.edu
+Computing Alliance of Hispanic-Serving Institutions (CAHSI)
+CAHSI@csudh.edu
+Career Possibilities
+Bachelor of Arts in Computer Technology is a comprehensive program
+that will consist of the following tracks: General Track, Homeland
+Security, and Professional. This program is intended to provide students
+with the technology-based skills set required immediately after degree
+completion to enter the workforce within the following areas related
+to computer technology: Manufacturing, Repair, troubleshooting, Lab
+technician, Public Service, Government Agencies, Consultants, Software
+Version Control, Domain Expert Technician, and other computer/software
+technology-related fields. Feedback from our Industry Advisory Board
+members indicates the need for professionals with a balance of practical
+and theoretical knowledge that extends beyond conventional information
+technology curricula.
+Undergraduate Programs
+Bachelor
+• Computer Technology, Bachelor of Arts (p. 492)
+Minor
+• Computer Technology, Minor (p. 496)
+Certificate
+• Computer Technology, Certificate (p. 496)
+Faculty
+Mohsen Beheshti, Department Chair
+Jianchao (Jack) Han, Marek Suchenek, Bin Tang, Amlan Chatterjee,
+Liudong Zuo, Alireza Izaddoost, Brad Hollister, Khondaker Salehin, Ali
+(Ashkan) Jalooli, Sanaz Rahimi Moosavi, Sahar Hooshmand
+Emeriti Faculty
+William B. Jones, Kazimierz Kowalski
+Staff
+Violeta Diaz, Administrative Assistant
+Ken Leyba, IT Consultant
+Department Office: NSM A-132, (310) 243-3398
+http://csc.csudh.edu
+
+Computer Technology, Bachelor of
+Arts
+Requirements
+Total Course Requirements for the Bachelor's Degree
+See the "Requirements for the Bachelor's Degree (p. 95)" in the University
+Catalog for complete details on general degree requirements. A minimum
+of 40 units, including those required for the major, must be upper division.
+Elective Requirements
+Completion of elective courses (beyond the requirements listed below) to
+reach a total of a minimum of 120 units.
+General Education Requirements (49 units)
+See the "General Education (p. 158)" requirements in the University
+Catalog or the Class Schedule for the most current information on
+General Education requirements and course offerings.
+Graduation Writing Assessment Requirement
+See the "Graduation Writing Assessment Requirement (p. 112)" in the
+University Catalog.
+Minor Requirements
+Single field major, no minor required.
+Major Requirements (62-68 units)
+Students entering the Computer Technology program must complete the
+following.
+1. Earn an overall grade point average of 2.0 or better in courses taken
+outside of the department.
+2. Earn a grade of "C" or better in each course taken within the
+department.
+3. Students must take capstone course CTC 492 Senior Project at
+CSUDH.
+The following courses, or their approved transfer equivalents, are required
+of all candidates for this degree.
+Core Requirements (34 units)
+Code Title Hours
+Lower Division Requirements
+CSC 101 Intro.to Computer Education 3
+CSC 111 Introduction to Computers and Basic
+Programming
+3
+CSC 116 Introduction to Computer Hardware and Tools 3
+CSC 255 Dynamic Web Programming 3
+MAT 131 Elementary Statistics and Probability 3
+MAT 153 Pre-Calculus with Trigonometry with Lab 4
+Upper Division Requirements
+CSC 301 Computers And Society 3
+CTC 310 Software Project Management 3
+CTC 316 Operating Systems and Networks Support 3
+CTC 452 Network Security and Hacking Prevention 3
+CTC 492 Senior Project 3
+Total Hours 34
+Tracks
+General Track (62 units)
+Code Title Hours
+Lower Division Requirements
+CSC 101 Intro.to Computer Education 3
+CSC 111 Introduction to Computers and Basic
+Programming
+3
+CSC 116 Introduction to Computer Hardware and Tools 3
+CSC 255 Dynamic Web Programming 3
+CSC 115 Introduction to Programming Concepts 3
+CSC 121 Introduction to Computer Science and
+Programming I
+1
+4
+CTC/CSC Elec. Lower Division Elective 4
+CTC/CSC Elec. Lower Division Elective 4
+CTC 218 Digital Logic Design 3
+MAT 131 Elementary Statistics and Probability 3
+MAT 153 Pre-Calculus with Trigonometry with Lab 4
+Upper Division Requirements
+CSC 301 Computers And Society 3
+CTC 310 Software Project Management 3
+CTC 316 Operating Systems and Networks Support 3
+CTC 452 Network Security and Hacking Prevention 3
+CTC 492 Senior Project 3
+CTC/CSC Elec. Upper Division Elective 4
+CTC/CSC Elec. Upper Division Elective 3
+CTC/CSC Elec. Upper Division Elective 3
+Total Hours 62
+1 Major students may substitute this course for General Education Area
+A3. Please contact the CNBS Student Success Center to request the
+course substitution.
+Homeland Security Track (65 units)
+Code Title Hours
+Lower Division Requirements
+CSC 101 Intro.to Computer Education 3
+2024-25 University Catalog 493
+CSC 111 Introduction to Computers and Basic
+Programming
+3
+CSC 116 Introduction to Computer Hardware and Tools 3
+CSC 255 Dynamic Web Programming 3
+CSC 115 Introduction to Programming Concepts 3
+CSC 121 Introduction to Computer Science and
+Programming I
+1
+4
+CSC 123 Introduction to Computer Science and
+Programming II
+4
+CSC 221 Assembly Language and Introduction to Computer
+Organization
+3
+CTC 218 Digital Logic Design 3
+CTC 228 Introduction to Operating Systems and Networks 4
+MAT 131 Elementary Statistics and Probability 3
+MAT 153 Pre-Calculus with Trigonometry with Lab 4
+Upper Division Requirements
+CSC 301 Computers And Society 3
+CTC 310 Software Project Management 3
+CTC 316 Operating Systems and Networks Support 3
+CTC 328 Computer Forensics and Investigation 4
+CTC 362 Communication Systems Security 3
+CTC 428 Operating Systems Security 3
+CTC 452 Network Security and Hacking Prevention 3
+CTC 492 Senior Project 3
+Total Hours 65
+1 Major students may substitute this course for General Education Area
+A3. Please contact the CNBS Student Success Center to request the
+course substitution.
+Professional Track (68 units)
+Code Title Hours
+Lower Division Requirements
+CSC 101 Intro.to Computer Education 3
+CSC 111 Introduction to Computers and Basic
+Programming
+3
+CSC 116 Introduction to Computer Hardware and Tools 3
+CSC 255 Dynamic Web Programming 3
+MAT 131 Elementary Statistics and Probability 3
+MAT 153 Pre-Calculus with Trigonometry with Lab 4
+Upper Division Requirements
+CSC 301 Computers And Society 3
+CTC 310 Software Project Management 3
+CTC 316 Operating Systems and Networks Support 3
+CTC 452 Network Security and Hacking Prevention 3
+CTC 492 Senior Project 3
+Specific Domain
+Complete one of the following: 15-31
+Associate Degree
+Minor in another program
+Concentration courses- with the consultation of computer science
+department
+Free Electives
+Complete free elective courses 3-19
+Total Hours 52-84
+Program Learning Outcomes
+• Analyze, design, implement, and evaluate a Technology related
+solution in areas such electronics, Manufacturing, Homeland Security,
+and etc. using appropriate tools.
+• Work effectively as a team member in design, implementation, and
+use of software and hardware utilization.
+• Communicate effectively through speaking, writing, and the use
+of presentation tools in describing the hardware and software
+specification.
+• Appraise the impact of ethical issues and societal concerns about
+constant changes in hardware/software computer technology.
+General Option Roadmaps
+4- Year Roadmap
+Course Title Hours
+First Year
+Fall
+MAT 131 Elementary Statistics and Probability (GE Area B4) 3
+HIS 101 History Of United States 3
+GE Area A2 Written Communication 3
+CSC 111 Introduction to Computers and Basic Programming 3
+CSC 101 Intro.to Computer Education 3
+Hours 15
+Spring
+MAT 153 Pre-Calculus with Trigonometry with Lab 4
+CSC 115 Introduction to Programming Concepts 3
+CSC 116 Introduction to Computer Hardware and Tools 3
+GE Area B1 Physical Science 3
+GE Area B3 Science Laboratory 1
+Hours 14
+Second Year
+Fall
+CSC 121 Introduction to Computer Science and Programming I
+(see counselor for GE Area A3: Critical Thinking credit)
+4
+POL 101 American Institutions 3
+CSC 255 Dynamic Web Programming 3
+CTC 228 Introduction to Operating Systems and Networks 4
+Hours 14
+Spring
+ITC 300 Security in a Digital Society 3
+CTC 218 Digital Logic Design 3
+GE Area A1 Oral Communication 3
+GE Area C1 Arts Courses 3
+GE Area C2 Letters Course 3
+Hours 15
+Third Year
+Fall
+CTC 316 Operating Systems and Networks Support 3
+CSC 301 Computers And Society (satisfies GE Area B5) 3
+GE Area D1 Perspectives on Individuals, Groups, and Society 3
+GE Area D2 Global and Historical Perspectives 3
+Elective to meet 120 units 2
+Hours 14
+Spring
+CTC 310 Software Project Management 3
+CTC/CSC Lower Division Elective 4
+494 Computer Technology, Bachelor of Arts
+CTC/CSC Lower Division Elective 4
+Additional GE in Area C1 or C2 3
+GE Area E Lifelong Learning and Self-Development 3
+Hours 17
+Fourth Year
+Fall
+CTC 452 Network Security and Hacking Prevention 3
+ENG 350 Advanced Composition (GWAR satisfying course) 3
+GE Area B2 Life Science 3
+CTC/CSC Upper Division Elective 3
+CTC/CSC Upper Division Elective 3
+Hours 15
+Spring
+CSC 492 Senior Design 3
+CTC/CSC Upper Division Elective 4
+GE Area C3 Integrative Studies in the Humanities 3
+GE Area D3 Integrative Studies in the Social Sciences 3
+GE Area F Ethnic Studies 3
+Hours 16
+Total Hours 120
+2- Year Roadmap (transfer students)
+Course Title Hours
+First Year
+Fall
+CSC 301 Computers And Society (satisfies GE Area B5) 3
+CTC 316 Operating Systems and Networks Support 3
+CTC 328 Computer Forensics and Investigation 4
+ITC 300 Security in a Digital Society (or an alternative GE Area
+D3 satisfying course)
+3
+Elective to meet 120 units 3
+Hours 16
+Spring
+CTC 310 Software Project Management 3
+CTC Upper Division Elective 3
+GE Area C3 Integrative Studies in the Humanities 3
+CTC Upper Division Elective 3
+Elective to meet 120 units 1
+Hours 13
+Second Year
+Fall
+CTC 452 Network Security and Hacking Prevention 3
+ENG 350 Advanced Composition (GWAR satisfying course) 3
+CTC/CSC Upper Division Elective 3
+CTC/CSC Upper Division Elective 3
+Elective to meet 120 units 3
+Hours 15
+Spring
+CSC 492 Senior Design 3
+CTC/CSC Upper Division Elective 4
+Elective to meet 120 units 3
+Elective to meet 120 units 3
+Elective to meet 120 units 3
+Hours 16
+Total Hours 60
+Homeland Security Option Roadmaps
+4- Year Roadmap
+Course Title Hours
+First Year
+Fall
+MAT 131 Elementary Statistics and Probability (GE Area B4) 3
+HIS 101 History Of United States 3
+GE Area A2 Written Communication 3
+CSC 111 Introduction to Computers and Basic Programming 3
+CSC 101 Intro.to Computer Education 3
+Hours 15
+Spring
+MAT 153 Pre-Calculus with Trigonometry with Lab 4
+CSC 115 Introduction to Programming Concepts 3
+CSC 116 Introduction to Computer Hardware and Tools 3
+GE Area B1 Physical Science 3
+GE Area B3 Science Laboratory 1
+Hours 14
+Second Year
+Fall
+CSC 121 Introduction to Computer Science and Programming I
+(see counselor for GE Area A3: Critical Thinking credit)
+4
+POL 101 American Institutions 3
+CSC 255 Dynamic Web Programming 3
+CTC 228 Introduction to Operating Systems and Networks 4
+GE Area A1 Oral Communication 3
+Hours 17
+Spring
+CSC 123 Introduction to Computer Science and Programming II 4
+CTC 218 Digital Logic Design 3
+CSC 221 Assembly Language and Introduction to Computer
+Organization
+3
+GE Area B2 Life Science 3
+GE Area C1 Arts Courses 3
+Hours 16
+Third Year
+Fall
+CSC 301 Computers And Society (satisfies GE Area B5) 3
+CTC 316 Operating Systems and Networks Support 3
+CTC 328 Computer Forensics and Investigation 4
+GE Area D1 Perspectives on Individuals, Groups, and Society 3
+GE Area D2 Global and Historical Perspectives 3
+Hours 16
+Spring
+CTC 310 Software Project Management 3
+CTC 362 Communication Systems Security 3
+CTC 428 Operating Systems Security 3
+GE Area C2 Letters Course 3
+GE Area E Lifelong Learning and Self-Development 3
+Hours 15
+Fourth Year
+Fall
+CTC 452 Network Security and Hacking Prevention 3
+ENG 350 Advanced Composition (GWAR satisfying course) 3
+Additional GE in Area C1 or C2 3
+CTC Upper Division Elective 3
+CTC Upper Division Elective 3
+Hours 15
+Spring
+CSC 492 Senior Design 3
+CTC Upper Division Elective 3
+GE Area C3 Integrative Studies in the Humanities 3
+2024-25 University Catalog 495
+GE Area D3 Integrative Studies in the Social Sciences 3
+GE Area F Ethnic Studies 3
+Hours 15
+Total Hours 123
+2- Year Roadmap (transfer students)
+Course Title Hours
+First Year
+Fall
+CSC 301 Computers And Society (satisfies GE Area B5) 3
+CTC 316 Operating Systems and Networks Support 3
+CTC 328 Computer Forensics and Investigation 4
+ITC 300 Security in a Digital Society (or an alternative GE Area
+D3 satisfying course)
+3
+Elective to meet 120 units 3
+Hours 16
+Spring
+CTC 310 Software Project Management 3
+CTC 362 Communication Systems Security 3
+CTC 428 Operating Systems Security 3
+GE Area C3 Integrative Studies in the Humanities 3
+Elective to meet 120 units 3
+Hours 15
+Second Year
+Fall
+CTC 452 Network Security and Hacking Prevention 3
+ENG 350 Advanced Composition (GWAR satisfying course) 3
+CTC Upper Division Elective 3
+CTC Upper Division Elective 3
+Elective to meet 120 units 3
+Hours 15
+Spring
+CSC 492 Senior Design 3
+CSC Upper Division Elective 4
+Elective to meet 120 units 3
+Elective to meet 120 units 3
+Elective to meet 120 units 1
+Hours 14
+Total Hours 60
+Professional Option Roadmaps
+4- Year Roadmap
+Course Title Hours
+First Year
+Fall
+MAT 131 Elementary Statistics and Probability (GE Area B4) 3
+HIS 101 History Of United States (statutory requirement) 3
+GE Area A2 Written Communication 3
+CSC 111 Introduction to Computers and Basic Programming 3
+CSC 101 Intro.to Computer Education 3
+Hours 15
+Spring
+MAT 153 Pre-Calculus with Trigonometry with Lab 4
+CTC Lower Division Elective (or from Minor/Associate Degree) 3
+CSC 116 Introduction to Computer Hardware and Tools 3
+GE Area B1 Physical Science 3
+GE Area B3 Science Laboratory 1
+Hours 14
+Second Year
+Fall
+GE Area A3 Logic/Critical Thinking 3
+POL 101 American Institutions 3
+CSC 255 Dynamic Web Programming 3
+CTC 228 Introduction to Operating Systems and Networks 4
+GE Area A1 Oral Communication 3
+Hours 16
+Spring
+CTC Lower Division Elective(or from Minor/Associate Degree) 3
+ITC 300 Security in a Digital Society 3
+GE Area B2 Life Science 3
+GE Area C1 Arts Courses 3
+GE Area C2 Letters Course 3
+Hours 15
+Third Year
+Fall
+CSC 301 Computers And Society (satisfies GE Area B5) 3
+CTC 316 Operating Systems and Networks Support 3
+CTC Upper Division Elective (of from Minor/Associate Degree) 3
+GE Area D1 Perspectives on Individuals, Groups, and Society 3
+GE Area D2 Global and Historical Perspectives 3
+Hours 15
+Spring
+CTC 310 Software Project Management 3
+CTC Upper Division Elective (or from Minor) 3
+CTC Upper Division Elective (or from Minor) 3
+Additional GE in Area C1 or C2 3
+GE Area E Lifelong Learning and Self-Development 3
+Hours 15
+Fourth Year
+Fall
+CTC 452 Network Security and Hacking Prevention 3
+ENG 350 Advanced Composition (GWAR satisfying course) 3
+CTC Upper Division Elective (of from Minor) 3
+CTC Upper Division Elective (or from Minor) 3
+CTC Upper Division Elective (or from Minor) 3
+Hours 15
+Spring
+CSC 492 Senior Design 3
+CTC Upper Division Elective (or from Minor) 3
+GE Area C3 Integrative Studies in the Humanities 3
+ITC 300 Security in a Digital Society (satisfies GE Area D3) 3
+GE Area F Ethnic Studies 3
+Hours 15
+Total Hours 120
+2- Year Roadmap (transfer students)
+Course Title Hours
+First Year
+Fall
+CSC 301 Computers And Society (satisfies GE Area B5) 3
+CTC 316 Operating Systems and Networks Support 3
+CTC Upper Division Elective (or from Minor) 3
+ITC 300 Security in a Digital Society (satisfies GE Area D3) 3
+Elective to meet 120 units 3
+Hours 15
+Spring
+CTC 310 Software Project Management 3
+CTC Upper Division Elective (or from Minor) 3
+GE Area C3 Integrative Studies in the Humanities 3
+496 Computer Technology, Certificate
+CTC Upper Division Elective (or from Minor) 3
+Elective to meet 120 units 3
+Hours 15
+Second Year
+Fall
+CTC 452 Network Security and Hacking Prevention 3
+ENG 350 Advanced Composition (GWAR satisfying course) 3
+CTC Upper Division Elective (or from Minor) 3
+CTC Upper Division Elective (or from Minor) 3
+Elective to meet 120 units 3
+Hours 15
+Spring
+CSC 492 Senior Design 3
+CTC Upper Division Elective (or from Minor) 4
+Elective to meet 120 units 3
+Elective to meet 120 units 3
+Elective to meet 120 units 2
+Hours 15
+Total Hours 60
+Computer Technology, Certificate
+Requirements
+Code Title Hours
+Computer Basics
+CSC 101 Introduction to Computer Education 3
+Programming
+Select one of the following: 3
+CSC 111 Introduction to Computers and Basic
+Programming
+CSC 115 Introduction to Programming Concepts
+Basic Hardware
+CSC 116 Introduction to Computer Hardware and Tools 3
+Web Design and Security
+CSC 255 Dynamic Web Programming 3
+Computer Ethics
+CSC 301 Computers and Society 3
+Total Hours 15
+Computer Technology, Minor
+Requirements
+Code Title Hours
+Lower Division Requirements
+CSC 111 Introduction to Computers and Basic
+Programming
+3
+CSC 116 Introduction to Computer Hardware and Tools 3
+CSC 255 Dynamic Web Programming 3
+Upper Division Requirements
+CSC 301 Computers and Society 3
+CTC 310 Software Project Management 3
+Select two courses from the following: 6
+CTC 316 Operating Systems and Networks Support
+CTC 328 Computer Forensics and Investigation
+CTC 362 Communication Systems Security
+CTC 428 Operating Systems Security
+CTC 452 Network Security and Hacking Prevention
+Total Hours 21
+Continuing & Professional Education
+Programs
+Features
+Programs offered through the College of Continuing and Professional
+Education (CCPE) are self-supporting and require tuition. For information
+on the fee and tuition schedules, please refer to the appropriate CCPE
+website.
+Students should be advised that courses containing an "X" in their prefix
+may not meet University requirements for continuing student status.
+Undergraduate students may apply up to twenty-four (24) semester
+units earned through these programs to a baccalaureate degree with
+departmental approval. Graduate students may apply a maximum of nine
+(9) units to a graduate degree with departmental approval.
+Undergraduate Programs
+Certificates
+• Alcohol and Drug Counseling, Certificate (p. 497)
+• Assistive Technology, Specialist Certificate (p. 497)
+• Communication Sciences and Disorders, Certificate (p. 497)
+• Community College Teaching, Certificate (p. 498)
+• Human Resources Management, Certificate (p. 499)
+• Mediation and Conflict Resolution, Certificate (p. 500)
+• Production and Inventory Control, Certificate (p. 500)
+• Purchasing, Certificate (p. 500)
+• Sport and Fitness Psychology, Certificate (p. 501)
+Graduate Programs
+Credential
+• American Language and Culture Program (p. 497)
+• Designated Subjects Adult Education, Teaching Credential (p. 499)
+Faculty/Staff
+Paul Richard, Assistive Technology Coordinator
+John Spruill, Coordinator, Communication Sciences and Disorders
+Program
+Carman Wimsatt, Community College Teaching Internship Coordinator
+Matthew Luckett, Humanities External Degree Coordinator
+Mark Muller, Orthotics and Prosthetics Coordinator
+Raul Guzman, Director, OSHA Training Education Center
+Milton Krivokuca (Interim), Quality Assurance Degree Coordinator
+Mark Cartiglia, Sport and Fitness Psychology Coordinator
+Fawn Supernaw, Coordinator, Lifelong Learning Programs and Extension
+Program Development Specialist
+Elena Christova, Director, Special Sessions
+Shirley Jones, Director, Degree and Certificate Partner Programs
+Elisabeth Legge, Director, Extension Programs
+Continuing and Profession Education: EE-1300, (310) 243-3737
+Regular and adjunct faculty teach in the programs. This provides a good
+balance and mix of expertise. Each possesses the appropriate degree,
+2024-25 University Catalog 497
+professional certification and experience. In addition, many of the faculty
+are nationally recognized leaders in their field.

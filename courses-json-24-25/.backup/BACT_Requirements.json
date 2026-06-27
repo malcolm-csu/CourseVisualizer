@@ -1,0 +1,179 @@
+{
+    "total_units": {
+        "min": 120
+    },
+    "gpa_requirement": "2.0 or better in courses taken outside of the department",
+    "grade_requirement": "C or better in each course taken within the department",
+    "capstone": "CTC 492 Senior Project must be taken at CSUDH",
+    "core": {
+        "total_units": 34,
+        "courses": [
+            {
+                "code": "CSC 101",
+                "title": "Intro.to Computer Education",
+                "units": 3
+            },
+            {
+                "code": "CSC 111",
+                "title": "Introduction to Computers and Basic Programming",
+                "units": 3
+            },
+            {
+                "code": "CSC 116",
+                "title": "Introduction to Computer Hardware and Tools",
+                "units": 3
+            },
+            {
+                "code": "CSC 255",
+                "title": "Dynamic Web Programming",
+                "units": 3
+            },
+            {
+                "code": "MAT 131",
+                "title": "Elementary Statistics and Probability",
+                "units": 3
+            },
+            {
+                "code": "MAT 153",
+                "title": "Pre-Calculus with Trigonometry with Lab",
+                "units": 4
+            },
+            {
+                "code": "CSC 301",
+                "title": "Computers And Society",
+                "units": 3
+            },
+            {
+                "code": "CTC 310",
+                "title": "Software Project Management",
+                "units": 3
+            },
+            {
+                "code": "CTC 316",
+                "title": "Operating Systems and Networks Support",
+                "units": 3
+            },
+            {
+                "code": "CTC 452",
+                "title": "Network Security and Hacking Prevention",
+                "units": 3
+            },
+            {
+                "code": "CTC 492",
+                "title": "Senior Project",
+                "units": 3
+            }
+        ]
+    },
+    "tracks": {
+        "general": {
+            "total_units": 62,
+            "upper_division_electives": 3,
+            "lower_division_electives": 2,
+            "courses": [
+                "CSC 115",
+                "CSC 121",
+                "CTC 218"
+            ],
+            "elective_units": {
+                "lower_division": [
+                    4,
+                    4
+                ],
+                "upper_division": [
+                    4,
+                    3,
+                    3
+                ]
+            }
+        },
+        "homeland_security": {
+            "total_units": 65,
+            "courses": [
+                "CSC 115",
+                "CSC 121",
+                "CSC 123",
+                "CSC 221",
+                "CTC 218",
+                "CTC 228",
+                "CTC 328",
+                "CTC 362",
+                "CTC 428"
+            ],
+            "courses_detailed": [
+                {
+                    "code": "CSC 115",
+                    "units": 3
+                },
+                {
+                    "code": "CSC 121",
+                    "units": 4
+                },
+                {
+                    "code": "CSC 123",
+                    "units": 4
+                },
+                {
+                    "code": "CSC 221",
+                    "units": 3
+                },
+                {
+                    "code": "CTC 218",
+                    "units": 3
+                },
+                {
+                    "code": "CTC 228",
+                    "units": 4
+                },
+                {
+                    "code": "CTC 328",
+                    "units": 4
+                },
+                {
+                    "code": "CTC 362",
+                    "units": 3
+                },
+                {
+                    "code": "CTC 428",
+                    "units": 3
+                }
+            ]
+        },
+        "professional": {
+            "total_units": {
+                "min": 52,
+                "max": 84
+            },
+            "required_courses": [],
+            "specific_domain": {
+                "options": [
+                    "Associate Degree",
+                    "Minor in another program",
+                    "Concentration courses (consult department)"
+                ],
+                "units_range": [
+                    15,
+                    31
+                ]
+            },
+            "free_electives": {
+                "units_range": [
+                    3,
+                    19
+                ]
+            },
+            "notes": "Professional track consists of 15\u201331 units from an Associate Degree, a Minor in another program, or a Concentration (consult department), plus 3\u201319 units of free electives depending on domain units."
+        }
+    },
+    "learning_outcomes": [
+        "Analyze, design, implement and evaluate a technology-related solution using appropriate tools. Example areas include Homeland Security, Manufacturing, Electronics, and Software Development.",
+        "Work effectively as a team member in the design, implementation and use of software and hardware technologies.",
+        "Communicate effectively through speaking, writing and the use of appropriate presentation tools.",
+        "Understand and appraise the impact of ethical issues and societal concerns related to changes in hardware/software technology."
+    ],
+    "general_education_units": 49,
+    "minor_requirement": "Single field major, no minor is required.",
+    "graduation_requirement": "Satisfactory completion of the Graduation Writing Assessment Requirement (GWAR).",
+    "free_electives_note": "Free electives may be taken to reach the required 120 units for graduation.",
+    "GE_notes": "CSC 121 may be used to meet GE A3 requirements with College of Natural and Behavioral Sciences (CNBS) approval."
+}

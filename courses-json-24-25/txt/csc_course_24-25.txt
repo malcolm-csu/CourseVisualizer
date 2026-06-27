@@ -1,0 +1,555 @@
+
+
+Computer Science (CSC)  2024-2025
+
+
+CSC101.  Intro.to Computer Education.  (3 Units)  
+A computer literacy course designed to familiarize the learner with a
+variety of computer tools and computer concepts with emphasis on
+utilizing packaged programs. This course provides an introduction to
+the use of computers, common software programs and peripherals.
+Students are instructed in the use of a word processor, drawing programs,
+spreadsheet, database, presentation tools, internet applications and
+statistical package in scientific applications.
+Offered Fall, Spring
+
+
+CSC111.  Introduction to Computers and Basic Programming.  (3 Units)  
+Introduction to computer programming with particular emphasis on small
+systems through programming in the BASIC language.
+Offered Fall, Spring
+
+
+CSC112.  Intro Computers And Basic.  (20 Units)  
+Offered All terms
+
+
+CSC115.  Introduction to Programming Concepts.  (3 Units)  
+Introduces students to computer programming by teaching techniques
+of problem solving. Students will become acquainted with decision
+constructs, looping structures, and subroutine modules. Students will
+learn the vocabulary of object-oriented programming.
+Offered Fall, Spring
+
+
+CSC116.  Introduction to Computer Hardware and Tools.  (3 Units)  
+Introduction to microcomputer hardware and operating systems.
+Students will be required to use application software to research,
+generate and prepare a semester project.
+Offered Fall, Spring
+
+
+CSC121.  Introduction to Computer Science and Programming I.  (4
+Units)  
+Prerequisite: CSC 115 or equivalent and MAT 153 or consent of
+instructor. Organization of sequential, digital machine: CPU, I/O, storage,
+communications devices. Functions of operating systems: translators,
+editors, peripheral control utilities. The course covers the development,
+description, and analysis of elementary algorithms. It includes three
+hours of lecture and two hours of activity per week.
+Offered Fall, Spring
+
+
+CSC123.  Introduction to Computer Science and Programming II.  (4
+Units)  
+Prerequisites: CSC 121. Continuation of CSC 121. Fundamental
+programming concepts using arrays, records, pointers, linked list,
+trees and recursion. Good style, documentation and structure will be
+emphasized. Introduction to analysis of algorithms for efficiency and
+correctness.
+Offered Fall, Spring, Summer
+
+
+CSC195.  Selected Topics in Computer Science.  (1-4 Units)  
+Prerequisite: Consent of Instructor. Content varies. Topics in computer
+science not covered by current course offerings.
+Offered As needed
+
+
+CSC221.  Assembly Language and Introduction to Computer
+Organization.  (3 Units)  
+Prerequisite: CSC 121. Programming problems in assembly language.
+Writing and using macros. Features of modern computer hardware and
+operating systems.
+Offered Fall, Spring
+
+
+CSC251.  C Language Programming and Unix.  (3 Units)  
+Prerequisite: CSC 121. Introduction to programming in the C language
+and its use in systems programming in the UNIX operating system.
+Offered Fall, Spring
+
+
+CSC255.  Dynamic Web Programming.  (3 Units)  
+The goal of the course is to provide instruction to the design and
+implementation of dynamic web applications. Topics include origins of
+Internet, TCP/IP basics, Standard Generalized Markup Language SGML,
+XML and XSL languages, client-side and server-side languages: Perl and
+PHP, interactivity in website design, front-end interface to databases,
+website access control, confidentiality, integrity, accessibility and their
+applicability in developing dynamic and distributed client/server web
+applications.
+Offered All terms, Fall, Spring
+
+
+CSC281.  Discrete Structures.  (3 Units)  
+This course introduces fundamental structures and logical principles that
+form the foundation of computer science. Topics will be introduced with
+emphasis on applications in computer science. Students will be required
+to write programs to deepen their understanding about the topics.Â
+Offered Fall, Spring
+
+
+CSC295.  Sel. Topics in Computer Sci.  (1-4 Units)  
+Prerequisite: Consent of Instructor. Content varies. Topics in computer
+science not covered by current course offerings. May be used for elective
+credit in departmental programs. Subject to approval.
+Offered As needed
+
+
+CSC300.  Software Development.  (3 Units)  
+Prerequisites: CSC 123 is required. This is an advanced Java
+programming course. Students are expected to have a much deeper
+understanding about major aspects of Java and OOP, and significantly
+enhance their programming and problem-solving ability. Several data
+structure and algorithms will be introduced.
+Offered Fall, Spring
+
+
+CSC301.  Computers And Society.  (3 Units)  
+Prerequisites: CSC 101 or CSC 111 or CSC 115 or CSC 121 or CSC 272
+or consent of instructor. Ethical, legal, psychological, economic, and
+theoretical implications and limitations of the uses of digital computers.
+Oral and written presentations required.
+Offered Fall, Spring
+
+
+CSC311.  Data Structures.  (3 Units)  
+Prerequisites: CSC 123 and CSC 281 or MAT 281. More advanced
+and detailed treatment of concepts of data organization introduced
+in CSC 123. Includes lists, trees, graphs and storage allocation and
+collection. Applications to such areas as symbol tables, string search and
+optimization.
+Offered Fall, Spring, Summer
+
+
+CSC321.  Programming Languages.  (3 Units)  
+Prerequisite: CSC 123. A comparative study of programming languages.
+Characteristics of languages and formal description of languages.
+Assignments in several languages.
+Offered Fall, Spring
+2024-25 University Catalog 205
+
+
+CSC331.  Computer Organization.  (3 Units)  
+Prerequisites: CSC 221 and MAT 281. Structure of the modern digital
+computer. Introduction to Boolean algebra and design of digital circuits.
+Arithmetic, control, storage and input/output systems.
+Offered Fall, Spring, Summer
+
+
+CSC337.  Microcomputers.  (3 Units)  
+Prerequisite: CSC 221, CSC 331, and MAT 281. The architecture,
+programming and interfacing of microcomputers. Topics include input/
+output, instruction sets, subroutines, interrupts and control. In-class use
+of microcomputer hardware. Repeatable course. Two hours of lecture and
+three hours of laboratory per week.
+Offered Infrequent
+
+
+CSC341.  Operating Systems.  (3 Units)  
+Prerequisites: CSC 311, CSC 331, and MAT 321. Overall structure of batch
+and time-shared operating systems. Scheduling of jobs, CPU and I/O
+devices. Paged and segmented memory management. I/O programming
+and file handling. Synchronization of concurrent processes.
+Offered Fall, Spring
+
+
+CSC353.  File Processing.  (3 Units)  
+Prerequisite: CSC 123 and CSC 251 are required; CSC 311 is
+recommended. Characteristics of secondary storage media. Logical vs.
+physical organization. Sequential, direct, and indexed access methods.
+Tree structure of indices; hashing.
+Offered Infrequent
+
+
+CSC361.  Systems Programming.  (3 Units)  
+Prerequisite: CSC 311, CSC 331, and CSC 341. Design and construction
+of systems programs such as assemblers, macro processors and linking
+loaders. Introduction to software engineering.
+Offered As needed
+
+
+CSC371.  Finite Automata.  (3 Units)  
+Prerequisite(s): CSC 311 is required. Introduces the formal foundations
+of computer science, the limits of computation, and the limits of efficient
+computation. The goal is to provide computer science students with a
+broad understanding of various models of computation and their power.
+Offered Fall, Spring, Summer
+
+
+CSC395.  Sel Topics in Computer Science.  (1-4 Units)  
+Prerequisite: Consent of Instructor and upper division standing in major.
+Content varies. Advanced topics in computer science not covered by
+current course offerings. May be used for elective credit in departmental
+programs. Subject to approval.
+Offered As needed
+
+
+CSC401.  Analysis Of Algorithms.  (3 Units)  
+Prerequisite: CSC 311. Mathematical study of non-numeric computer
+algorithms. Topics include combinatorial techniques, algorithm proof, and
+program complexity.
+Offered Fall, Spring
+
+
+CSC411.  Artificial Intelligence.  (3 Units)  
+Prerequisites: CSC 311 and CSC 321. Introduction to the use of
+computers to simulate intelligent behavior; includes game playing,
+problem solving, use of natural languages and pattern recognition.
+Offered Fall
+
+
+CSC421.  Advanced Programming Languages.  (3 Units)  
+Prerequisites: CSC CORE. Continuation of CSC 321. Methods of formal
+specification of syntax and semantics of programming languages and
+special purpose language features for such areas as simulation and
+systems programming.
+Offered Infrequent
+
+
+CSC431.  Advanced Computer Organization.  (3 Units)  
+Prerequisites: CSC 221, CSC 331, CSC 341, MAT 271, and MAT 281.
+Alternate computer architectures and features of large scale systems.
+Microprogramming, parallel processing, memory organization, input/
+output systems, interprocessor communications and multiprocessing.
+Offered Infrequent
+
+
+CSC441.  Advanced Operating Systems.  (3 Units)  
+Prerequisite: CSC CORE. Theoretical study of important topics in
+operating system design. Substantial individual and group programming
+projects.
+Offered Infrequent
+
+
+CSC451.  Computer Networks.  (3 Units)  
+Prerequisite: CSC 311 and MAT 281. An introduction to computer
+networks including both long haul and local area networks. Topics
+include network topology, network access methodology, transmission
+media, protocols and applications.
+Offered Fall, Spring
+
+
+CSC453.  Data Management.  (3 Units)  
+Prerequisite: CSC 311. Fundamental concepts in design, analysis and
+implementation of computerized database systems. Database models,
+user and program interfaces and database control.
+Offered Fall, Spring
+
+
+CSC455.  WWW Design and Management.  (3 Units)  
+Prerequisites: CSC 251, CSC 311 and CSC 321. An introduction to the
+design, implementation and management of World Wide Web over the
+Internet and Intranet networks. Topics include Internet overview, web
+authoring, web programming, server setting and maintenance.
+Offered Infrequent
+
+
+CSC459.  Security Engineering.  (3 Units)  
+The goal of the course is to provide introduction to the design,
+implementation and management of systems that remain dependable
+in the face of malice, error or mischance. Topics include the tools,
+processes and methods needed to design, implement and test complete
+systems and to adapt existing systems as their environment evolves.
+Specifically, it includes cryptography, privacy, hardware tamper resistance,
+firewalls, intrusion detection and prevention and security policies.
+Offered Fall, Spring
+
+
+CSC461.  Computer Graphics I.  (3 Units)  
+Prerequisite: CSC 311. Fundamental concepts of programming for
+computer graphics. Graphics devices, languages and algorithms.
+Substantial graphics programming projects.
+Offered Spring
+
+
+CSC463.  Computer Graphics II.  (3 Units)  
+Prerequisite: CSC 461. Advanced topics in computer graphics. Interactive
+graphics, animation, color and three dimensional modeling.
+Offered Infrequent
+
+
+CSC471.  Compiler Construction I.  (3 Units)  
+Prerequisites: CSC 221, CSC 311 and MAT 361. Introduction to the theory
+and practice of compiler construction. Overall structure of compilers.
+Lexical and syntactic analysis, code generation for block structured
+languages and code optimization.
+Offered Infrequent
+
+
+CSC481.  Software Engineering.  (3 Units)  
+Prerequisites: CSC 301, CSC 311 and CSC 321. Introduction to software
+engineering, with emphasis on software design and specification. Oral
+and written presentations required.
+Offered Fall, Spring
+206 Computer Science (CSC)
+
+
+CSC490.  Senior Seminar.  (3 Units)  
+Prerequisite: CSC 301, CSC 311 and CSC 321. Intense, structured seminar.
+Exposure to current areas of research in Computer Science. Students will
+attend department colloquia; conduct research; present individual and
+group projects; and, prepare a written proposal for a senior project.
+Offered Infrequent
+
+
+CSC492.  Senior Design.  (3 Units)  
+Prerequisites: CSC 301, CSC 321 and CSC 481. Intensive study under the
+guidance of a member of the Computer Science faculty which continues
+and expands the research carried out in Senior Seminar. Students will
+study system design and total project planning and management. A
+formal written report and oral presentation are required.
+Offered Fall, Spring, Summer
+
+
+CSC495.  Selected Topics:.  (3 Units)  
+Prerequisite: CSC 311 is required. Content varies. Advanced topics in
+computer science not covered by current course offerings. May be used
+for elective credit in departmental programs. Subject to approval.
+Offered Fall, Spring
+
+
+CSC497.  Directed Study In Computer Science.  (1-3 Units)  
+Prerequisite: CSC CORE or consent of instructor. A project in computer
+science carried out on an independent study basis. Repeatable course.
+Offered Infrequent
+
+
+CSC498.  Directed Research.  (1-3 Units)  
+Offered Infrequent
+
+
+CSC500.  Research Methods.  (3 Units)  
+Prerequisite: Graduate standing and consent of instructor. Series of
+lectures given by faculty and visiting computer scientists.
+Offered Summer
+
+
+CSC501.  Design and Analysis of Algorithms.  (3 Units)  
+Prerequisite: CSC 401. Methods for the design of efficient algorithms:
+divide and conquer, greedy method, dynamic programming, backtracking,
+brand and bound, problem in string matching, polynomials and matrices,
+graph theory, NP-problems.
+Offered Fall, Spring, Summer
+
+
+CSC511.  Artificial Intelligence and Expert Systems.  (3 Units)  
+Prerequisite: CSC 411. Introduction to in-depth engineering approach to
+the field of artificial neural networks. Topics include different types of
+network architectures and applications, and their properties and behavior.
+Offered Fall
+
+
+CSC521.  Fundamentals and Concepts of Programming Languages.  (3
+Units)  
+Prerequisite: CSC 321. Study of the principles that form the basis of
+programming language design. Research topics in high-level languages
+including : data abstraction, parameterization, scooping, generics,
+exception handling, parallelism and concurrency; alternative language
+designs; imperative, functional, descriptive, object-oriented and data flow;
+overview of interface with support environments.
+Offered Spring
+
+
+CSC531.  Advanced Computer Architecture.  (3 Units)  
+Prerequisite: CSC 331. Covering new technological developments,
+including details of multiprocessor systems and specialized machines.
+The main focus is on the quantitative analysis and cost-performance
+tradeoffs in instruction-set, pipeline, and memory design. Description
+of real systems and performance data are also presented. Topics
+covered: quantitative performance measures, instruction set design,
+pipeline, vector processing, memory organization, input/output, and an
+introduction to parallel processing.
+Offered Fall even
+
+
+CSC541.  Advanced Operating Systems.  (3 Units)  
+Prerequisite: CSC 341. Theoretical and practical aspects of
+operating systems: overview of system software, time-sharing and
+multiprogramming operating systems, network operating systems and
+the Internet, virtual memory management, inter-process communication
+and synchronization, file organization, and case studies. Giving advanced
+topics and examples, and simulation techniques used in performance
+evaluation.
+Offered Fall
+
+
+CSC546.  Human Computer Interaction and Interface Design.  (3 Units)  
+Prerequisite: CSC 481. Research-oriented course; in-depth analyses of
+selected current topics with emphasis on problems related to computer
+systems, artificial intelligence, and human computer information
+interaction and interface design.
+Offered Spring
+
+
+CSC551.  Data Communications and Computer Networks.  (3 Units)  
+Prerequisite: CSC 451. Topics related to the development of clientserver based application, including two-tiers and multi-tiers Client-Server
+concepts and programming. Concurrency issues in the design of client
+and server programs. Trade-off of different architectures and usage of
+remote procedure calls. Broadcasting and multicasting.
+Offered Fall odd
+
+
+CSC552.  Distributed Computing and Parallel Processing.  (3 Units)  
+Prerequisites: CSC 451, CSC 401. Comprehensive introduction to the field
+of parallel and distributed computing systems: Algorithms, architectures,
+networks, systems, theory and applications. The distributed parallel
+computation models, design and analysis of parallel algorithms will be
+discussed.
+Offered Infrequent
+
+
+CSC553.  Advanced Database Management Systems.  (3 Units)  
+Prerequisite: CSC 453. Provides an in-depth treatment of one or more
+advanced topics in the management of information systems. The field of
+information systems consists of three major components: information
+systems technology, information systems development and information
+systems management. Deals with the latter area. Because of the many
+advances in information technology and the corresponding development
+techniques, new business opportunities are constantly emerging and with
+them the need to manage these applications effectively. Explores these
+new application areas and the management approaches needed to make
+them successful.
+Offered Spring odd
+
+
+CSC555.  Information Assurance and Network Security.  (3 Units)  
+Prerequisites: CSC 451, CSC 401 and/or consent of instructor. Topics
+related to communications and IT infrastructures, their vulnerabilities as
+well as the size and complexity of security threats faced by enterprises,
+development of security practices, policies, awareness and compliance
+programs, and legal and regulatory issues will be examined. Fundamental
+encryption algorithms and systems supported in today's IT and secure
+communications networks Virtual Private Networks, Tunneling, Secure
+Socket Layer, SSH, and PGP will also be examined.
+Offered Spring even
+
+
+CSC561.  Advanced Computer Graphics.  (3 Units)  
+Prerequisite: CSC 461. Solid modeling Euler operators, finite element
+methods. Rendering: filling, shading, ray tracing. Natural modeling: Lsystems, fractals. Image processing: filtering anti-aliasing, enhancement.
+Color: physics, graphics, physiology.
+Offered Spring
+2024-25 University Catalog 207
+
+
+CSC564.  Numerical Analysis.  (3 Units)  
+Prerequisite: MAT 361. Topics include numerical solution of partial
+differential equations by finite difference and finite element algorithms.
+Focus on direct and iterative methods for solving large, sparse linear
+systems and related eigenvalue and vector problems. Emphasis is placed
+on robust mathematical software and its interaction with computer
+hardware and languages.
+Offered Infrequent
+
+
+CSC565.  Theory of Computation.  (3 Units)  
+Prerequisites: CSC 401 and MAT 361. Models of computation, complexity
+theory, intractable problems, complete problems, recursive function
+theory, incompleteness, formal theory of program semantics and
+correctness, logics of programs.
+Offered Infrequent
+
+
+CSC581.  Advanced Software Engineering.  (3 Units)  
+Prerequisite: CSC 481. This course focuses on defining software
+requirements and provides an overview of advanced analysis and design
+techniques that can be used to structure applications. Topics of software
+requirements include interacting with end-users to determine needs
+and expectations, identifying functional requirements and identifying
+performance requirements. Analysis techniques include prototyping,
+modeling and simulation. Design topics include design in the system
+lifecycle, hardware vs. software trade-offs, subsystem definition and
+design, abstraction, information hiding, modularity and reuse.
+Offered Spring
+
+
+CSC582.  Object-Oriented Analysis and Design.  (3 Units)  
+Prerequisite: CSC 481. Object-oriented analysis and design is essential
+in developing high-quality object-oriented systems. Topics will include
+object-oriented classes, attributes, methods and relations to other
+classes, objects, classifications and inheritance, encapsulation,
+polymorphism, object-oriented analysis, design and programming.
+Offered Fall
+
+
+CSC583.  Software Engineering Processes.  (3 Units)  
+Prerequisite: CSC 581. The course focuses on the engineering of complex
+systems that have a strong software component. Topics include deriving
+and allocating requirements, system and software architectures, system
+analysis and design, integration, interface management, configuration
+management, quality, verification and validation, reliability, and risk.
+Offered Fall
+
+
+CSC584.  Software Project.  (3 Units)  
+Prerequisite: CSC 581. The main topics of this course address the
+successful management of a software development project. This
+includes planning, scheduling, tracking, cost and size estimating, risk
+management, quality engineering, and process improvement. The course
+is centered on the concept of a software engineering process and
+includes discussion of life cycle models for software development.
+Offered Spring
+
+
+CSC585.  Advanced Software Quality Assurance.  (3 Units)  
+Prerequisite: CSC 581. The relationship of software testing to quality is
+examined with an emphasis on testing techniques and the role of testing
+in the validation of system requirements. Topics include module and
+unit testing, integration, code inspection, peer reviews, verification and
+validation, statistical testing methods, preventing and detecting errors,
+selecting and implementing project metrics and defining test plans and
+strategies that map to system requirements. Testing principles, formal
+models of testing, performance monitoring and measurement also are
+examined.
+Offered Fall odd
+
+
+CSC590.  Master's Project.  (3 Units)  
+Prerequisite: Graduate standing and consent of the graduate adviser.
+Offered on the letter-grade basis only. The equivalent of three lecture
+hours a week.
+Offered Fall, Spring
+
+
+CSC594.  Independent Study.  (3 Units)  
+Prerequisites: Graduate standing and consent of instructor. Individual
+studies in advanced computer science and technology.
+Offered Infrequent
+
+
+CSC595.  Special Topics in Computer Science.  (3 Units)  
+Prerequisite: Graduate standing and consent of instructor. Exposes
+students to new and emerging concepts and technologies
+Offered Infrequent
+
+
+CSC597.  Directed Reading.  (3 Units)  
+Offered As needed
+
+
+CSC599.  Master's Thesis.  (3 Units)  
+Prerequisite: Graduate standing and consent of the graduate adviser.
+Computer research writing of thesis for a master's degree. CR/NC
+grading.
+Offered Fall, Spring
+
+
+CSC600.  Graduate Continuation Course.  (1 Units)  
+Prerequisite: Signature of graduate program coordinator required.
+Graduate students, who have completed their course work but not
+their thesis, project, or comprehensive examination, or who have other
+requirements remaining for the completion for their degree, may attain
+continuous enrollment by enrolling in this course.
+Offered Fall, Spring

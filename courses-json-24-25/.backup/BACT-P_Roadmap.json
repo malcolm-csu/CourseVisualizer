@@ -1,0 +1,114 @@
+
+{
+  "track": "Professional",
+  "type": "4-Year Roadmap",
+  "total_units": 120,
+  "years": {
+    "Year 1": {
+      "Fall": [
+        {"title": "MAT 131 Elementary Statistics and Probability (GE Area B4)", "units": 3},
+        {"title": "HIS 101 History Of United States (statutory requirement)", "units": 3},
+        {"title": "GE Area A2 Written Communication", "units": 3},
+        {"title": "CSC 111 Introduction to Computers and Basic Programming", "units": 3},
+        {"title": "CSC 101 Intro.to Computer Education", "units": 3}
+      ],
+      "Spring": [
+        {"title": "MAT 153 Pre-Calculus with Trigonometry with Lab", "units": 4},
+        {"title": "CTC Lower Division Elective (or from Minor/Associate Degree)", "units": 3},
+        {"title": "CSC 116 Introduction to Computer Hardware and Tools", "units": 3},
+        {"title": "GE Area B1 Physical Science", "units": 3},
+        {"title": "GE Area B3 Science Laboratory", "units": 1}
+      ]
+    },
+    "Year 2": {
+      "Fall": [
+        {"title": "GE Area A3 Logic/Critical Thinking", "units": 3},
+        {"title": "POL 101 American Institutions", "units": 3},
+        {"title": "CSC 255 Dynamic Web Programming", "units": 3},
+        {"title": "CTC 228 Introduction to Operating Systems and Networks", "units": 4},
+        {"title": "GE Area A1 Oral Communication", "units": 3}
+      ],
+      "Spring": [
+        {"title": "CTC Lower Division Elective (or from Minor/Associate Degree)", "units": 3},
+        {"title": "ITC 300 Security in a Digital Society", "units": 3},
+        {"title": "GE Area B2 Life Science", "units": 3},
+        {"title": "GE Area C1 Arts Courses", "units": 3},
+        {"title": "GE Area C2 Letters Course", "units": 3}
+      ]
+    },
+    "Year 3": {
+      "Fall": [
+        {"title": "CSC 301 Computers And Society (satisfies GE Area B5)", "units": 3},
+        {"title": "CTC 316 Operating Systems and Networks Support", "units": 3},
+        {"title": "CTC Upper Division Elective (of from Minor/Associate Degree)", "units": 3},
+        {"title": "GE Area D1 Perspectives on Individuals, Groups, and Society", "units": 3},
+        {"title": "GE Area D2 Global and Historical Perspectives", "units": 3}
+      ],
+      "Spring": [
+        {"title": "CTC 310 Software Project Management", "units": 3},
+        {"title": "CTC Upper Division Elective (or from Minor)", "units": 3},
+        {"title": "CTC Upper Division Elective (or from Minor)", "units": 3},
+        {"title": "Additional GE in Area C1 or C2", "units": 3},
+        {"title": "GE Area E Lifelong Learning and Self-Development", "units": 3}
+      ]
+    },
+    "Year 4": {
+      "Fall": [
+        {"title": "CTC 452 Network Security and Hacking Prevention", "units": 3},
+        {"title": "ENG 350 Advanced Composition (GWAR satisfying course)", "units": 3},
+        {"title": "CTC Upper Division Elective (of from Minor)", "units": 3},
+        {"title": "CTC Upper Division Elective (or from Minor)", "units": 3},
+        {"title": "CTC Upper Division Elective (or from Minor)", "units": 3}
+      ],
+      "Spring": [
+        {"title": "CSC 492 Senior Design", "units": 3},
+        {"title": "CTC Upper Division Elective (or from Minor)", "units": 3},
+        {"title": "GE Area C3 Integrative Studies in the Humanities", "units": 3},
+        {"title": "ITC 300 Security in a Digital Society (satisfies GE Area D3)", "units": 3},
+        {"title": "GE Area F Ethnic Studies", "units": 3}
+      ]
+    }
+  }
+}
+
+{
+  "track": "Professional",
+  "type": "2-Year Roadmap (Transfer Students)",
+  "total_units": 60,
+  "years": {
+    "Year 1": {
+      "Fall": [
+        {"title": "CSC 301 Computers And Society (satisfies GE Area B5)", "units": 3},
+        {"title": "CTC 316 Operating Systems and Networks Support", "units": 3},
+        {"title": "CTC Upper Division Elective (or from Minor)", "units": 3},
+        {"title": "ITC 300 Security in a Digital Society (satisfies GE Area D3)", "units": 3},
+        {"title": "Elective to meet 120 units", "units": 3}
+      ],
+      "Spring": [
+        {"title": "CTC 310 Software Project Management", "units": 3},
+        {"title": "CTC Upper Division Elective (or from Minor)", "units": 3},
+        {"title": "GE Area C3 Integrative Studies in the Humanities", "units": 3},
+        {"title": "CTC Upper Division Elective (or from Minor)", "units": 3},
+        {"title": "Elective to meet 120 units", "units": 3}
+      ]
+    },
+    "Year 2": {
+      "Fall": [
+        {"title": "CTC 452 Network Security and Hacking Prevention", "units": 3},
+        {"title": "ENG 350 Advanced Composition (GWAR satisfying course)", "units": 3},
+        {"title": "CTC Upper Division Elective (or from Minor)", "units": 3},
+        {"title": "CTC Upper Division Elective (or from Minor)", "units": 3},
+        {"title": "Elective to meet 120 units", "units": 3}
+      ],
+      "Spring": [
+        {"title": "CSC 492 Senior Design", "units": 3},
+        {"title": "CTC Upper Division Elective (or from Minor)", "units": 4},
+        {"title": "Elective to meet 120 units", "units": 3},
+        {"title": "Elective to meet 120 units", "units": 3},
+        {"title": "Elective to meet 120 units", "units": 2}
+      ]
+    }
+  }
+}
+
+

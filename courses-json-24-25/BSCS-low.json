@@ -1,0 +1,216 @@
+{ 
+    "MAT 153": {
+        "title": "Pre-Calculus with Trigonometry", 
+        "units": 4, 
+        "prerequisites": [],
+	"corequisites": [], 
+        "offered": "Fall Spring", 
+        "description": "Topics include functions and their graphs; linear, quadratic, rational, exponential, and logarithmic functions; composition, transformation and arithmetic of functions; inverse function; inequalities; right-triangle trigonometry and circular motion; applications to contextual problems. This course is supported with Supplemental Instruction. Preparation for MAT 191: Calculus.", 
+        "level": "Lower Division Required", 
+        "notes":"Math Placement Category Level 2 or completed GE Quantitative Reasoning"
+    },
+    "MAT 191": {
+        "title": "Calculus I", 
+        "units": 5, 
+        "prerequisites": [],
+	"corequisites": [], 
+        "offered": "Fall Spring", 
+        "description": "Limits, continuity, derivatives, differentiation formulas, applications of derivatives, introduction to integration, fundamental theorem of calculus, application of integration", 
+        "level": "Lower Division Required", 
+        "notes": "" 
+    },
+    "MAT 193": {
+        "title": "Calculus II",
+        "units": 5, 
+        "prerequisites": ["MAT 191"],
+	"corequisites": [], 
+        "offered": "Fall Spring", 
+        "description": "Differentiation and integration of transcendental function. Techniques and applications of integration. Polar coordinates. Infinite sequences and series, power series, convergence.", 
+        "level": "Lower Division Required", 
+        "notes": ""
+    },
+    "MAT 211": {
+        "title": "Calculus III", 
+        "units": 5, 
+        "prerequisites": [],
+	"corequisites": [], 
+        "offered": "Fall Spring", 
+        "description": "Multivariable calculus: analytic geometry, scalar and vector products, partial differentiation, multiple integration, change of coordinates, gradient, optimization, line integrals, Green's theorem, elements of vector calculus.", 
+        "level": "Lower Division", 
+        "notes": "" 
+    },
+    "MAT 271": {
+        "title": "Foundations of Higher Mathematics",
+        "units": 3, 
+        "prerequisites": ["MAT 193"],
+	"corequisites": [], 
+        "offered": "Fall Spring", 
+        "description": "Topics include logic, methods of mathematical proof, set theory, relations and functions. Introduction to complex numbers and proof strategies using ideas of vector algebra. Meant to prepare students for mathematics program as well as concepts of computer science.", 
+        "level": "Lower Division Required", 
+        "notes": "Or CSC 300"
+    },
+    "MAT 281": {
+        "title": "Discrete Mathematics",
+        "units": 3, 
+        "prerequisites": ["MAT 153"],
+	"corequisites": [], 
+        "offered": "Fall Spring", 
+        "description": "",  
+        "level": "Lower Division Required", 
+        "notes": "Or CSC 281"
+    },
+
+    "PHY 130": {
+        "title": "General Physics I",
+        "units": 3, 
+        "prerequisites": [],
+	"corequisites": [], 
+        "offered": "Fall Spring", 
+        "description": "",  
+        "level": "Lower Division Required", 
+        "notes": ""
+    },
+    "PHY 132": {
+        "title": "General Physics II",
+        "units": 3, 
+        "prerequisites": ["PHY 130"],
+	"corequisites": [], 
+        "offered": "Fall Spring", 
+        "description": "",  
+        "level": "Lower Division Required", 
+        "notes": ""
+    },
+
+    "CSC 101": {
+        "title": "Intro to Computer Education",
+        "units": 3,
+        "prerequisites": [],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "A computer literacy course designed to familiarize the learner with a variety of computer tools and computer concepts with emphasis on utilizing packaged programs. This course provides an introduction to the use of computers, common software programs and peripherals. Students are instructed in the use of a word processor, drawing programs, spreadsheet, database, presentation tools, internet applications and statistical package in scientific applications.",
+        "level": "Lower Division", 
+        "notes": ""
+    },
+    "CSC 111": {
+        "title": "Introduction to Computers and Basic Programming",
+        "units": 3,
+        "prerequisites": [],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Introduction to computer programming with particular emphasis on small systems through programming in the BASIC language.",
+        "level": "Lower Division", 
+        "notes": ""
+    },
+    "CSC 112": {
+        "title": "Intro Computers And Basic",
+        "units": 1,
+        "prerequisites": [],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "",
+        "level": "Lower Division", 
+        "notes": "units: 20 units hours"
+    },
+    "CSC 115": {
+        "title": "Introduction to Programming Concepts",
+        "units": 3,
+        "prerequisites": [],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Introduction to microcomputer hardware and operating systems. Students will be required to use application software to research, generate and prepare a semester project.",
+        "level": "Lower Division Required", 
+        "notes": ""
+    },
+    "CSC 116": {
+        "title": "Introduction to Computer Hardware and Tools",
+        "units": 3,
+        "prerequisites": [],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Organization of sequential, digital machine: CPU, I/O, storage, communications devices. Functions of operating systems: translators, editors, peripheral control utilities. The course covers the development, description, and analysis of elementary algorithms. It includes three hours of lecture and two hours of activity per week.",
+        "level": "Lower Division", 
+        "notes": ""
+    },
+    "CSC 121": {
+        "title": "Introduction to Computer Science and Programming I",
+        "units": 4,
+        "prerequisites": ["CSC 115", "MAT 153"],
+	"corequisites": [],
+        "offered": "Fall Spring Summer",
+        "description": "Fundamental programming concepts using arrays, records, pointers, linked list, trees, and recursion. Good style, documentation and structure will be emphasized. Introduction to analysis of algorithms for efficiency and correctness.",
+        "level": "Lower Division Required", 
+        "notes": " CSC 115 or equivalent and MAT 153 or Consent of Instructor "
+    },
+    "CSC 123": {
+        "title": "Introduction to Computer Science and Programming II",
+        "units": 4,
+        "prerequisites": ["CSC 121"],
+	"corequisites": [],
+        "offered": "As needed",
+        "description": "Continuation of CSC 121. Topics in computer science not covered by current course offerings.",
+        "level": "Lower Division Required", 
+        "notes": ""
+    },
+    "CSC 195": {
+        "title": "Selected Topics in Computer Science",
+        "units": 3,
+        "prerequisites": [],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Programming problems in assembly language. Writing and using macros. Features of modern computer hardware and operating system.",
+        "level": "Lower Division", 
+        "notes": "Consent of Instructor, units:1-4"
+    },
+    "CSC 221": {
+        "title": "Assembly Language and Introduction to Computer Organization",
+        "units": 3,
+        "prerequisites": ["CSC 121"],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Introduction to programming in the C language and its use in systems programming in the UNIX operating system.",
+        "level": "Lower Division Required", 
+        "notes": ""
+    },
+    "CSC 251": {
+        "title": "C Language Programming and Unix",
+        "units": 3,
+        "prerequisites": ["CSC 121"],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "The goal of the course is to provide instruction to the design and implementation of dynamic web applications. Topics include origins of Internet, TCP/IP basics, Standard Generalized Markup Language SGML, XML and XSL languages, client-side and server-side languages: Perl and PHP, interactivity in website design, front-end interface to databases, website access control, confidentiality, integrity, accessibility and their applicability in developing dynamic and distributed client/server web applications.",
+        "level": "Lower Division", 
+        "notes": ""
+    },
+    "CSC 255": {
+        "title": "Dynamic Web Programming",
+        "units": 3,
+        "prerequisites": [],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "This course introduces fundamental structures and logical principles that form the foundation of computer science. Topics will be introduced with emphasis on applications in computer science. Students will be required to write programs to deepen their understanding about the topics.",
+        "level": "Lower Division", 
+        "notes": ""
+    },
+    "CSC 281": {
+        "title": "Discrete Structures",
+        "units": 3,
+        "prerequisites": ["MAT 153"],
+	"corequisites": [],
+        "offered": "As needed",
+        "description": "Content varies. Topics in computer science not covered by current course offerings. May be used for elective credit in departmental programs. Subject to approval.",
+        "level": "Lower Division Required", 
+        "notes": "Or MAT 281"
+    },
+   
+    "CSC 295": {
+        "title": "Sel Topics in Computer Sci",
+        "units": 3,
+        "prerequisites": [],
+	"corequisites": [],
+        "offered": "",
+        "description": "",
+        "level": "Lower Division", 
+        "notes": "Consent of Instructor, units: 1-4"
+    }
+}
+

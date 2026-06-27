@@ -1,0 +1,58 @@
+
+{
+  "degree": "Bachelor of Science in Information Technology (BSIT)",
+  "total_units_required": 120,
+  "upper_division_units_required": 40,
+  "upper_division_in_major_at_CSU_DH": 18,
+  "general_education_units": 49,
+  "minor_required": false,
+  "gpa_requirement_outside_department": 2.0,
+  "grade_requirement_in_department": "C or better in each course",
+  "capstone_requirement": {
+    "course": "ITC 492 Senior Design",
+    "note": "Must be taken at CSUDH"
+  },
+  "major_units": 73,
+  "electives_note": "Complete two CSC Elective Courses - Recommended IT Architecture (6 units); Additional electives as needed to reach 120 total units.",
+  "courses": {
+    "lower_division": [
+      {"code": "ITC 101", "title": "Introduction to Information Technology", "units": 3},
+      {"code": "CSC 121", "title": "Introduction to Computer Science and Programming I", "units": 4},
+      {"code": "CSC 123", "title": "Introduction to Computer Science and Programming II", "units": 4},
+      {"code": "ITC 251", "title": "System Programming in C and Unix", "units": 3},
+      {"code": "CTC 228", "title": "Introduction to Operating Systems and Networks", "units": 4},
+      {"code": "CSC 255", "title": "Dynamic Web Programming", "units": 3},
+      {"code": "BIO 102", "title": "General Biology", "units": 3},
+      {"code": "BIO 103", "title": "General Biology Laboratory", "units": 1},
+      {"code": "PHY 100", "title": "Patterns In Nature", "units": 3},
+      {"code": "MAT 131", "title": "Elementary Statistics and Probability", "units": 3},
+      {"code": "MAT 281", "title": "Discrete Mathematics", "units": 3},
+      {"code": "Science Elective", "title": "Any Physical or Life Science", "units": 3},
+      {"code": "Science Elective with Lab", "title": "Any Physical Science with Lab and/or any Life Science with lab", "units": 10}
+    ],
+    "upper_division": [
+      {"code": "CSC 301", "title": "Computers and Society", "units": 3},
+      {"code": "ITC 310", "title": "IT Project Management", "units": 3},
+      {"code": "CSC 311", "title": "Data Structures", "units": 3},
+      {"code": "CTC 316", "title": "Operating Systems and Networks Support", "units": 3},
+      {"code": "CTC 362", "title": "Communication Systems Security", "units": 3},
+      {"code": "CTC 452", "title": "Network Security and Hacking Prevention", "units": 3},
+      {"code": "ITC 453", "title": "Database Management Systems (DBMS)", "units": 3},
+      {"code": "ITC 459", "title": "IT Security", "units": 3},
+      {"code": "ITC 492", "title": "Senior Design", "units": 3}
+    ],
+    "electives": [
+      {"category": "CSC Elective", "note": "Complete two CSC Elective Courses - Recommended IT Architecture", "units": 6}
+    ]
+  },
+  "graduation_policies": [
+    "A minimum of 40 units, including those required for the major, must be upper division.",
+    "A minimum of 18 upper division units in the major must be taken in residence at CSU Dominguez Hills.",
+    "Earn an overall grade point average of 2.0 or better in courses taken outside of the department.",
+    "Earn a grade of “C” or better in each course taken within the department.",
+    "Students must take capstone course ITC 492 Senior Design at CSUDH."
+  ],
+  "learning_outcomes": null,
+  "prerequisites": "Not explicitly listed in this section; see catalog for course-specific prerequisites."
+}
+

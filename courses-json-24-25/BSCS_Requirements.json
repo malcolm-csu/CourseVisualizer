@@ -1,0 +1,152 @@
+{
+    "total_units": 76,
+    "requirements": {
+        "gpa": "2.0 or better in courses taken outside of the department",
+        "department_grade": "C or better in each course taken within the department",
+        "prereq_grade": "C or better in all prerequisite courses before advancing",
+        "capstone": "CSC 492 Senior Design must be taken at CSUDH"
+    },
+    "lower_division": [
+        {
+            "code": "CSC 121",
+            "title": "Introduction to Computer Science and Programming I",
+            "units": 4,
+            "GE_notes": "CSC 121 may be used to satisfy GE Area A3 with approval from the CNBS Student Success Center."
+        },
+        {
+            "code": "CSC 123",
+            "title": "Introduction to Computer Science and Programming II",
+            "units": 4
+        },
+        {
+            "code": "CSC 221",
+            "title": "Assembly Language and Introduction to Computer Organization",
+            "units": 3
+        },
+        {
+            "code": "CSC 2xx",
+            "title": "Any 200-level CSC course",
+            "units": 3,
+            "wildcard": true,
+            "criteria": {
+               "prefix": "CSC",
+               "level": 200
+            }
+         },
+        {
+            "code": "MAT 191",
+            "title": "Calculus I",
+            "units": 5
+        },
+        {
+            "code": "MAT 193",
+            "title": "Calculus II",
+            "units": 5
+        },
+        {
+            "code": "MAT 271",
+            "title": "Foundations Of Higher Math",
+            "units": 3
+        },
+        {
+            "code": "MAT 281",
+            "title": "Discrete Mathematics",
+            "units": 3
+        },
+        {
+            "code": "PHY 130",
+            "title": "General Physics I",
+            "units": 5
+        },
+        {
+            "code": "PHY 132",
+            "title": "General Physics II",
+            "units": 5
+        }
+    ],
+    "upper_division_core": [
+        {
+            "code": "CSC 311",
+            "title": "Data Structures",
+            "units": 3
+        },
+        {
+            "code": "CSC 321",
+            "title": "Programming Languages",
+            "units": 3
+        },
+        {
+            "code": "CSC 331",
+            "title": "Computer Organization",
+            "units": 3
+        },
+        {
+            "code": "CSC 341",
+            "title": "Operating Systems",
+            "units": 3
+        }
+    ],
+    "upper_division_required": [
+        {
+            "code": "CSC 301",
+            "title": "Computers and Society",
+            "units": 3
+        },
+        {
+            "code": "CSC 401",
+            "title": "Analysis of Algorithms",
+            "units": 3
+        },
+        {
+            "code": "CSC 481",
+            "title": "Software Engineering",
+            "units": 3
+        },
+        {
+            "code": "CSC 492",
+            "title": "Senior Design",
+            "units": 3
+        },
+        {
+            "code": "MAT 321",
+            "title": "Probability and Statistics",
+            "units": 3
+        },
+        {
+            "code": "MAT 361",
+            "title": "Finite Automata",
+            "units": 3
+        }
+    ],
+    "electives": {
+        "choose": 2,
+        "total_units": 6,
+        "options": [
+            "CSC 395",
+            "CSC 411",
+            "CSC 421",
+            "CSC 431",
+            "CSC 441",
+            "CSC 451",
+            "CSC 453",
+            "CSC 455",
+            "CSC 459",
+            "CSC 461",
+            "CSC 463",
+            "CSC 471",
+            "CSC 490",
+            "CSC 495",
+            "MAT 367",
+            "MAT 369"
+        ]
+    },
+
+    "residency_requirement": "Minimum of 18 upper division units in the major must be taken at CSUDH",
+
+    "GE_notes": "CSC 121 may be used to satisfy GE Area A3 with approval from the CNBS Student Success Center.",
+
+    "Unit Requirements": {
+           "LOWER DIVISION REQUIREMENTS ":    40,
+           "UPPER DIVISION REQUIREMENTS ":    36
+    }
+}

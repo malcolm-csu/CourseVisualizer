@@ -1,0 +1,83 @@
+{
+    "ITC101": {
+        "title": "Introduction to Information Technology",
+        "units": 3,
+        "prerequisites": [],
+        "offered": "Fall, Spring",
+        "description": "Designed to introduce the fundamentals of information technology.\nThis includes, introduction to a variety of computer tools and computer\nconcepts with an emphasis on information technology"
+    },
+    "ITC251": {
+        "title": "System Programming in C and Unix",
+        "units": 3,
+        "prerequisites": [
+            "CSC 121 is required"
+        ],
+        "offered": "Fall, Spring",
+        "description": "Provides a substantial exposure to the\nC programming language and the Unix programming environment for\nstudents with some prior programming experience but minimal exposure\nto C."
+    },
+    "ITC300": {
+        "title": "Security in a Digital Society",
+        "units": 3,
+        "prerequisites": [],
+        "offered": "Fall, Spring",
+        "description": "This course provides students with an understanding of what is involved\nin the journey of positioning the computer, security, privacy, internet, and\ncloud as a valuable service provide to the business and personal life of\nthe digital society."
+    },
+    "ITC310": {
+        "title": "IT Project Management",
+        "units": 3,
+        "prerequisites": [
+            "CSC 301 is required"
+        ],
+        "offered": "Fall, Spring",
+        "description": "Aims to provide students with the basic\nskills, knowledge and competence to effectively understand and manage\ninformation technology projects. This course prepares students to gain a\npractical and theoretical foundation for managing IT projects."
+    },
+    "ITC395": {
+        "title": "Selected Topics in Information Technology",
+        "units": [
+            1,
+            2,
+            3
+        ],
+        "prerequisites": [
+            "Consent of Instructor"
+        ],
+        "offered": "As needed",
+        "description": "Content varies. Topics in computer\ntechnology not covered by current course offerings. May be used for\nelective credit in departmental programs. Subject to approval."
+    },
+    "ITC399": {
+        "title": "IT Practicum",
+        "units": 3,
+        "prerequisites": [
+            "Consent of instructor is required"
+        ],
+        "offered": "Fall, Spring",
+        "description": "The information\ntechnology internship program allows students to gain hands-on\nexperience in a technology environment by spending one semester\nas an intern in the Information Technology Division or a related area.\nThe internship program provides students with the opportunity to gain\ntechnical experience related to their studies and to prepare them for\nfuture career opportunities in the field. CR/NC grading only.\n\n250 Interdisciplinary Studies (IDS)"
+    },
+    "ITC453": {
+        "title": "Database Management Systems (DBMS)",
+        "units": 3,
+        "prerequisites": [
+            "CSC 311 is required"
+        ],
+        "offered": "Fall, Spring",
+        "description": "Covers the design methodology\nprocess for databases and how to verify its structural correctness.\nStudents will learn how to implement databases and applications\nsoftware, primarily in the relational model. This is through using querying\nlanguages, primarily SQL, and other database supporting software;\nand applying the theory behind various database models and query\nlanguages. It also includes implementing security and integrity policies\nrelating to databases working in group settings during design."
+    },
+    "ITC459": {
+        "title": "IT Security",
+        "units": 3,
+        "prerequisites": [
+            "CSC 311 or consent of instructor is required"
+        ],
+        "offered": "Fall, Spring",
+        "description": "Information\nTechnology Security aims at securing systems that remain dependable\nin the face of malice, error or mischance. This course covers a number of\nprinciples, methods, tools and good practices to secure systems."
+    },
+    "ITC492": {
+        "title": "Senior Design",
+        "units": 3,
+        "prerequisites": [
+            "ITC 453 is required"
+        ],
+        "offered": "Fall, Spring",
+        "description": "Intensive study under the guidance\nof a member of the Information Technology (IT) faculty to complete a\nresearch project from start to end. Students will study system design and\ntotal project planning and management. A formal written report and oral\npresentation will be required."
+    }
+}

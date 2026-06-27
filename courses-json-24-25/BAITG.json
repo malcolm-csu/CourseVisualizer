@@ -1,0 +1,726 @@
+{
+    "MAT 131": {
+        "title": "Elementary Statistics and Probability",
+        "units": 4,
+        "prerequisites": [],
+	     "corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Includes the binomial and normal distributions, confidence intervals, linear regression and correlation, and conditional probability. Satisfies General Education Quantitative Reasoning Requirement.",
+        "level": "Lower Division Required",
+        "notes":"GE Math Placement Category Level 2 or completed GE Quantitative Reasoning"
+        },
+    "MAT 153": {
+        "title": "Pre-Calculus with Trigonometry",
+        "units": 4,
+        "prerequisites": [],
+	     "corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Topics include functions and their graphs; linear, quadratic, rational, exponential, and logarithmic functions; composition, transformation and arithmetic of functions; inverse function; inequalities; right-triangle trigonometry and circular motion; applications to contextual problems. This course is supported with Supplemental Instruction. Preparation for MAT 191: Calculus.",
+        "level": "Lower Division Required",
+        "notes":"Math Placement Category Level 2 or completed GE Quantitative Reasoning"
+    },
+    "MAT 191": {
+        "title": "Calculus I",
+        "units": 5,
+        "prerequisites": [],
+        "corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Limits, continuity, derivatives, differentiation formulas, applications of derivatives, introduction to integration, fundamental theorem of calculus, application of integration",
+        "level": "Lower Division Required",
+        "notes": ""
+    },
+    "MAT 193": {
+        "title": "Calculus II",
+        "units": 5,
+        "prerequisites": ["MAT 191"],
+        "corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Differentiation and integration of transcendental function. Techniques and applications of integration. Polar coordinates. Infinite sequences and series, power series, convergence.",
+        "level": "Lower Division Required",
+        "notes": ""
+    },
+    "MAT 271": {
+        "title": "Foundations of Higher Mathematics",
+        "units": 3,
+        "prerequisites": ["MAT 193"],
+        "corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Topics include logic, methods of mathematical proof, set theory, relations and functions. Introduction to complex numbers and proof strategies using ideas of vector algebra. Meant to prepare students for mathematics program as well as concepts of computer science.",
+        "level": "Lower Division Required",
+        "notes": "Or CSC 300"
+    },
+    "MAT 281": {
+        "title": "Discrete Mathematics",
+        "units": 3,
+        "prerequisites": ["MAT 153"],
+        "corequisites": [],
+        "offered": "Fall Spring",
+        "description": "",
+        "level": "Lower Division Required",
+        "notes": "Or CSC 281"
+    },
+    "MAT 321": {
+        "title": "Probability and Statistics",
+        "units": 3,
+        "prerequisites": ["MAT 193"],
+        "corequisites": [],
+        "offered": "Fall Spring",
+        "description": "",
+        "level": "Upper Division Required",
+        "notes": ""
+    },
+    "MAT 361": {
+        "title": "Finite Automata",
+        "units": 3,
+        "prerequisites": [ [ "MAT 281", "CSC 281" ] ],
+        "corequisites": [],
+        "offered": "Fall Spring",
+        "description": "",
+        "level": "Upper Division Required",
+        "notes": ""
+    },
+    "MAT 367": {
+        "title": "Numerical Analysis I",
+        "units": 3,
+        "prerequisites": ["MAT 193"],
+        "corequisites": [],
+        "offered": "Fall Spring",
+        "description": "",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CSC 101": {
+        "title": "Intro to Computer Education",
+        "units": 3,
+        "prerequisites": [],
+	     "corequisites": [],
+        "offered": "Fall Spring",
+        "description": "A computer literacy course designed to familiarize the learner with a variety of computer tools and computer concepts with emphasis on utilizing packaged programs. This course provides an introduction to the use of computers, common software programs and peripherals. Students are instructed in the use of a word processor, drawing programs, spreadsheet, database, presentation tools, internet applications and statistical package in scientific applications.",
+        "level": "Lower Division Required",
+        "notes": ""
+    },
+    "CSC 111": {
+        "title": "Introduction to Computers and Basic Programming",
+        "units": 3,
+        "prerequisites": [],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Introduction to computer programming with particular emphasis on small systems through programming in the BASIC language.",
+        "level": "Lower Division Required",
+        "notes": ""
+    },
+    "CSC 115": {
+        "title": "Introduction to Programming Concepts",
+        "units": 3,
+        "prerequisites": [],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Introduction to microcomputer hardware and operating systems. Students will be required to use application software to research, generate and prepare a semester project.",
+        "level": "Lower Division Required",
+        "notes": ""
+    },
+    "CSC 116": {
+        "title": "Introduction to Computer Hardware and Tools",
+        "units": 3,
+        "prerequisites": [],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Organization of sequential, digital machine: CPU, I/O, storage, communications devices. Functions of operating systems: translators, editors, peripheral control utilities. The course covers the development, description, and analysis of elementary algorithms. It includes three hours of lecture and two hours of activity per week.",
+        "level": "Lower Division Required",
+        "notes": ""
+    },
+    "CSC 121": {
+        "title": "Introduction to Computer Science and Programming I",
+        "units": 4,
+        "prerequisites": ["CSC 115", "MAT 153"],
+	"corequisites": [],
+        "offered": "Fall Spring Summer",
+        "description": "Fundamental programming concepts using arrays, records, pointers, linked list, trees, and recursion. Good style, documentation and structure will be emphasized. Introduction to analysis of algorithms for efficiency and correctness.",
+        "level": "Lower Division Required",
+        "notes": "GE"
+    },
+    "CSC 123": {
+        "title": "Introduction to Computer Science and Programming II",
+        "units": 4,
+        "prerequisites": ["CSC 121"],
+	"corequisites": [],
+        "offered": "As needed",
+        "description": "Continuation of CSC 121. Topics in computer science not covered by current course offerings.",
+        "level": "Lower Division",
+        "notes": ""
+    },
+    "CSC 221": {
+        "title": "Assembly Language and Introduction to Computer Organization",
+        "units": 3,
+        "prerequisites": ["CSC 121"],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Introduction to programming in the C language and its use in systems programming in the UNIX operating system.",
+        "level": "Lower Division",
+        "notes": ""
+    },  
+   "CSC 251": {
+        "title": "C Language Programming and Unix",
+        "units": 3,
+        "prerequisites": ["CSC 121"],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "The goal of the course is to provide instruction to the design and implementation of dynamic web applications. Topics include origins of Internet, TCP/IP basics, Standard Generalized Markup Language SGML, XML and XSL languages, client-side and server-side languages: Perl and PHP, interactivity in website design, front-end interface to databases, website access control, confidentiality, integrity, accessibility and their applicability in developing dynamic and distributed client/server web applications.",
+        "level": "Lower Division",
+        "notes": ""
+    },
+   "CSC 255": {
+        "title": "Dynamic Web Programming",
+        "units": 3,
+        "prerequisites": [ [ "CSC 101", "CSC 111", "CSC 115" ] ],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "This course introduces fundamental structures and logical principles that form the foundation of computer science. Topics will be introduced with emphasis on applications in computer science. Students will be required to write programs to deepen their understanding about the topics.",
+        "level": "Lower Division Required",
+        "notes": ""
+    },
+    "CSC 281": {
+        "title": "Discrete Structures",
+        "units": 3,
+        "prerequisites": ["MAT 153"],
+	"corequisites": [],
+        "offered": "As needed",
+        "description": "Content varies. Topics in computer science not covered by current course offerings. May be used for elective credit in departmental programs. Subject to approval.",
+        "level": "Lower Division",
+        "notes": ""
+    },
+
+    "CSC 295": {
+        "title": "Sel Topics in Computer Sci",
+        "units": 3,
+        "prerequisites": [],
+	"corequisites": [],
+        "offered": "",
+        "description": "",
+        "level": "Lower Division",
+        "notes": "Consent of Instructor, units: 1-4"
+    },
+    "CSC 300": {
+        "title": "Software Development",
+        "units": 3,
+        "prerequisites": ["CSC 123"],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "This is an advanced Java programming course. Students are expected to have a much deeper understanding about major aspects of Java and OOP, and significantly enhance their programming and problem-solving ability. Several data structure and algorithms will be introduced.",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CSC 301": {
+        "title": "Computers And Society",
+        "units": 3,
+        "prerequisites": [ [ "CSC 101", "CSC 111", "CSC 115" ] ],
+	"corequisites": [],
+        "offered": "",
+        "description": "Ethical, legal, psychological, economic, and theoretical implications and limitations of the uses of digital computers. Oral and written presentations required.",
+        "level": "Upper Division Requird",
+        "notes": "CSC 272  Upper Division   GE"
+    },
+    "CSC 311": {
+        "title": "Data Structures",
+        "units": 3,
+        "prerequisites": [ "CSC 123", [ "MAT 281", "CSC 281" ] ],
+        "offered": "Fall Spring",
+        "description": "More advanced and detailed treatment of concepts of data organization introduced in CSC 123. Includes lists, trees, graphs, and storage allocation and collection. Applications to such areas as symbol tables, string search and optimization.",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CSC 321": {
+        "title": "Programming Languages",
+        "units": 3,
+        "prerequisites": ["CSC 123"],
+	"corequisites": [],
+        "offered": "Fall Spring Summer",
+        "description": "A comparative study of programming languages. Characteristics of languages and formal description of languages. Assignments in several languages.",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CSC 331": {
+        "title": "Computer Organization",
+        "units": 3,
+        "prerequisites": ["CSC 221", "MAT 281"],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Structure of the modern digital computer. Introduction to Boolean algebra and design of digital circuits. Arithmetic, control, storage, and input/output systems.",
+        "level": "Upper Division",
+        "notes": ""
+    },    
+    "CSC 337": {
+        "title": "Microcomputers",
+        "units": 3,
+        "prerequisites": ["CSC 311", "CSC 331", "MAT 321"],
+	"corequisites": [],
+        "offered": "",
+        "description": "The architecture, programming and interfacing of microcomputers. Topics include input/output, instruction sets, subroutines, interrupts and control. In-class use of microcomputer hardware. Repeatable course. Two hours of lecture and three hours of laboratory per week.",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CSC 341": {
+        "title": "Operating Systems",
+        "units": 3,
+        "prerequisites": ["CSC 311", "CSC 321", "CSC 331"],
+	"corequisites": [],
+        "offered": "Fall Spring Summer",
+        "description": "Overall structure of batch and time-shared operating systems. Scheduling of jobs, CPU and I/O devices. Paged and segmented memory management. I/O programming and file handling. Synchronization of concurrent processes.",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CSC 353": {
+        "title": "File Processing",
+        "units": 3,
+        "prerequisites": ["CSC 123", "CSC 251", "CSC 311"],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Characteristics of secondary storage media. Logical vs. physical organization. Sequential, direct, and indexed access methods. Tree structure of indices; hashing.",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CSC 361": {
+        "title": "Systems Programming",
+        "units": 3,
+        "prerequisites": ["CSC 311", "CSC 331", "CSC 341"],
+	"corequisites": [],
+        "offered": "",
+        "description": "Design and construction of systems programs such as assemblers, macro processors and linking loaders. Introduction to software engineering.",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CSC 371": {
+        "title": "Finite Automata",
+        "units": 3,
+        "prerequisites": ["CSC 311"],
+	"corequisites": [],
+        "offered": "As needed",
+        "description": "Introduces the formal foundations of computer science, the limits of computation, and the limits of efficient computation. The goal is to provide computer science students with a broad understanding of various models of computation and their power.",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CSC 395": {
+        "title": "Sel Topics in Computer Science",
+        "units": 3,
+        "prerequisites": [],
+	"corequisites": [],
+        "offered": "As needed",
+        "description": "Content varies. Topics in computer science not covered by current course offerings. May be used for elective credit in departmental programs. Subject to approval.",
+        "level": "Upper Division",
+        "notes": "Consent of Instructor and upper division standing Upper Division Core, units 1-4"
+    },
+    "CSC 401": {
+        "title": "Analysis of Algorithms",
+        "units": 3,
+        "prerequisites": ["CSC 311"],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Mathematical study of non-numeric computer algorithms. Topics include combinatorial techniques, algorithm proof, and program complexity.",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CSC 411": {
+        "title": "Artificial Intelligence",
+        "units": 3,
+        "prerequisites": ["CSC 311", "CSC 321"],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Introduction to the use of computers to simulate intelligent behavior; includes game playing, problem solving, use of natural languages and pattern recognition.",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CSC 421": {
+        "title": "Advanced Programming Languages",
+        "units": 3,
+        "prerequisites": ["CSC 311", "CSC 321", "CSC 341"],
+	"corequisites": [],
+        "offered": "Fall",
+        "description": "Continuation of CSC 321. Methods of formal specification of syntax and semantics of programming languages and special purpose language features for such areas as simulation and systems programming.",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CSC 431": {
+        "title": "Advanced Computer Organization",
+        "units": 3,
+        "prerequisites": ["CSC 221", "CSC 331", "CSC 341", "MAT 271", "MAT 281"],
+	"corequisites": [],
+        "offered": "Infrequent",
+        "description": "Alternate computer architectures and features of large scale systems. Microprogramming, parallel processing, memory organization, input/output systems, interprocessor communications and multiprocessing.",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CSC 441": {
+        "title": "Advanced Operating Systems",
+        "units": 3,
+        "prerequisites": ["CSC 311", "CSC 321", "CSC 331", "CSC 341"],
+	"corequisites": [],
+        "offered": "Infrequent",
+        "description": "Theoretical study of important topics in operating system design. Substantial individual and group programming projects.",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CSC 451": {
+        "title": "Computer Networks",
+        "units": 3,
+        "prerequisites": ["CSC 311", "CSC 321", "CSC 331", "CSC 341"],
+	"corequisites": [],
+        "offered": "Infrequent",
+        "description": "An introduction to computer networks including both long haul and local area networks. Topics include network topology, network access methodology, transmission media, protocols and applications.",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CSC 453": {
+        "title": "Data Management",
+        "units": 3,
+        "prerequisites": ["CSC 311"],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Fundamental concepts in design, analysis and implementation of computerized database systems. Database models, user and program interfaces and database control.",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CSC 455": {
+        "title": "WWW Design and Management",
+        "units": 3,
+        "prerequisites": ["CSC 251", "CSC 311", "CSC 321"],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "An introduction to the design, implementation and management of World Wide Web over the Internet and Intranet networks. Topics include Internet overview, web authoring, web programming, server setting and maintenance.",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CSC 459": {
+        "title": "Security Engineering",
+        "units": 3,
+        "prerequisites": [],
+	"corequisites": [],
+        "offered": "Infrequent",
+        "description": "The goal of the course is to provide introduction to the design, implementation and management of systems that remain dependable in the face of malice, error or mischance. Topics include the tools, processes and methods needed to design, implement and test complete systems and to adapt existing systems as their environment evolves. Specifically it includes cryptography, privacy, hardware tamper resistance, firewalls, intrusion detection and prevention and security policies.",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CSC 461": {
+        "title": "Computer Graphics I",
+        "units": 3,
+        "prerequisites": ["CSC 311"],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Fundamental concepts of programming for computer graphics. Graphics devices, languages and algorithms. Substantial graphics programming projects.",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CSC 463": {
+        "title": "Computer Graphics II",
+        "units": 3,
+        "prerequisites": ["CSC 461"],
+	"corequisites": [],
+        "offered": "Spring",
+        "description": "Advanced topics in computer graphics. Interactive graphics, animation, color and three dimensional modeling.",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CSC 471": {
+        "title": "Compiler Construction I",
+        "units": 3,
+        "prerequisites": ["CSC 221", "CSC 311", "MAT 361"],
+	"corequisites": [],
+        "offered": "Infrequent",
+        "description": "Introduction to the theory and practice of compiler construction. Overall structure of compilers. Lexical and syntactic analysis, code generation for block structured languages and code optimization.",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CSC 481": {
+        "title": "Software Engineering",
+        "units": 3,
+        "prerequisites": ["CSC 301", "CSC 311", "CSC 321"],
+	"corequisites": [],
+        "offered": "Infrequent",
+        "description": "Introduction to software engineering, with emphasis on software design and specification. Oral and written presentations required.",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CSC 490": {
+        "title": "Senior Seminar",
+        "units": 3,
+        "prerequisites": ["CSC 301", "CSC 311", "CSC 321"],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Intense, structured seminar. Exposure to current areas of research in Computer Science. Students will attend department colloquia; conduct research; present individual and group projects; and, prepare a written proposal for a senior project.",
+        "level": "Upper Division",
+        "notes": ""
+    },
+
+
+
+    "CTC 218": {
+        "title": "Digital Logic Design",
+        "units": 3,
+        "prerequisites": [ "CSC 121" ],
+	"corequisites": [],
+        "offered": "Fall, Spring",
+        "description": "Provides students with a basic understanding of digital device and circuit fundamentals. The students should be able to analyze and design both combinational and sequential circuits after completing this course.",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CTC 228": {
+        "title": "Introduction to Operating Systems and Networks",
+        "units": 4,
+        "prerequisites": ["CSC 116"],
+	"corequisites": [],
+        "offered": "Fall, Spring",
+        "description": "Course acquaints students with basic networking concepts such as TCP/IP, local/wide area networking as well as emerging industry topics such as Radio Frequency Identification (RFID), Global Information Systems (GIS), Networked Attached Storage (NAS), and WiMAX.",
+        "level": "Lower Division Required",
+        "notes": ""
+    },
+    "CTC 295": {
+        "title": "Special Topics",
+        "units": [1, 3],
+        "prerequisites": [],
+	"corequisites": [],
+        "offered": "As needed",
+        "description": "Topics in computer technology not covered by current course offerings. May be used for elective credit in departmental programs. Subject to approval.",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CTC 305": {
+        "title": "Introduction to Game and Mobile Programming",
+        "units": 3,
+        "prerequisites": [],
+	"corequisites": [],
+        "offered": "Fall",
+        "description": "This course teaches students through lectures, discussions, demonstrations, and classroom labs. Students learn the knowledge, skills, and abilities necessary to create games in the C# programming language using the Microsoft XNA framework and Silver light.",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CTC 310": {
+        "title": "Software Project Management",
+        "units": 3,
+        "prerequisites": [ [ "CSC 101", "CSC 111", "CSC 115" ] ] ,
+	"corequisites": [],
+        "offered": "Fall, Spring",
+        "description": "Course will focus on the critical aspects of project management, including software project management concepts and case studies, and discuss software project management roadmap, and especially address linear, incremental, iterative, adaptive and extreme effective software project management from the perspectives of project scoping, planning, launching, monitoring, controlling and closing phases.",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CTC 316": {
+        "title": "Operating Systems and Networks Support",
+        "units": 3,
+        "prerequisites": ["CSC 115"],
+	"corequisites": [],
+        "offered": "Fall, Spring",
+        "description": "Course provides an introduction to OS and networking support. Topics include user engineering, risk management, mission assurance, software process management, enterprise management tools and processes, disaster recovery, business continuity and information life cycle management.",
+        "level": "Upper Division Required",
+        "notes": ""
+    },
+    "CTC 328": {
+        "title": "Computer Forensics and Investigation",
+        "units": 4,
+        "prerequisites": [ "CTC 228" ],
+	"corequisites": [],
+        "offered": "Fall, Spring",
+        "description": "Course presents methods to properly conduct a computer forensics investigation, beginning with a discussion of ethics while mapping to the objectives of the International Association of Computer Investigative Specialists (IACIS) certification.",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CTC 362": {
+        "title": "Communication Systems Security",
+        "units": 3,
+        "prerequisites": ["CTC 228"],
+	"corequisites": [],
+        "offered": "Fall, Spring",
+        "description": "Course provides the foundation for understanding the key issues associated with protecting information assets, determining the levels of protection and response to security incidents, and designing a consistent, reasonable information security system, with appropriate intrusion detection and reporting features.",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CTC 385": {
+        "title": "Introduction to Programming",
+        "units": 3,
+        "prerequisites": [],
+	"corequisites": [],
+        "offered": "Fall, Spring, Summer",
+        "description": "Introduces computing practice first, and then the concept of programming using block-based and visual (drag-and-drop) programming language such as Scratch. Students will also be exposed to pseudocode and algorithm design.",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CTC 386": {
+        "title": "Computational Thinking and Programming",
+        "units": 3,
+        "prerequisites": ["CTC 385"],
+	"corequisites": [],
+        "offered": "Fall, Spring, Summer",
+        "description": "Introduces computational thinking and problem-solving frameworks first, and then uses Python to teach programming concepts and problem-solving skills. Ethics in computing is also discussed.",
+        "level": "Upper Division",
+        "notes": "Restricted to majors"
+    },
+    "CTC 387": {
+        "title": "Computer Networks, Communication Devices and Methods",
+        "units": 4,
+        "prerequisites": ["CTC 386"],
+	"corequisites": [],
+        "offered": "Fall, Spring, Summer",
+        "description": "Introduces computer system, network and communication devices first, and then introduces how to identify hardware and software failures, and use tools to perform diagnosis. Social and legal issues in computing, and pedagogy in computer science are also discussed.",
+        "level": "Upper Division",
+        "notes": "Restricted to majors"
+    },
+    "CTC 389": {
+        "title": "Data Structures and Software Design",
+        "units": 3,
+        "prerequisites": ["CTC 387"],
+	"corequisites": [],
+        "offered": "Fall, Spring, Summer",
+        "description": "Introduces different data structures and algorithm design principles first, followed by different software design models. Advanced Python programming techniques are also discussed.",
+        "level": "Upper Division",
+        "notes": "Restricted to majors"
+    },
+    "CTC 395": {
+        "title": "Special Topics",
+        "units": [1, 3],
+        "prerequisites": [],
+	"corequisites": [],
+        "offered": "As needed",
+        "description": "Advanced topics in computer technology not covered by current course offerings. May be used for elective credit in departmental programs. Subject to approval.",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CTC 399": {
+        "title": "IT Practicum",
+        "units": 3,
+        "prerequisites": [],
+	"corequisites": [],
+        "offered": "Fall, Spring",
+        "description": "The technology internship program allows students to gain hands on experience in a technology environment by spending one semester as an intern in the Information Technology Department at CSUDH. The Internship program provides students with the opportunity to gain technical experience related to their studies, and to prepare for future career opportunities. CR/NC grading",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CTC 405": {
+        "title": "Advanced Game Development",
+        "units": 3,
+        "prerequisites": [ ["CTC 305", "CSC 123"] ],
+	"corequisites": [ ],
+        "offered": "Spring",
+        "description": "Students learn the advanced knowledge in game development including Skills, and the abilities necessary to create 3D games on multiple platforms. The course includes lectures, discussions, demonstrations, and classroom labs.",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CTC 428": {
+        "title": "Operating Systems Security",
+        "units": 3,
+        "prerequisites": ["CTC 316"],
+	"corequisites": [],
+        "offered": "Fall, Spring",
+        "description": "Course takes an in depth look at operating system security concepts and techniques. It examines theoretical concepts that make the world of security unique. Also, this course will adopt a practical hands-on approach when examining operating system security techniques.",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CTC 435": {
+        "title": "Fundamentals of Information Technology",
+        "units": 2,
+        "prerequisites": [],
+	"corequisites": [],
+        "offered": "Fall, Spring, Summer",
+        "description": "This course focuses on the introduction to Python programming language, handling data, database, operating systems, and network and security. Students are expected to gain significant theoretical knowledge of information technology, and know how to write Python programs.",
+        "level": "Upper Division",
+        "notes": "Restricted to students in the major"
+    },
+    "CTC 436": {
+        "title": "Fundamentals of Networking and Hardware",
+        "units": 2,
+        "prerequisites": [],
+	"corequisites": [],
+        "offered": "Fall, Spring, Summer",
+        "description": "This course focuses on the introduction of computer hardware systems, computer network, and wireless networking. Students who enroll and complete this course are expected to gain significant theoretical knowledge and hands-on experience of computer hardware and networking.",
+        "level": "Upper Division",
+        "notes": "Restricted to students in the major"
+    },
+    "CTC 437": {
+        "title": "Fundamentals of Information Security",
+        "units": 2,
+        "prerequisites": [],
+	"corequisites": [],
+        "offered": "Fall, Spring, Summer",
+        "description": "Introduces students to security, network monitoring and access control, malicious activity detection, cryptography and security function",
+        "level": "Upper Division",
+        "notes": "Restricted to students in the major"
+    },
+    "CTC 452": {
+        "title": "Network Security and Hacking Prevention",
+        "units": 3,
+        "prerequisites": ["CTC 228"],
+	"corequisites": [],
+        "offered": "Fall, Spring",
+        "description": "Course takes an in depth look at network defense concepts and techniques. It examines theoretical concepts that make the world of networking unique. This course also adopts a practical hands-on approach when examining network defense techniques and strategies.",
+        "level": "Upper Division Required",
+        "notes": "Consent of instructor is required"
+    },
+    "CTC 454": {
+        "title": "Wireless Security & Forensics",
+        "units": 3,
+        "prerequisites": [],
+	"corequisites": [],
+        "offered": "Spring",
+        "description": "Examines fundamental topics in wireless technology in wireless technology, such as planning, designing, installing, securing, using tools, and forensics. Students will also examine the maintenance, security, and business applications for wireless Local Area Networks.",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CTC 456": {
+        "title": "Enterprise System Security",
+        "units": 3,
+        "prerequisites": ["CTC 228"],
+	"corequisites": [],
+        "offered": "Spring",
+        "description": "Students learn to identify and fix enterprise level network vulnerabilities through the use of existing defense tools. Students also learn the essential skills and techniques needed to develop enterprise level network security skills to protect enterprise's information.",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CTC 458": {
+        "title": "Network Security Through Penetration Testing",
+        "units": 3,
+        "prerequisites": ["CTC 228"],
+	"corequisites": [],
+        "offered": "Fall",
+        "description": "Students learn how to determine the feasibility of a particular set of attack vectors and identify higher-risk vulnerabilities. Students learn through performing penetration tests against the setup environment using existing tools, techniques, and programming languages.",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CTC 492": {
+        "title": "Senior Project",
+        "units": 3,
+        "prerequisites": ["CSC 301"],
+	"corequisites": [],
+        "offered": "Fall, Spring",
+        "description": "Intensive study under guidance of a member of the Computer Science Department to complete a project from start to end. Students will study system design and total project planning and management. A formal written report and oral presentation will be required.",
+        "level": "Upper Division Required",
+        "notes": ""
+    },
+    "CTC 495": {
+        "title": "Special Topics",
+        "units": 3,
+        "prerequisites": [],
+	"corequisites": [],      
+        "offered": "Fall, Spring",
+        "description": "Advanced topics in computer technology not covered by current course offerings. May be used for elective credit in departmental programs. Subject to approval",
+        "level": "Upper Division",
+        "notes": "units: 1-3"
+    },
+    "CTC 495": {
+        "title": "Internship in Computer Technology",
+        "units": 3,
+        "prerequisites": [],
+	"corequisites": [],      
+        "offered": "As needed",
+        "description": "",
+        "level": "Upper Division",
+        "notes": ""
+    },
+    "CTC 497": {
+        "title": "Directed Studie",
+        "units": 3,
+        "prerequisites": ["CTC 310"],
+	"corequisites": [],      
+        "offered": "As needed",
+        "description": "Software Project Management",
+        "level": "Upper Division",
+        "notes": "ITC 310"
+    }
+}
+

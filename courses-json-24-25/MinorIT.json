@@ -1,0 +1,102 @@
+{
+    "CSC 111": {
+        "title": "Introduction to Computers and Basic Programming",
+        "units": 3,
+        "prerequisites": [],
+        "corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Introduction to computer programming with particular emphasis on small systems through programming in the BASIC language.",
+        "level": "Lower Division Required",
+        "notes": ""
+    },
+    "CSC 116": {
+        "title": "Introduction to Computer Hardware and Tools",
+        "units": 3,
+        "prerequisites": [],
+        "corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Organization of sequential, digital machine: CPU, I/O, storage, communications devices. Functions of operating systems, translators, editors, peripheral control utilities.",
+        "level": "Lower Division Required",
+        "notes": ""
+    },
+    "CSC 255": {
+        "title": "Dynamic Web Programming",
+        "units": 3,
+        "prerequisites": [["CSC 101", "CSC 111", "CSC 115"]],
+        "corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Introduces fundamental structures and logical principles that form the foundation of computer science. Students write programs to deepen their understanding.",
+        "level": "Lower Division Required",
+        "notes": ""
+    },
+    "CSC 301": {
+        "title": "Computers And Society",
+        "units": 3,
+        "prerequisites": [["CSC 101", "CSC 111", "CSC 115"]],
+        "corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Ethical, legal, psychological, economic, and theoretical implications and limitations of the uses of digital computers. Oral and written presentations required.",
+        "level": "Upper Division Required",
+        "notes": "GE Area B5"
+    },
+    "CTC 310": {
+        "title": "Software Project Management",
+        "units": 3,
+        "prerequisites": [["CSC 101", "CSC 111", "CSC 115"]],
+        "corequisites": [],
+        "offered": "Fall, Spring",
+        "description": "Focus on critical aspects of project management, including software project management concepts, roadmap, and effective software project management approaches.",
+        "level": "Upper Division Required",
+        "notes": ""
+    },
+    "CTC 316": {
+        "title": "Operating Systems and Networks Support",
+        "units": 3,
+        "prerequisites": ["CSC 115"],
+        "corequisites": [],
+        "offered": "Fall, Spring",
+        "description": "Introduction to OS and networking support. Topics include risk management, mission assurance, enterprise management tools, disaster recovery, and business continuity.",
+        "level": "Upper Division",
+        "notes": "Elective — choose 2 of 5"
+    },
+    "CTC 328": {
+        "title": "Computer Forensics and Investigation",
+        "units": 4,
+        "prerequisites": ["CTC 228"],
+        "corequisites": [],
+        "offered": "Fall, Spring",
+        "description": "Methods to properly conduct a computer forensics investigation, ethics, and IACIS certification objectives.",
+        "level": "Upper Division",
+        "notes": "Elective — choose 2 of 5"
+    },
+    "CTC 362": {
+        "title": "Communication Systems Security",
+        "units": 3,
+        "prerequisites": ["CTC 228"],
+        "corequisites": [],
+        "offered": "Fall, Spring",
+        "description": "Foundation for understanding key issues associated with protecting information assets, security incidents, and designing a consistent information security system.",
+        "level": "Upper Division",
+        "notes": "Elective — choose 2 of 5"
+    },
+    "CTC 428": {
+        "title": "Operating Systems Security",
+        "units": 3,
+        "prerequisites": ["CTC 316"],
+        "corequisites": [],
+        "offered": "Fall, Spring",
+        "description": "In-depth look at operating system security concepts and techniques, examining theoretical concepts and practical hands-on operating system security techniques.",
+        "level": "Upper Division",
+        "notes": "Elective — choose 2 of 5"
+    },
+    "CTC 452": {
+        "title": "Network Security and Hacking Prevention",
+        "units": 3,
+        "prerequisites": ["CTC 228"],
+        "corequisites": [],
+        "offered": "Fall, Spring",
+        "description": "In-depth look at network defense concepts and techniques, examining theoretical networking concepts and practical network defense techniques and strategies.",
+        "level": "Upper Division",
+        "notes": "Elective — choose 2 of 5; Consent of instructor required"
+    }
+}

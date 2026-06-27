@@ -1,0 +1,662 @@
+Computer Science
+College of Natural and Behavioral and Sciences
+Department of Computer Science
+Program Description
+The modern electronic digital computer has become the indispensable
+tool of government, commerce, and technology because of its enormous
+appetite for data and its near-instantaneous processing speed. Computer
+2024-25 University Catalog 479
+Science is the discipline of designing methods for solving problems by
+means of such computers. The subject involves a surprising amalgam
+of logic, mathematics, engineering, electronics, communications, and
+ergonomics.
+The curriculum is designed to provide preparation for professional
+careers in the areas of software design and applied computer science, as
+well as to give the necessary theoretical background for graduate study
+in the field and to allow a flexible response to a dynamic and growing
+profession. The required courses give students a firm foundation in the
+basic areas of computer science and related areas of mathematics, and
+a wide choice of electives allows them to tailor their program to their
+specific interests.
+The baccalaureate program (Bachelor of Science in Computer Science) is
+accredited by the Computing Accreditation Commission of ABET, http://
+www.abet.org (http://www.abet.org/). The programs accredited by ABET
+are accredited as separate and distinct from any other programs or kinds
+of accreditation.
+Features
+The University's location in the South Bay area of greater Los Angeles
+provides direct access to many major government contractors,
+manufacturers, and international centers of commerce and finance. This
+provides excellent opportunities for work-study and early job placement.
+Our highly qualified full-time faculty are supplemented by talented and
+dedicated part-time faculty drawn from local firms and schools. Good
+teaching and easy on-campus access to professional quality computing
+systems enhance a degree program with a solid core curriculum and a
+broad range of electives.
+All courses are offered alternatively day and evening so that students
+may complete their programs by enrolling at either time exclusively.
+Graduation with Honors
+An undergraduate student may be a candidate for graduation with Honors
+in Computer Science provided he or she meets the following criteria:
+1. A minimum of 36 units in residence at CSU Dominguez Hills at least
+24 of which taken in Computer Science major;
+2. A minimum GPA of 3.5 in all upper-division courses in the Computer
+Science major completed in residence at CSUDH.
+Students who achieve Honors in Computer Science will have the
+information recorded on their transcripts and diplomas.
+Academic Advisement
+Faculty guidance in the development of career goals and program
+planning to achieve those goals is available to all majors.
+Preparation
+Students entering the computer science program should have completed
+high school mathematics through trigonometry. Remediation is available
+but will delay the student's progress toward a Computer Science Degree.
+This is a demanding program that places a premium on the student's
+initiative and effort.
+
+Computer Science, Bachelor of
+Science
+Requirements
+Total Course Requirements for the Bachelor's Degree
+See the "Requirements for the Bachelor's Degree (p. 95)" in the University
+Catalog for complete details on general degree requirements. A minimum
+of 40 units, including those required for the major, must be upper division.
+Elective Requirements
+Completion of elective courses (beyond the requirements listed below) to
+reach a total of a minimum of 120 units.
+General Education Requirements (49 units)
+See the "General Education (p. 158)" requirements in the University
+Catalog or the Class Schedule for the most current information on
+General Education requirements and course offerings.
+Graduation Writing Assessment Requirement
+See the "Graduation Writing Assessment Requirement (p. 112)" in the
+University Catalog.
+Minor Requirements
+Single field major, no minor required.
+Major Requirements (76 units)
+Students entering the Computer Science program must complete the
+following.
+1. Earn an overall grade point average of 2.0 or better in courses taken
+outside of the department.
+484 Computer Science, Bachelor of Science
+2. Earn a grade of "C" or better in each course taken within the
+department.
+3. Earn a grade of "C" or better in all direct and indirect prerequisite
+courses listed in the catalog before advancing to the next level course
+in a sequence for English, Mathematics, and Science courses.
+4. Students must take capstone course CSC 492 Senior Design at
+CSUDH.
+The following courses, or their approved transfer equivalents, are required
+of all candidates for this degree.
+Code Title Hours
+Lower Division Requirements
+CSC 121 Introduction to Computer Science and
+Programming I
+1
+4
+CSC 123 Introduction to Computer Science and
+Programming II
+4
+CSC 221 Assembly Language and Introduction to Computer
+Organization
+3
+CSC 2xx 3
+MAT 191 Calculus I 5
+MAT 193 Calculus II 5
+MAT 271 Foundations Of Higher Math 3
+MAT 281 Discrete Mathematics 3
+PHY 130 General Physics I 5
+PHY 132 General Physics II 5
+Upper Division Requirements 2
+Core Requirements:
+CSC 311 Data Structures 3
+CSC 321 Programming Languages 3
+CSC 331 Computer Organization 3
+CSC 341 Operating Systems 3
+Required Courses:
+CSC 301 Computers and Society 3
+CSC 401 Analysis of Algorithms 3
+CSC 481 Software Engineering 3
+CSC 492 Senior Design 3
+MAT 321 Probability and Statistics 3
+MAT 361 Finite Automata 3
+Electives
+Select two courses from the following: 6
+CSC 395 Sel Topics in Computer Science
+CSC 411 Artificial Intelligence
+CSC 421 Advanced Programming Languages
+CSC 431 Advanced Computer Organization
+CSC 441 Advanced Operating Systems
+CSC 451 Computer Networks
+CSC 453 Data Management
+CSC 455 WWW Design and Management
+CSC 459 Security Engineering
+CSC 461 Computer Graphics I
+CSC 463 Computer Graphics II
+CSC 471 Compiler Construction I
+CSC 490 Senior Seminar
+CSC 495 Selected Topics:
+MAT 367 Numerical Analysis I
+MAT 369 Numerical Analysis II
+Total Hours 76
+1 Major students may substitute this course for General Education Area
+A3. Please contact the CNBS Student Success Center to request the
+course substitution.
+2
+A minimum of 18 upper division units in the major must be taken in
+residence at CSU Dominguez Hills.
+Program Learning Outcome
+• Analyze a complex computing problem and to apply principles of
+computing and other relevant disciplines to identify solutions.
+• Design, implement, and evaluate a computing-based solution to meet
+a given set of computing requirements in the context of the program’s
+discipline.
+• Communicate effectively in a variety of professional contexts.
+• Recognize professional responsibilities and make informed
+judgments in computing practice based on legal and ethical
+principles.
+• Function effectively as a member or leader of a team engaged in
+activities appropriate to the program’s discipline.
+• Apply computer science theory and software development
+fundamentals to produce computing-based solutions.
+4- Year Roadmap
+First Year
+Fall Hours
+CSC 121 Introduction to Computer Science and Programming I 4
+HIS 101 History Of United States 3
+GE Area A1 Oral Communication 3
+GE Area A2 Written Communication 3
+GE Area C1 Arts Courses 3
+Hours 16
+Spring
+MAT 191 Calculus I (satisfies GE Area B4) 5
+CSC 123 Introduction to Computer Science and Programming II 4
+PHY 130 General Physics I (satisfy GE Areas B1 and B3) 5
+GE Area C2 Letters Course 3
+Hours 17
+Second Year
+Fall
+MAT 193 Calculus II 5
+POL 101 American Institutions 3
+PHY 132 General Physics II 5
+GE Area A3 Logic/Critical Thinking 3
+Hours 16
+Spring
+CSC 281 Discrete Structures 3
+CSC 251 C Language Programming and Unix (satisfies CSC
+lower division elective)
+3
+CSC 300 Software Development 3
+CSC 221 Assembly Language and Introduction to Computer
+Organization
+3
+GE Area B2 Life Science 3
+Hours 15
+2024-25 University Catalog 485
+Third Year
+Fall
+CSC 301 Computers and Society (satisfies GE Area B5) 3
+MAT 321 Probability and Statistics 3
+CSC 311 Data Structures 3
+CSC 331 Computer Organization 3
+GE Area D1 Perspectives on Individuals, Groups, and Society 3
+Hours 15
+Spring
+CSC 401 Analysis of Algorithms 3
+CSC 321 Programming Languages 3
+Upper Division CSC Elective 1 3
+Additional GE in Area C1 or C2 3
+GE Area E Lifelong Learning and Self-Development 3
+Hours 15
+Fourth Year
+Fall
+CSC 481 Software Engineering 3
+CSC 341 Operating Systems 3
+CSC 371 Finite Automata 3
+ENG 350 Advanced Composition (satisfies GWAR requirement) 3
+GE Area C3 Integrative Studies in the Humanities 3
+GE Area D2 Global and Historical Perspectives 3
+Hours 18
+Spring
+CSC 492 Senior Design 3
+Upper Division CSC Elective 2 3
+GE Area B5 Integrative Studies in Natural Sciences 3
+GE Area D3 Integrative Studies in the Social Sciences 3
+GE Area F Ethnic Studies 3
+Hours 15
+Total Hours 127
+2-Year Roadmap (transfer students)
+First Year
+Fall Hours
+CSC 300 Software Development 3
+CSC 301 Computers and Society (satisfies GE Area B5) 3
+MAT 321 Probability and Statistics 3
+CSC 311 Data Structures 3
+CSC 331 Computer Organization 3
+Hours 15
+Spring
+CSC 401 Analysis of Algorithms 3
+CSC 321 Programming Languages 3
+ENG 350 Advanced Composition (satisfies GWAR requirement) 3
+Upper Division CSC Elective 1 3
+GE Area C3 Integrative Studies in the Humanities 3
+Hours 15
+Second Year
+Fall
+CSC 481 Software Engineering 3
+CSC 341 Operating Systems 3
+CSC 371 Finite Automata 3
+GE Area D3 Integrative Studies in the Social Sciences 3
+Elective to meet 120 units 3
+Hours 15
+Spring
+CSC 492 Senior Design 3
+Upper Division CSC Elective 2 3
+Elective to meet 120 units 3
+Elective to meet 120 units 3
+Elective to meet 120 units 2
+Hours 14
+Total Hours 59
+Computer Science, Certificate
+Requirements
+Code Title Hours
+Upper Division Requirements
+CSC 311 Data Structures 3
+CSC 321 Programming Languages 3
+CSC 331 Computer Organization 3
+Electives
+Select three courses from the following: 9
+CSC 337 Microcomputers
+CSC 341 Operating Systems
+CSC 353 File Processing
+CSC 361 Systems Programming
+CSC 395 Sel Topics in Computer Science
+CSC 401 Analysis of Algorithms
+CSC 411 Artificial Intelligence
+CSC 421 Advanced Programming Languages
+CSC 431 Advanced Computer Organization
+CSC 441 Advanced Operating Systems
+CSC 451 Computer Networks
+CSC 453 Data Management
+CSC 455 WWW Design and Management
+CSC 459 Security Engineering
+CSC 461 Computer Graphics I
+CSC 463 Computer Graphics II
+CSC 471 Compiler Construction I
+CSC 490 Senior Seminar
+CSC 492 Senior Design
+CSC 495 Selected Topics:
+MAT 361 Finite Automata
+MAT 367 Numerical Analysis I
+MAT 369 Numerical Analysis II
+Total Hours 18
+Notes:
+1. Adequate preparation in terms of the completion of all lower division
+courses which are prerequisites of courses for this certificate is
+necessary.
+2. At least four of the six upper division courses must be taken at CSU
+Dominguez Hills.
+3. None of the upper division courses may be taken as credit/no credit.
+4. A minimum grade point average of 2.0 is required for all units taken
+for the certificate.
+1.
+486 Computer Science, Master of Science
+Computer Science, Master of Science
+The Master's Program in Computer Science is a two-year program in
+which a student must complete a required core of courses and additional
+concentration and general computer science elective courses. The
+curriculum for the Master of Science in Computer Science requires 36
+semester credit units, and offers both a thesis option (30 semester
+credit units of coursework and 6 semester units of a thesis) and a nonthesis option (33 semester credit units of coursework and 3 semester
+credit units of a project). Students may choose to obtain the degree
+in Computer Science with specialization in Software Engineering or
+Distributed Systems and Networking.
+The academic program is expected to culminate in a master's thesis
+or project. During the first semester of the program, the student should
+choose a major advisor who will assist him or her in the choice of elective
+courses. The major advisor will chair the student's advisory committee
+for the thesis. Two additional members of the students graduate advisory
+committee will need to be selected.
+The graduate program can provide a strong background for future study
+in a doctoral program. It also provides graduate training as preparation
+for professional applications. Students with a master's degree in
+computer science are also prepared for a career in teaching and/or
+research.
+A majority of graduate classes are scheduled to accommodate late
+afternoon and evening students.
+Admission Requirements
+Students holding a Bachelor's degree in Computer Science are accepted
+as graduate students, provided they meet the general requirements
+stated below.
+Applicants not holding a degree in Computer Science are also accepted
+as graduate students, provided they meet the general requirements and
+successfully complete the leveling courses described below.
+General requirements for graduate study in Computer Science are as
+follows:
+• An undergraduate degree from an accredited higher education
+institution.
+• A minimum GPA of 2.75 on a 4.0 scale.
+• A minimum TOEFL score of 90 or ITLES score of 6.5 (for applicants
+whose native language is not English).
+• A minimum Graduate Examination (GRE) General Test score of
+293 (combined verbal and quantitative); for more information refer
+to: www.gre.org (https://www.ets.org/gre/)
+A student with a Bachelor of Science in Computer Science, with a GPA
+greater than 2.44 but less than 2.75 and/or a GRE score below 191 may
+first receive conditionally classified admission to the MS degree program.
+A conditionally classified student has one year to receive a minimum GRE
+score of 900 and a minimum GPA of 3.0 to change status to classified
+graduate student.
+A student with a Bachelor's degree in a discipline other than Computer
+Science must possess a computer science background equivalent to the
+following CSUDH courses:
+Code Title Hours
+CSC 321 Programming Languages 3
+CSC 331 Computer Organization 3
+CSC 311 Data Structures 3
+MAT 281 Discrete Mathematics 3
+CSC 341 Operating Systems 3
+MAT 361 Finite Automata 3
+Proficiency in a programming language
+1
+1
+or CSC 123 Introduction to Computer Science and Programming II.
+A student without this background must enroll in these leveling courses
+before being accepted as a regular student in the graduate Computer
+Science program. Successful completion in these courses means a grade
+of C or better in each leveling course.
+Students entering the master's program must maintain a grade of no less
+than B in any course for their continuation in this program. Final decision
+on admission to the graduate program is made by the Computer Science
+Graduate Committee.
+Admission Procedures
+Prospective graduate students must:
+1. Submit an application to the University for admission (or
+readmission) with graduate standing, and official transcripts of
+all previous college work following the procedures outlined in the
+Admissions section of the University Catalog.
+2. Submit to the Computer Science Graduate Program Coordinator:
+3. a second set of official transcripts;
+4. a letter to the department describing interests, goals and
+expectations in pursuing the master's degree in computer science;
+5. three letters of recommendation sent directly from individuals who
+can evaluate potential for graduate study;
+6. verification of a minimum GRE General Test score of 900 (combined
+verbal and quantitative) before the student has completed 9 semester
+units.
+Graduate Standing: Conditionally
+Classified
+To qualify for admission with a graduate degree objective, students must
+meet the admission requirements for post-baccalaureate standing as well
+as any additional requirements of the particular program. Students who
+apply to a graduate degree program but who do not satisfy all program
+requirements may be admitted to conditionally classified status. Program
+coordinators will outline all conditions for attainment of classified status.
+Graduate Standing: Classified
+Students applying for master's degree programs will be admitted in
+classified status if they meet all program admission requirements.
+Classified standing as a graduate student is granted by the academic unit
+to which the student is applying. Classified standing is normally granted
+when all prerequisites have been satisfactorily completed for admission
+to a master's degree program. Students must have classified standing to
+qualify for Advancement to Candidacy.
+2024-25 University Catalog 487
+Graduation Writing Assessment
+Requirement
+All graduate students entering the University in the Fall of 1983 or
+thereafter are required to satisfy the Graduation Writing Assessment
+Requirement (GWAR) in accordance with the established policies of the
+university. Students must satisfy the requirements before being advanced
+to Candidacy. (See "Graduation Writing Assessment Requirement
+(https://catalog.csudh.edu/general-information/graduate-writingexamination/)" section of the University Catalog.
+Advancement to Candidacy
+Advancement to candidacy recognizes that the student has
+demonstrated the ability to sustain a level of scholarly competency
+commensurate with successful completion of degree requirements. Upon
+advancement to candidacy, the student is cleared for the final stages of
+the graduate program which, in addition to any remaining course work,
+will include the thesis or project.
+Following are the requirements for Advancement to Candidacy:
+1. A minimum of 15 resident units;
+2. Classified standing;
+3. An approved Program of Study;
+4. Successful completion of GWAR;
+5. A cumulative GPA of 3.0 in all courses taken as a graduate student;
+6. No grade lower than a "B" in the degree program.
+Advancement to Candidacy must be certified on the appropriate form to
+the Graduate Dean by the department prior to the final semester, prior to
+enrolling in the thesis or project.
+Admission Requirements
+Students holding a Bachelor's degree in Computer Science are accepted
+as graduate students, provided they meet the general requirements
+stated below.
+Applicants not holding a degree in Computer Science are also accepted
+as graduate students, provided they meet the general requirements and
+successfully complete the leveling courses described below.
+General requirements for graduate study in Computer Science are as
+follows:
+• An undergraduate degree from an accredited higher education
+institution.
+• A minimum GPA of 2.75 on a 4.0 scale.
+• A minimum TOEFL score of 90 or ITLES score of 6.5 (for applicants
+whose native language is not English).
+• A minimum Graduate Examination (GRE) General Test score of
+293 (combined verbal and quantitative); for more information refer
+to: www.gre.org (https://www.ets.org/gre/)
+A student with a Bachelor of Science in Computer Science, with a GPA
+greater than 2.44 but less than 2.75 and/or a GRE score below 191 may
+first receive conditionally classified admission to the MS degree program.
+A conditionally classified student has one year to receive a minimum GRE
+score of 900 and a minimum GPA of 3.0 to change status to classified
+graduate student.
+A student with a Bachelor's degree in a discipline other than Computer
+Science must possess a computer science background equivalent to the
+following CSUDH courses:
+Code Title Hours
+CSC 321 Programming Languages 3
+CSC 331 Computer Organization 3
+CSC 311 Data Structures 3
+MAT 281 Discrete Mathematics 3
+CSC 341 Operating Systems 3
+MAT 361 Finite Automata 3
+Proficiency in a programming language
+1
+1
+or CSC 123 Introduction to Computer Science and Programming II.
+A student without this background must enroll in these leveling courses
+before being accepted as a regular student in the graduate Computer
+Science program. Successful completion in these courses means a grade
+of C or better in each leveling course.
+Students entering the master's program must maintain a grade of no less
+than B in any course for their continuation in this program. Final decision
+on admission to the graduate program is made by the Computer Science
+Graduate Committee.
+Admission Procedures
+Prospective graduate students must:
+1. Submit an application to the University for admission (or
+readmission) with graduate standing, and official transcripts of
+all previous college work following the procedures outlined in the
+Admissions section of the University Catalog.
+2. Submit to the Computer Science Graduate Program Coordinator:
+3. a second set of official transcripts;
+4. a letter to the department describing interests, goals and
+expectations in pursuing the master's degree in computer science;
+5. three letters of recommendation sent directly from individuals who
+can evaluate potential for graduate study;
+6. verification of a minimum GRE General Test score of 900 (combined
+verbal and quantitative) before the student has completed 9 semester
+units.
+Graduate Standing: Conditionally
+Classified
+To qualify for admission with a graduate degree objective, students must
+meet the admission requirements for post-baccalaureate standing as well
+as any additional requirements of the particular program. Students who
+apply to a graduate degree program but who do not satisfy all program
+requirements may be admitted to conditionally classified status. Program
+coordinators will outline all conditions for attainment of classified status.
+Graduate Standing: Classified
+Students applying for master's degree programs will be admitted in
+classified status if they meet all program admission requirements.
+Classified standing as a graduate student is granted by the academic unit
+to which the student is applying. Classified standing is normally granted
+when all prerequisites have been satisfactorily completed for admission
+488 Computer Science, Master of Science
+to a master's degree program. Students must have classified standing to
+qualify for Advancement to Candidacy.
+Graduation Writing Assessment
+Requirement
+All graduate students entering the University in the Fall of 1983 or
+thereafter are required to satisfy the Graduation Writing Assessment
+Requirement (GWAR) in accordance with the established policies of the
+university. Students must satisfy the requirements before being advanced
+to Candidacy. (See "Graduation Writing Assessment Requirement
+(p. 112)" section of the University Catalog.
+Advancement to Candidacy
+Advancement to candidacy recognizes that the student has
+demonstrated the ability to sustain a level of scholarly competency
+commensurate with successful completion of degree requirements. Upon
+advancement to candidacy, the student is cleared for the final stages of
+the graduate program which, in addition to any remaining course work,
+will include the thesis or project.
+Following are the requirements for Advancement to Candidacy:
+1. A minimum of 15 resident units;
+2. Classified standing;
+3. An approved Program of Study;
+4. Successful completion of GWAR;
+5. A cumulative GPA of 3.0 in all courses taken as a graduate student;
+6. No grade lower than a "B" in the degree program.
+Advancement to Candidacy must be certified on the appropriate form to
+the Graduate Dean by the department prior to the final semester, prior to
+enrolling in the thesis or project.
+Requirements
+Thesis Option
+Code Title Hours
+Graduate Coursework
+CSC 500 Research Methods 3
+CSC 501 Design and Analysis of Algorithms 3
+CSC 521 Fundamentals and Concepts of Programming
+Languages
+3
+CSC 581 Advanced Software Engineering 3
+CSC 584 Software Project 3
+Elective graduate courses 15
+Master's Thesis
+CSC 599 Master's Thesis 6
+Total Hours 36
+Non-Thesis Option
+Code Title Hours
+Graduate Coursework
+CSC 500 Research Methods 3
+CSC 501 Design and Analysis of Algorithms 3
+CSC 521 Fundamentals and Concepts of Programming
+Languages
+3
+CSC 581 Advanced Software Engineering 3
+CSC 584 Software Project 3
+Elective graduate courses 18
+Master's Project
+CSC 590 Master's Project 3
+Total Hours 36
+Tracks
+Students may choose to obtain the degree specializing in either Software
+Engineering (SE) or in Distributed Systems and Networking (DSN) tracks.
+Software Engineering (SE) Track
+Code Title Hours
+CSC 541 Advanced Operating Systems 3
+CSC 546 Human Computer Interaction and Interface Design 3
+CSC 582 Object-Oriented Analysis and Design 3
+CSC 583 Software Engineering Processes 3
+CSC 585 Advanced Software Quality Assurance 3
+Total Hours 15
+Distributed Systems Networking (DSN) Track
+Code Title Hours
+CSC 531 Advanced Computer Architecture 3
+CSC 541 Advanced Operating Systems 3
+CSC 551 Data Communications and Computer Networks 3
+CSC 552 Distributed Computing and Parallel Processing 3
+CSC 555 Information Assurance and Network Security 3
+Total Hours 15
+Elective Graduate Courses
+Code Title Hours
+CSC 511 Artificial Intelligence and Expert Systems 3
+CSC 531 Advanced Computer Architecture 3
+CSC 541 Advanced Operating Systems 3
+CSC 546 Human Computer Interaction and Interface Design 3
+CSC 553 Advanced Database Management Systems 3
+CSC 551 Data Communications and Computer Networks 3
+CSC 552 Distributed Computing and Parallel Processing 3
+CSC 555 Information Assurance and Network Security 3
+CSC 561 Advanced Computer Graphics 3
+CSC 564 Numerical Analysis 3
+CSC 565 Theory of Computation 3
+CSC 582 Object-Oriented Analysis and Design 3
+CSC 583 Software Engineering Processes 3
+CSC 585 Advanced Software Quality Assurance 3
+CSC 594 Independent Study 3
+CSC 595 Special Topics in Computer Science 3
+Notes:
+1. General Computer Science:
+a. Thesis Option: select 5 courses (15 units) from the list of elective
+courses;
+b. Non-Thesis Option: select 6 courses (18 units) from the list of
+elective courses.
+2. Software Engineering or Distributed Systems Networking tracks:
+2024-25 University Catalog 489
+a. No double counting of electives;
+b. Thesis Option: select 1 course (3 units) from the list of elective
+courses;
+c. Non-Thesis Option: select 2 courses (6 units) from the list of
+elective courses
+a.
+Program Learning Outcomes
+1.
+Computer Science, Minor
+Requirements
+Code Title Hours
+Lower Division Required Courses
+CSC 121 Introduction to Computer Science and
+Programming I
+4
+CSC 123 Introduction to Computer Science and
+Programming II
+4
+CSC 221 Assembly Language and Introduction to Computer
+Organization
+3
+MAT 191 Calculus I 5
+MAT 193 Calculus II 5
+MAT 271 Foundations Of Higher Math 3
+MAT 281 Discrete Mathematics 3
+Upper Division Required Courses
+CSC 311 Data Structures 3
+Select two courses from the following, one of which must have a CSC
+prefix:
+6
+CSC 321 Programming Languages
+CSC 331 Computer Organization
+CSC 341 Operating Systems
+CSC 395 Sel Topics in Computer Science
+CSC 401 Analysis of Algorithms
+CSC 411 Artificial Intelligence
+CSC 421 Advanced Programming Languages
+CSC 431 Advanced Computer Organization
+CSC 441 Advanced Operating Systems
+CSC 451 Computer Networks
+CSC 453 Data Management
+CSC 455 WWW Design and Management
+CSC 459 Security Engineering
+CSC 461 Computer Graphics I
+CSC 463 Computer Graphics II
+CSC 471 Compiler Construction I
+CSC 490 Senior Seminar
+CSC 492 Senior Design
+CSC 495 Selected Topics:
+MAT 361 Finite Automata
+MAT 367 Numerical Analysis I
+MAT 369 Numerical Analysis II
+CIS 372 Systems Analysis and Design
+CIS 373 Database Systems
+CIS 375 Data Communications
+Total Hours 36
+
+

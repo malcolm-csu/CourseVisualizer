@@ -1,0 +1,117 @@
+{
+  "CSUDH_2024-25": {
+    "Computer_Science_BS": {
+      "lower_division": [
+        {"course": "CSC 121", "title": "Intro to Computer Science & Programming I", "units": 4},
+        {"course": "CSC 123", "title": "Intro to CS & Programming II", "units": 4},
+        {"course": "CSC 221", "title": "Assembly Lang & Computer Org", "units": 4},
+        {"course": "CSC 231", "title": "Digital Logic", "units": 3},
+        {"course": "CSC 251", "title": "Java Programming", "units": 3},
+        {"course": "MAT 153 or MAT 171", "title": "Precalculus or Accelerated Precalculus", "units": 4},
+        {"course": "MAT 191", "title": "Calculus I", "units": 4}
+      ],
+      "upper_division": [
+        {"course": "CSC 311", "title": "Data Structures", "units": 3},
+        {"course": "CSC 321", "title": "Programming Languages", "units": 3},
+        {"course": "CSC 331", "title": "Computer Architecture", "units": 3},
+        {"course": "CSC 341", "title": "Operating Systems", "units": 3},
+        {"course": "CSC 401", "title": "Software Engineering", "units": 3},
+        {"course": "CSC 471", "title": "Algorithms", "units": 3},
+        {"course": "CSC 481", "title": "Theoretical CS", "units": 3},
+        {"course": "CSC 492", "title": "Senior Project", "units": 4},
+        {"course": "CSC 496", "title": "Senior Seminar", "units": 1}
+      ],
+      "electives": {
+        "units_required": 9,
+        "notes": "Choose any three upper-division CSC courses, excluding CSC 301 and CSC 337."
+      },
+      "total_units": 63
+    },
+    "Computer_Technology_BS": {
+      "lower_division": [
+        {"course": "CSC 121", "units": 4},
+        {"course": "CSC 123", "units": 4},
+        {"course": "CSC 221", "units": 4},
+        {"course": "CTC 228", "units": 3},
+        {"course": "CTC 257", "units": 3},
+        {"course": "MAT 153", "units": 4},
+        {"course": "MAT 171", "units": 3}
+      ],
+      "upper_division": [
+        {"course": "CTC 300", "title": "IT Project Management", "units": 3},
+        {"course": "CTC 301", "title": "Information Systems & Networks", "units": 3},
+        {"course": "CTC 310", "title": "Network Systems Admin", "units": 3},
+        {"course": "CTC 362", "title": "Database Systems Admin", "units": 3},
+        {"course": "CTC 452", "title": "Network Security & Hacking", "units": 3},
+        {"course": "ITC 459", "title": "IT Security", "units": 3},
+        {"course": "ITC 492", "title": "Senior Design", "units": 3},
+        {"course": "ITC 496", "title": "Senior Seminar", "units": 1},
+        {"course": "ITC 399", "title": "IT Practicum", "units": 1}
+      ],
+      "track_electives": {
+        "track": "Homeland Security",
+        "required": [
+          "CTC 316", "CTC 310", "CTC 362", "CTC 452"
+        ],
+        "choose_two_from": [
+          "CTC 454", "CTC 456", "CTC 458", "CTC 428", "CTC 328", "CTC 305"
+        ]
+      },
+      "total_units": 67
+    },
+    "Information_Technology_BS": {
+      "lower_division": [
+        "CSC 121", "CSC 123", "CTC 228", "CTC 257",
+        "ITC 102",
+        "MAT 131 or MAT 153",
+        "MAT 132 or MAT 171",
+        "1 Natural Science w/Lab"
+      ],
+      "upper_division": [
+        "CTC 300", "CTC 301", "CTC 310", "CTC 362",
+        "ITC 301", "ITC 401", "ITC 453", "ITC 459",
+        "ITC 492", "ITC 496"
+      ],
+      "electives": {
+        "units_required": 6,
+        "notes": "2–3 advisor-approved upper-division ITC/CTC/CSC electives"
+      },
+      "total_units": 67
+    },
+    "General_Education": {
+      "Area_A": {
+        "units": 9,
+        "requirements": ["A1 Oral Communication", "A2 Written Communication", "A3 Critical Thinking"]
+      },
+      "Area_B": {
+        "units_minimum": 9,
+        "requirements": ["B1 Physical Science", "B2 Life Science", "B3 Lab Activity", "B4 Math/Quantitative"]
+      },
+      "Area_C": {
+        "units": 9,
+        "requirements": ["C1 Arts", "C2 Humanities", "C3 Additional C1 or C2"]
+      },
+      "Area_D": {
+        "units": 9,
+        "requirements": ["Social Sciences (must include U.S. History & American Institutions)"]
+      },
+      "Area_E": {
+        "units": 3,
+        "requirements": ["Lifelong Learning"]
+      },
+      "Area_F": {
+        "units": 3,
+        "requirements": ["Ethnic Studies"]
+      },
+      "Overlay_Requirements": {
+        "GWAR": "Graduation Writing Assessment Requirement",
+        "WI": "Upper-division Writing Intensive",
+        "DEI": "Diversity, Equity, Inclusion",
+        "SL": "Service Learning (if applicable by catalog year)",
+        "RES": "Race & Ethnicity",
+        "Capstone_GE": "GE Synthesis (C4 or D4, varies)"
+      }
+    }
+  }
+}
+

@@ -1,0 +1,256 @@
+
+
+Information Technology
+College of Natural and Behavioral and Sciences
+Department of Computer Science
+Program Description
+Information Technology forms the technological infrastructure of modern
+commerce. It’s the driving force of every industry and permeates everyday
+life. The ability to combine the power of computing with the management
+of multimedia information is arguable the key to obtaining ascendancy in
+any field.
+Information Technology is an ever-evolving, expanding field. The
+Information Technology Program will provide students with the
+background, knowledge, and skills they will need to adapt to the dynamic
+nature of the marketplace.
+The BSIT degree provides a high-quality science degree program in
+information technology that will prepare the student for lifelong learning
+as they pursue professional careers in informational technology and
+leadership roles in the society in which they serve. It provides our
+students with a strong foundational base, state-of-the-art techniques,
+methodologies, and tools to specify, design, and develop technologybased solutions to complex system problems. This program prepares
+our students to communicate well, both orally and in writing, on moral
+and ethical development, in the knowledge of the liberal arts, and on the
+commitment to services to others. IT provides opportunities for students
+to contribute to the body of knowledge that serves the profession, by
+engaging in activities that support their interests and are in agreement
+with the goals and objectives of the College, and the university.
+Features
+The University’s location in the South Bay area of greater Los Angeles
+provides direct access to many major government contractors,
+manufacturers, and international centers of commerce and finance. This
+provides excellent opportunities for work-study and early job placement.
+Our highly qualified full-time faculty are supplemented by talented and
+dedicated part-time faculty drawn from local firms and schools. Good
+teaching and easy on-campus access to professional quality computing
+systems enhance a degree program that provides both a solid core
+curriculum and a broad range of electives.
+All courses are offered alternatively day and evening so that students
+may complete their programs by enrolling at either time exclusively.
+Graduation with Honors
+An undergraduate student may be a candidate for graduation with Honors
+in Information Technology provided he or she meets the following criteria:
+1. A minimum of 36 units in residence at CSU Dominguez Hills at least
+24 of which taken in Computer Science major;
+2. A minimum GPA of 3.5 in all upper division courses in the Computer
+Science major completed in residence at CSUDH;
+Students who achieve Honors in Information Technology will have the
+information recorded on their transcripts and diplomas.
+Academic Advisement
+Faculty guidance in the development of career goals and program
+planning to achieve those goals is available to all majors.
+Preparation
+Students entering the Information Technology program should have
+completed high school mathematics through trigonometry. Remediation
+is available but will delay the student’s progress toward an Information
+Technology degree.
+This is a program that places a premium on the student’s initiative and
+effort.
+Student Organizations
+Contact departmental office for membership information, or visit the
+websites:
+Association for Computing Machinery (ACM) ACM@csudh.edu
+Institute of Electrical and Electronics Engineers (IEEE) IEEE@csudh.edu
+Cyber Security CyberSec@csudh.edu
+Computing Alliance of Hispanic-Serving Institutions (CAHSI)
+CAHSI@csudh.edu
+Career Possibilities
+Bachelor of Science in Information Technology is a comprehensive
+program that is intended to provide students with the technology based
+skill set required immediately after degree completion to enter the
+workforce or a graduate program. Feedback and letters of support
+from members of our Industry Advisory Board indicate the need for
+professionals with the balance of practical and theoretical knowledge
+that extends beyond conventional information technology curricula.
+Undergraduate Programs
+Bachelor
+• Information Technology, Bachelor of Science (p. 613)
+Faculty
+Mohsen Beheshti, Department Chair
+Jianchao (Jack) Han, Marek Suchenek, Bin Tang, Amlan Chatterjee,
+Liudong Zuo, Alireza Izaddoost, Brad Hollister, Kkondaker Salehin
+2024-25 University Catalog 613
+Emeriti Faculty
+William B. Jones, Kazimierz Kowalski
+Staff
+Violeta Diaz, Administrative Assistant
+Ken Leyba, IT Consultant
+Department Office: NSM A-132, (310) 243-3398
+http://csc.csudh.edu
+
+Information Technology, Bachelor of
+Science
+Requirements
+Total Course Requirements for the Bachelor's Degree
+See the "Requirements for the Bachelor's Degree (p. 95)" in the University
+Catalog for complete details on general degree requirements. A minimum
+of 40 units, including those required for the major, must be upper division.
+Elective Requirements
+Completion of elective courses (beyond the requirements listed below) to
+reach a total of a minimum of 120 units.
+General Education Requirements (49 units)
+See the "General Education (p. 158)" requirements in the University
+Catalog or the Class Schedule for the most current information on
+General Education requirements and course offerings.
+Graduation Writing Assessment Requirement
+See the "Graduation Writing Assessment Requirement (p. 112)" in the
+University Catalog.
+Minor Requirements
+Single field major, no minor required.
+Major Requirements (73 units)
+Students entering the Information Technology program must complete
+the following:
+1. Earn an overall grade point average of 2.0 or better in courses taken
+outside of the department;
+2. Earn a grade of “C” or better in each course taken within the
+department;
+3. Students must take capstone course ITC 492 Senior Design at
+CSUDH.
+The following courses, or their approved transfer equivalents, are required
+of all candidates for this degree.
+Code Title Hours
+Lower Division Requirements
+ITC 101 Introduction to Information Technology 3
+CSC 121 Introduction to Computer Science and
+Programming I
+4
+CSC 123 Introduction to Computer Science and
+Programming II
+4
+614 Information Technology, Bachelor of Science
+ITC 251 System Programming in C and Unix 3
+CTC 228 Introduction to Operating Systems and Networks 4
+CSC 255 Dynamic Web Programming 3
+BIO 102 General Biology 3
+BIO 103 General Biology Laboratory 1
+PHY 100 Patterns In Nature 3
+MAT 131 Elementary Statistics and Probability 3
+MAT 281 Discrete Mathematics 3
+Science- Any Physical or Life Science 3
+Any Physical Science with Lab and/or any Life Science with lab 10
+Upper Division Requirements 1
+CSC 301 Computers and Society 3
+ITC 310 IT Project Management 3
+CSC 311 Data Structures 3
+CTC 316 Operating Systems and Networks Support 3
+CTC 362 Communication Systems Security 3
+CTC 452 Network Security and Hacking Prevention 3
+ITC 453 Database Management Systems (DBMS) 3
+ITC 459 IT Security 3
+ITC 492 Senior Design 3
+Complete two CSC Elective Courses - Recommended IT Architecture 6
+Total Hours 80
+1
+A minimum of 18 upper division units in the major must be taken in
+residence at CSU Dominguez Hills.
+4- Year Roadmap
+Course Title Hours
+First Year
+Fall
+MAT 131 Elementary Statistics and Probability (GE B4) 3
+HIS 101 History Of United States (statutory requirement) 3
+ITC 101 Introduction to Information Technology 3
+GE Area A1 Oral Communication 3
+GE Area A2 Written Communication 3
+Hours 15
+Spring
+CSC 121 Introduction to Computer Science and Programming I
+(see academic advisor for GE Area A3 credit)
+4
+BIO 102 General Biology (GE B2) 3
+BIO 103 General Biology Laboratory (GE B3) 1
+POL 101 American Institutions (statutory requirements) 3
+GE Area C1 Arts Courses 3
+Hours 14
+Second Year
+Fall
+CSC 123 Introduction to Computer Science and Programming II 4
+CSC 255 Dynamic Web Programming 3
+CSC 281 Discrete Structures 3
+GE Area C2 Letters Course 3
+Hours 13
+Spring
+ITC 251 System Programming in C and Unix 3
+CTC 228 Introduction to Operating Systems and Networks 4
+CSC 311 Data Structures 3
+GE Area D1 Perspectives on Individuals, Groups, and Society 3
+PHY 100 Patterns In Nature (GE B1) 3
+Hours 16
+Third Year
+Fall
+ENG 350 Advanced Composition (GWAR satisfying course) 3
+CSC 301 Computers And Society (GE Area B5) 3
+CTC 316 Operating Systems and Networks Support 3
+ITC 399 IT Practicum 3
+GE Area C1 or C2 3
+Hours 15
+Spring
+ITC 310 IT Project Management 3
+ITC 453 Database Management Systems (DBMS) 3
+GE Area D2 Global and Historical Perspectives 3
+GE Area C3 Integrative Studies in the Humanities 3
+Additional PHY or Life Science Course 3
+Hours 15
+Fourth Year
+Fall
+CTC 362 Communication Systems Security 3
+CTC 452 Network Security and Hacking Prevention 3
+ITC 459 IT Security 3
+GE Area E Lifelong Learning and Self-Development 3
+GE Area D3 Integrative Studies in the Social Sciences 3
+Elective to meet 120 units 3
+Hours 18
+Spring
+ITC 492 Senior Design 3
+CSC or ITC Elective Course 1 3
+GE Area F Ethnic Studies 3
+GE Area A3 Logic/Critical Thinking 3
+CSC or ITC Elective Course 2 3
+Hours 15
+Total Hours 121
+2-Year Roadmap
+Course Title Hours
+First Year
+Fall
+CSC 301 Computers And Society (GE B5) 3
+CSC 311 Data Structures 3
+CTC 316 Operating Systems and Networks Support 3
+ITC 399 IT Practicum 3
+Elective to meet 120 units 3
+Hours 15
+Spring
+ITC 310 IT Project Management 3
+ITC 453 Database Management Systems (DBMS) 3
+ENG 350 Advanced Composition (GWAR satisfying course) 3
+Elective to meet 120 units 3
+GE Area C3 Integrative Studies in the Humanities 3
+Hours 15
+Second Year
+Fall
+CTC 362 Communication Systems Security 3
+CTC 452 Network Security and Hacking Prevention 3
+ITC 459 IT Security 3
+GE Area D3 Integrative Studies in the Social Sciences 3
+Elective to meet 120 units 3
+Hours 15
+2024-25 University Catalog 615
+Spring
+ITC 492 Senior Design 3
+CSC or ITC Upper Division Elective 1 3
+CSC or ITC Upper Division Elective 2 3
+Elective to meet 120 units 3
+Elective to meet 120 units 3
+Hours 15
+Total Hours 60
+
+

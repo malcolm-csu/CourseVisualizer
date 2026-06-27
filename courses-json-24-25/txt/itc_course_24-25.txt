@@ -1,0 +1,80 @@
+Information Technology (ITC) 2024-2025
+
+
+ITC 101.  Introduction to Information Technology.  (3 Units)  
+Designed to introduce the fundamentals of information technology.
+This includes, introduction to a variety of computer tools and computer
+concepts with an emphasis on information technology
+Offered Fall, Spring
+
+
+ITC 251.  System Programming in C and Unix.  (3 Units)  
+Prerequisite: CSC 121 is required. Provides a substantial exposure to the
+C programming language and the Unix programming environment for
+students with some prior programming experience but minimal exposure
+to C.
+Offered Fall, Spring
+
+
+ITC 300.  Security in a Digital Society.  (3 Units)  
+This course provides students with an understanding of what is involved
+in the journey of positioning the computer, security, privacy, internet, and
+cloud as a valuable service provide to the business and personal life of
+the digital society.
+Offered Fall, Spring
+
+
+ITC 310.  IT Project Management.  (3 Units)  
+Prerequisite: CSC 301 is required. Aims to provide students with the basic
+skills, knowledge and competence to effectively understand and manage
+information technology projects. This course prepares students to gain a
+practical and theoretical foundation for managing IT projects.
+Offered Fall, Spring
+
+
+ITC 395.  Selected Topics in Information Technology.  (1-3 Units)  
+Prerequisite: Consent of Instructor. Content varies. Topics in computer
+technology not covered by current course offerings. May be used for
+elective credit in departmental programs. Subject to approval.
+Offered As needed
+
+
+ITC 399.  IT Practicum.  (3 Units)  
+Prerequisite: Consent of instructor is required. The information
+technology internship program allows students to gain hands-on
+experience in a technology environment by spending one semester
+as an intern in the Information Technology Division or a related area.
+The internship program provides students with the opportunity to gain
+technical experience related to their studies and to prepare them for
+future career opportunities in the field. CR/NC grading only.
+Offered Fall, Spring
+250 Interdisciplinary Studies (IDS)
+
+
+ITC 453.  Database Management Systems (DBMS).  (3 Units)  
+Prerequisite: CSC 311 is required. Covers the design methodology
+process for databases and how to verify its structural correctness.
+Students will learn how to implement databases and applications
+software, primarily in the relational model. This is through using querying
+languages, primarily SQL, and other database supporting software;
+and applying the theory behind various database models and query
+languages. It also includes implementing security and integrity policies
+relating to databases working in group settings during design.
+Offered Fall, Spring
+
+
+ITC 459.  IT Security.  (3 Units)  
+Prerequisite: CSC 311 or consent of instructor is required. Information
+Technology Security aims at securing systems that remain dependable
+in the face of malice, error or mischance. This course covers a number of
+principles, methods, tools and good practices to secure systems.
+Offered Fall, Spring
+
+
+ITC 492.  Senior Design.  (3 Units)  
+Prerequisite: ITC 453 is required. Intensive study under the guidance
+of a member of the Information Technology (IT) faculty to complete a
+research project from start to end. Students will study system design and
+total project planning and management. A formal written report and oral
+presentation will be required.
+Offered Fall, Spring

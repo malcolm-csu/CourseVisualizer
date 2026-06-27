@@ -1,0 +1,156 @@
+
+Computer Technology, Bachelor of
+Arts
+Requirements
+Total Course Requirements for the Bachelor's Degree
+See the "Requirements for the Bachelor's Degree (p. 95)" in the University
+Catalog for complete details on general degree requirements. A minimum
+of 40 units, including those required for the major, must be upper division.
+Elective Requirements
+Completion of elective courses (beyond the requirements listed below) to
+reach a total of a minimum of 120 units.
+General Education Requirements (49 units)
+See the "General Education (p. 158)" requirements in the University
+Catalog or the Class Schedule for the most current information on
+General Education requirements and course offerings.
+Graduation Writing Assessment Requirement
+See the "Graduation Writing Assessment Requirement (p. 112)" in the
+University Catalog.
+Minor Requirements
+Single field major, no minor required.
+Major Requirements (62-68 units)
+Students entering the Computer Technology program must complete the
+following.
+1. Earn an overall grade point average of 2.0 or better in courses taken
+outside of the department.
+2. Earn a grade of "C" or better in each course taken within the
+department.
+3. Students must take capstone course CTC 492 Senior Project at
+CSUDH.
+The following courses, or their approved transfer equivalents, are required
+of all candidates for this degree.
+Core Requirements (34 units)
+Code Title Hours
+Lower Division Requirements
+CSC 101 Intro.to Computer Education 3
+CSC 111 Introduction to Computers and Basic
+Programming
+3
+CSC 116 Introduction to Computer Hardware and Tools 3
+CSC 255 Dynamic Web Programming 3
+MAT 131 Elementary Statistics and Probability 3
+MAT 153 Pre-Calculus with Trigonometry with Lab 4
+Upper Division Requirements
+CSC 301 Computers And Society 3
+CTC 310 Software Project Management 3
+CTC 316 Operating Systems and Networks Support 3
+CTC 452 Network Security and Hacking Prevention 3
+CTC 492 Senior Project 3
+Total Hours 34
+Tracks
+General Track (62 units)
+Code Title Hours
+Lower Division Requirements
+CSC 101 Intro.to Computer Education 3
+CSC 111 Introduction to Computers and Basic
+Programming
+3
+CSC 116 Introduction to Computer Hardware and Tools 3
+CSC 255 Dynamic Web Programming 3
+CSC 115 Introduction to Programming Concepts 3
+CSC 121 Introduction to Computer Science and
+Programming I 1
+4
+CTC/CSC Elec. Lower Division Elective 4
+CTC/CSC Elec. Lower Division Elective 4
+CTC 218 Digital Logic Design 3
+MAT 131 Elementary Statistics and Probability 3
+MAT 153 Pre-Calculus with Trigonometry with Lab 4
+Upper Division Requirements
+CSC 301 Computers And Society 3
+CTC 310 Software Project Management 3
+CTC 316 Operating Systems and Networks Support 3
+CTC 452 Network Security and Hacking Prevention 3
+CTC 492 Senior Project 3
+CTC/CSC Elec. Upper Division Elective 4
+CTC/CSC Elec. Upper Division Elective 3
+CTC/CSC Elec. Upper Division Elective 3
+Total Hours 62
+1 Major students may substitute this course for General Education Area
+A3. Please contact the CNBS Student Success Center to request the
+course substitution.
+Homeland Security Track (65 units)
+Code Title Hours
+Lower Division Requirements
+CSC 101 Intro.to Computer Education 3
+2024-25 University Catalog 493
+CSC 111 Introduction to Computers and Basic
+Programming
+3
+CSC 116 Introduction to Computer Hardware and Tools 3
+CSC 255 Dynamic Web Programming 3
+CSC 115 Introduction to Programming Concepts 3
+CSC 121 Introduction to Computer Science and
+Programming I 1
+4
+CSC 123 Introduction to Computer Science and
+Programming II
+4
+CSC 221 Assembly Language and Introduction to Computer
+Organization
+3
+CTC 218 Digital Logic Design 3
+CTC 228 Introduction to Operating Systems and Networks 4
+MAT 131 Elementary Statistics and Probability 3
+MAT 153 Pre-Calculus with Trigonometry with Lab 4
+Upper Division Requirements
+CSC 301 Computers And Society 3
+CTC 310 Software Project Management 3
+CTC 316 Operating Systems and Networks Support 3
+CTC 328 Computer Forensics and Investigation 4
+CTC 362 Communication Systems Security 3
+CTC 428 Operating Systems Security 3
+CTC 452 Network Security and Hacking Prevention 3
+CTC 492 Senior Project 3
+Total Hours 65
+1 Major students may substitute this course for General Education Area
+A3. Please contact the CNBS Student Success Center to request the
+course substitution.
+Professional Track (68 units)
+Code Title Hours
+Lower Division Requirements
+CSC 101 Intro.to Computer Education 3
+CSC 111 Introduction to Computers and Basic
+Programming
+3
+CSC 116 Introduction to Computer Hardware and Tools 3
+CSC 255 Dynamic Web Programming 3
+MAT 131 Elementary Statistics and Probability 3
+MAT 153 Pre-Calculus with Trigonometry with Lab 4
+Upper Division Requirements
+CSC 301 Computers And Society 3
+CTC 310 Software Project Management 3
+CTC 316 Operating Systems and Networks Support 3
+CTC 452 Network Security and Hacking Prevention 3
+CTC 492 Senior Project 3
+Specific Domain
+Complete one of the following: 15-31
+Associate Degree
+Minor in another program
+Concentration courses- with the consultation of computer science
+department
+Free Electives
+Complete free elective courses 3-19
+Total Hours 52-84
+Program Learning Outcomes
+• Analyze, design, implement, and evaluate a Technology related
+solution in areas such electronics, Manufacturing, Homeland Security,
+and etc. using appropriate tools.
+• Work effectively as a team member in design, implementation, and
+use of software and hardware utilization.
+• Communicate effectively through speaking, writing, and the use
+of presentation tools in describing the hardware and software
+specification.
+• Appraise the impact of ethical issues and societal concerns about
+constant changes in hardware/software computer technology.
+

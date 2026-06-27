@@ -1,0 +1,100 @@
+
+4- Year Roadmap
+Course Title Hours
+First Year
+Fall
+MAT 131 Elementary Statistics and Probability (GE B4) 3
+HIS 101 History Of United States (statutory requirement) 3
+ITC 101 Introduction to Information Technology 3
+GE Area A1 Oral Communication 3
+GE Area A2 Written Communication 3
+Hours 15
+Spring
+CSC 121 Introduction to Computer Science and Programming I
+(see academic advisor for GE Area A3 credit)
+4
+BIO 102 General Biology (GE B2) 3
+BIO 103 General Biology Laboratory (GE B3) 1
+POL 101 American Institutions (statutory requirements) 3
+GE Area C1 Arts Courses 3
+Hours 14
+Second Year
+Fall
+CSC 123 Introduction to Computer Science and Programming II 4
+CSC 255 Dynamic Web Programming 3
+CSC 281 Discrete Structures 3
+GE Area C2 Letters Course 3
+Hours 13
+Spring
+ITC 251 System Programming in C and Unix 3
+CTC 228 Introduction to Operating Systems and Networks 4
+CSC 311 Data Structures 3
+GE Area D1 Perspectives on Individuals, Groups, and Society 3
+PHY 100 Patterns In Nature (GE B1) 3
+Hours 16
+Third Year
+Fall
+ENG 350 Advanced Composition (GWAR satisfying course) 3
+CSC 301 Computers And Society (GE Area B5) 3
+CTC 316 Operating Systems and Networks Support 3
+ITC 399 IT Practicum 3
+GE Area C1 or C2 3
+Hours 15
+Spring
+ITC 310 IT Project Management 3
+ITC 453 Database Management Systems (DBMS) 3
+GE Area D2 Global and Historical Perspectives 3
+GE Area C3 Integrative Studies in the Humanities 3
+Additional PHY or Life Science Course 3
+Hours 15
+Fourth Year
+Fall
+CTC 362 Communication Systems Security 3
+CTC 452 Network Security and Hacking Prevention 3
+ITC 459 IT Security 3
+GE Area E Lifelong Learning and Self-Development 3
+GE Area D3 Integrative Studies in the Social Sciences 3
+Elective to meet 120 units 3
+Hours 18
+Spring
+ITC 492 Senior Design 3
+CSC or ITC Elective Course 1 3
+GE Area F Ethnic Studies 3
+GE Area A3 Logic/Critical Thinking 3
+CSC or ITC Elective Course 2 3
+Hours 15
+Total Hours 121
+2-Year Roadmap
+Course Title Hours
+First Year
+Fall
+CSC 301 Computers And Society (GE B5) 3
+CSC 311 Data Structures 3
+CTC 316 Operating Systems and Networks Support 3
+ITC 399 IT Practicum 3
+Elective to meet 120 units 3
+Hours 15
+Spring
+ITC 310 IT Project Management 3
+ITC 453 Database Management Systems (DBMS) 3
+ENG 350 Advanced Composition (GWAR satisfying course) 3
+Elective to meet 120 units 3
+GE Area C3 Integrative Studies in the Humanities 3
+Hours 15
+Second Year
+Fall
+CTC 362 Communication Systems Security 3
+CTC 452 Network Security and Hacking Prevention 3
+ITC 459 IT Security 3
+GE Area D3 Integrative Studies in the Social Sciences 3
+Elective to meet 120 units 3
+Hours 15
+2024-25 University Catalog 615
+Spring
+ITC 492 Senior Design 3
+CSC or ITC Upper Division Elective 1 3
+CSC or ITC Upper Division Elective 2 3
+Elective to meet 120 units 3
+Elective to meet 120 units 3
+Hours 15
+Total Hours 60

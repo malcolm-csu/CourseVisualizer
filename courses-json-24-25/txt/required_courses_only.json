@@ -1,0 +1,433 @@
+[
+  {
+    "department": "CSC",
+    "course_number": "221",
+    "title": "Assembly Language and Introduction to Computer\nOrganization.",
+    "units": 3,
+    "prerequisites": "CSC 121",
+    "offered": [
+      "Fall",
+      "Spring"
+    ],
+    "repeatable": false,
+    "cross_listed": null,
+    "description": "Programming problems in assembly language.\nWriting and using macros. Features of modern computer hardware and\noperating systems."
+  },
+  {
+    "department": "CSC",
+    "course_number": "251",
+    "title": "C Language Programming and Unix.",
+    "units": 3,
+    "prerequisites": "CSC 121",
+    "offered": [
+      "Fall",
+      "Spring"
+    ],
+    "repeatable": false,
+    "cross_listed": null,
+    "description": "Introduction to programming in the C language\nand its use in systems programming in the UNIX operating system."
+  },
+  {
+    "department": "CSC",
+    "course_number": "301",
+    "title": "Computers And Society.",
+    "units": 3,
+    "prerequisites": null,
+    "offered": [
+      "Fall",
+      "Spring"
+    ],
+    "repeatable": false,
+    "cross_listed": null,
+    "description": "Prerequisites: CSC 101 or CSC 111 or CSC 115 or CSC 121 or CSC 272\nor consent of instructor. Ethical, legal, psychological, economic, and\ntheoretical implications and limitations of the uses of digital computers.\nOral and written presentations required."
+  },
+  {
+    "department": "CSC",
+    "course_number": "311",
+    "title": "Data Structures.",
+    "units": 3,
+    "prerequisites": "CSC 123 and CSC 281 or MAT 281",
+    "offered": [
+      "Fall",
+      "Spring",
+      "Summer"
+    ],
+    "repeatable": false,
+    "cross_listed": null,
+    "description": "More advanced\nand detailed treatment of concepts of data organization introduced\nin CSC 123. Includes lists, trees, graphs and storage allocation and\ncollection. Applications to such areas as symbol tables, string search and\noptimization."
+  },
+  {
+    "department": "CSC",
+    "course_number": "321",
+    "title": "Programming Languages.",
+    "units": 3,
+    "prerequisites": "CSC 123",
+    "offered": [
+      "Fall",
+      "Spring"
+    ],
+    "repeatable": false,
+    "cross_listed": null,
+    "description": "A comparative study of programming languages.\nCharacteristics of languages and formal description of languages.\nAssignments in several languages."
+  },
+  {
+    "department": "CSC",
+    "course_number": "331",
+    "title": "Computer Organization.",
+    "units": 3,
+    "prerequisites": "CSC 221 and MAT 281",
+    "offered": [
+      "Fall",
+      "Spring",
+      "Summer"
+    ],
+    "repeatable": false,
+    "cross_listed": null,
+    "description": "Structure of the modern digital\ncomputer. Introduction to Boolean algebra and design of digital circuits.\nArithmetic, control, storage and input/output systems."
+  },
+  {
+    "department": "CSC",
+    "course_number": "337",
+    "title": "Microcomputers.",
+    "units": 3,
+    "prerequisites": "CSC 221, CSC 331, and MAT 281",
+    "offered": [
+      "Infrequent"
+    ],
+    "repeatable": true,
+    "cross_listed": null,
+    "description": "The architecture,\nprogramming and interfacing of microcomputers. Topics include input/\noutput, instruction sets, subroutines, interrupts and control. In-class use\nof microcomputer hardware. . Two hours of lecture and\nthree hours of laboratory per week."
+  },
+  {
+    "department": "CSC",
+    "course_number": "341",
+    "title": "Operating Systems.",
+    "units": 3,
+    "prerequisites": "CSC 311, CSC 331, and MAT 321",
+    "offered": [
+      "Fall",
+      "Spring"
+    ],
+    "repeatable": false,
+    "cross_listed": null,
+    "description": "Overall structure of batch\nand time-shared operating systems. Scheduling of jobs, CPU and I/O\ndevices. Paged and segmented memory management. I/O programming\nand file handling. Synchronization of concurrent processes."
+  },
+  {
+    "department": "CSC",
+    "course_number": "401",
+    "title": "Analysis Of Algorithms.",
+    "units": 3,
+    "prerequisites": "CSC 311",
+    "offered": [
+      "Fall",
+      "Spring"
+    ],
+    "repeatable": false,
+    "cross_listed": null,
+    "description": "Mathematical study of non-numeric computer\nalgorithms. Topics include combinatorial techniques, algorithm proof, and\nprogram complexity."
+  },
+  {
+    "department": "CSC",
+    "course_number": "471",
+    "title": "Compiler Construction I.",
+    "units": 3,
+    "prerequisites": "CSC 221, CSC 311 and MAT 361",
+    "offered": [
+      "Infrequent"
+    ],
+    "repeatable": false,
+    "cross_listed": null,
+    "description": "Introduction to the theory\nand practice of compiler construction. Overall structure of compilers.\nLexical and syntactic analysis, code generation for block structured\nlanguages and code optimization."
+  },
+  {
+    "department": "CSC",
+    "course_number": "481",
+    "title": "Software Engineering.",
+    "units": 3,
+    "prerequisites": "CSC 301, CSC 311 and CSC 321",
+    "offered": [
+      "Fall",
+      "Spring"
+    ],
+    "repeatable": false,
+    "cross_listed": null,
+    "description": "Introduction to software\nengineering, with emphasis on software design and specification. Oral\nand written presentations required."
+  },
+  {
+    "department": "CSC",
+    "course_number": "492",
+    "title": "Senior Design.",
+    "units": 3,
+    "prerequisites": "CSC 301, CSC 321 and CSC 481",
+    "offered": [
+      "Fall",
+      "Spring",
+      "Summer"
+    ],
+    "repeatable": false,
+    "cross_listed": null,
+    "description": "Intensive study under the\nguidance of a member of the Computer Science faculty which continues\nand expands the research carried out in Senior Seminar. Students will\nstudy system design and total project planning and management. A\nformal written report and oral presentation are required."
+  },
+  {
+    "department": "CTC",
+    "course_number": "228",
+    "title": "Introduction to Operating Systems and Networks.",
+    "units": 4,
+    "prerequisites": null,
+    "offered": [
+      "Fall",
+      "Spring"
+    ],
+    "repeatable": false,
+    "cross_listed": null,
+    "description": "Course acquaints students with basic networking concepts such as TCP/\nIP, local/wide area networking as well as emerging industry topics such\nas Radio Frequency Identification (RFID), Global Information Systems\n(GIS), Networked Attached Storage (NAS), and WiMAX."
+  },
+  {
+    "department": "CTC",
+    "course_number": "305",
+    "title": "Introduction to Game and Mobile Programming.",
+    "units": 3,
+    "prerequisites": null,
+    "offered": [
+      "Fall"
+    ],
+    "repeatable": false,
+    "cross_listed": null,
+    "description": "This course teaches students through lectures, discussions,\ndemonstrations, and classroom labs. Students learn the knowledge,\nskills, and abilities necessary to create games in the C# programming\nlanguage using the Microsoft XNA framework and Silver light."
+  },
+  {
+    "department": "CTC",
+    "course_number": "310",
+    "title": "Software Project Management.",
+    "units": 3,
+    "prerequisites": null,
+    "offered": [
+      "Fall",
+      "Spring"
+    ],
+    "repeatable": false,
+    "cross_listed": null,
+    "description": "Course will focus on the critical aspects of project management,\nincluding software project management concepts and case studies, and\ndiscuss software project management roadmap, and especially address\nlinear, incremental, iterative, adaptive and extreme effective software\nproject management from the perspectives of project scoping, planning,\nlaunching, monitoring, controlling and closing phases."
+  },
+  {
+    "department": "CTC",
+    "course_number": "316",
+    "title": "Operating Systems and Networks Support.",
+    "units": 3,
+    "prerequisites": null,
+    "offered": [
+      "Fall",
+      "Spring"
+    ],
+    "repeatable": false,
+    "cross_listed": null,
+    "description": "Course provides an introduction to OS and networking support. Topics\ninclude user engineering, risk management, mission assurance, software\nprocess management, enterprise management tools and processes,\ndisaster recovery, business continuity and information life cycle\nmanagement."
+  },
+  {
+    "department": "CTC",
+    "course_number": "328",
+    "title": "Computer Forensics and Investigation.",
+    "units": 4,
+    "prerequisites": null,
+    "offered": [
+      "Fall",
+      "Spring"
+    ],
+    "repeatable": false,
+    "cross_listed": null,
+    "description": "Course presents methods to properly conduct a computer forensics\ninvestigation, beginning with a discussion of ethics while mapping to\nthe objectives of the International Association of Computer Investigative\nSpecialists (IACIS) certification."
+  },
+  {
+    "department": "CTC",
+    "course_number": "362",
+    "title": "Communication Systems Security.",
+    "units": 3,
+    "prerequisites": null,
+    "offered": [
+      "Fall",
+      "Spring"
+    ],
+    "repeatable": false,
+    "cross_listed": null,
+    "description": "Course provides the foundation for understanding the key issues\nassociated with protecting information assets, determining the levels of\nprotection and response to security incidents, and designing a consistent,\nreasonable information security system, with appropriate intrusion\ndetection and reporting features."
+  },
+  {
+    "department": "CTC",
+    "course_number": "428",
+    "title": "Operating Systems Security.",
+    "units": 3,
+    "prerequisites": "CTC 316 is required",
+    "offered": [
+      "Fall",
+      "Spring"
+    ],
+    "repeatable": false,
+    "cross_listed": null,
+    "description": "Course takes an in depth look at\noperating system security concepts and techniques. It examines\ntheoretical concepts that make the world of security unique. Also,\nthis course will adopt a practical hands-on approach when examining\noperating system security techniques."
+  },
+  {
+    "department": "CTC",
+    "course_number": "452",
+    "title": "Network Security and Hacking Prevention.",
+    "units": 3,
+    "prerequisites": "CTC 228 or consent of instructor is required",
+    "offered": [
+      "Fall",
+      "Spring"
+    ],
+    "repeatable": false,
+    "cross_listed": null,
+    "description": "Course\ntakes an in depth look at network defense concepts and techniques. It\nexamines theoretical concepts that make the world of networking unique.\nThis course also adopts a practical hands-on approach when examining\nnetwork defense techniques and strategies."
+  },
+  {
+    "department": "CTC",
+    "course_number": "454",
+    "title": "Wireless Security & Forensics.",
+    "units": 3,
+    "prerequisites": null,
+    "offered": [
+      "Spring"
+    ],
+    "repeatable": false,
+    "cross_listed": null,
+    "description": "Examines fundamental topics in wireless technology in wireless\ntechnology, such as planning, designing, installing, securing, using tools,\nand forensics. Students will also examine the maintenance, security, and\nbusiness applications for wireless Local Area Networks."
+  },
+  {
+    "department": "CTC",
+    "course_number": "456",
+    "title": "Enterprise System Security.",
+    "units": 3,
+    "prerequisites": "CTC 228 is required",
+    "offered": [
+      "Spring"
+    ],
+    "repeatable": false,
+    "cross_listed": null,
+    "description": "Students learn to identify and fix\nenterprise level network vulnerabilities through the use of existing\ndefense tools. Students also learn the essential skills and techniques\nneeded to develop enterprise level network security skills to protect\nenterprise's information."
+  },
+  {
+    "department": "CTC",
+    "course_number": "458",
+    "title": "Network Security Through Penetration Testing.",
+    "units": 3,
+    "prerequisites": "CTC 228 is required",
+    "offered": [
+      "Fall"
+    ],
+    "repeatable": false,
+    "cross_listed": null,
+    "description": "Students learn how to determine the\nfeasibility of a particular set of attack vectors and identify higher-risk\nvulnerabilities. students learn through performing penetration tests\nagainst the setup environment using existing tools, techniques, and\nprogramming languages."
+  },
+  {
+    "department": "ITC",
+    "course_number": "399",
+    "title": "IT Practicum.",
+    "units": 3,
+    "prerequisites": "Consent of instructor is required",
+    "offered": [
+      "Fall",
+      "Spring"
+    ],
+    "repeatable": false,
+    "cross_listed": null,
+    "description": "The information\ntechnology internship program allows students to gain hands-on\nexperience in a technology environment by spending one semester\nas an intern in the Information Technology Division or a related area.\nThe internship program provides students with the opportunity to gain\ntechnical experience related to their studies and to prepare them for\nfuture career opportunities in the field. CR/NC grading only."
+  },
+  {
+    "department": "ITC",
+    "course_number": "453",
+    "title": "Database Management Systems (DBMS).",
+    "units": 3,
+    "prerequisites": "CSC 311 is required",
+    "offered": [
+      "Fall",
+      "Spring"
+    ],
+    "repeatable": false,
+    "cross_listed": null,
+    "description": "Covers the design methodology\nprocess for databases and how to verify its structural correctness.\nStudents will learn how to implement databases and applications\nsoftware, primarily in the relational model. This is through using querying\nlanguages, primarily SQL, and other database supporting software;\nand applying the theory behind various database models and query\nlanguages. It also includes implementing security and integrity policies\nrelating to databases working in group settings during design."
+  },
+  {
+    "department": "ITC",
+    "course_number": "459",
+    "title": "IT Security.",
+    "units": 3,
+    "prerequisites": "CSC 311 or consent of instructor is required",
+    "offered": [
+      "Fall",
+      "Spring"
+    ],
+    "repeatable": false,
+    "cross_listed": null,
+    "description": "Information\nTechnology Security aims at securing systems that remain dependable\nin the face of malice, error or mischance. This course covers a number of\nprinciples, methods, tools and good practices to secure systems."
+  },
+  {
+    "department": "ITC",
+    "course_number": "492",
+    "title": "Senior Design.",
+    "units": 3,
+    "prerequisites": "ITC 453 is required",
+    "offered": [
+      "Fall",
+      "Spring"
+    ],
+    "repeatable": false,
+    "cross_listed": null,
+    "description": "Intensive study under the guidance\nof a member of the Information Technology (IT) faculty to complete a\nresearch project from start to end. Students will study system design and\ntotal project planning and management. A formal written report and oral\npresentation will be required.\n\nInterdisciplinary Studies (IDS)"
+  },
+  {
+    "department": "MAT",
+    "course_number": "131",
+    "title": "Elementary Statistics and Probability.",
+    "units": 3,
+    "prerequisites": null,
+    "offered": [
+      "Fall",
+      "Spring"
+    ],
+    "repeatable": false,
+    "cross_listed": null,
+    "description": "Prerequisite: Quantitative Reasoning Placement Level 2 or completion\nof any of MAT 105, MAT 151, MAT 153, or MAT 191. A practical course\nin probability and statistics including such topics as the binomial and\nnormal distributions, confidence intervals, t, F, and chi-square tests, linear\nregression and correlation, and conditional probability. Satisfies the\nGeneral Education Quantitative Reasoning Requirement."
+  },
+  {
+    "department": "MAT",
+    "course_number": "132",
+    "title": "Statistics and Probability with Support.",
+    "units": 4,
+    "prerequisites": null,
+    "offered": [
+      "Fall",
+      "Spring"
+    ],
+    "repeatable": false,
+    "cross_listed": null,
+    "description": "Recommended prerequisite: MAT 102 or GE Math Ready with Support\n(Level III) Includes the binomial and normal distributions, confidence\nintervals, linear regression and correlation, and conditional probability.\nSatisfies General Education Quantitative Reasoning Requirement."
+  },
+  {
+    "department": "MAT",
+    "course_number": "153",
+    "title": "Pre-Calculus with Trigonometry with Lab.",
+    "units": 4,
+    "prerequisites": null,
+    "offered": [
+      "Fall",
+      "Spring"
+    ],
+    "repeatable": false,
+    "cross_listed": null,
+    "description": "Prerequisites:Math Placement Category Level 2 or completed GE\nQuantitative Reasoning. Topics include functions and their graphs; linear,\nquadratic, rational, exponential, and logarithmic functions; composition,\ntransformation and arithmetic of functions; inverse function; inequalities;\nright-triangle trigonometry and circular motion; applications to contextual\nproblems. This course is supported with Supplemental Instruction.\nPreparation for MAT 191: Calculus."
+  },
+  {
+    "department": "MAT",
+    "course_number": "191",
+    "title": "Calculus I.",
+    "units": 5,
+    "prerequisites": null,
+    "offered": [
+      "Fall",
+      "Spring"
+    ],
+    "repeatable": false,
+    "cross_listed": null,
+    "description": "Prerequisite: MAT 151 or MAT 153 or equivalent with a grade of C or\nbetter. Limits, continuity, derivatives, differentiation formulas, applications\nof derivatives, introduction to integration, fundamental theorem of\ncalculus, application of integration. Satisfies the General Education\nQuantitative Reasoning Requirement."
+  }
+]

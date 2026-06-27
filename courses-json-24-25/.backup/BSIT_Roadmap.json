@@ -1,0 +1,118 @@
+
+
+{
+  "track": "BSIT",
+  "type": "4-Year Roadmap",
+  "total_units": 121,
+  "years": {
+    "Year 1": {
+      "Fall": [
+        {"title": "MAT 131 Elementary Statistics and Probability (GE B4)", "units": 3},
+        {"title": "HIS 101 History Of United States (statutory requirement)", "units": 3},
+        {"title": "ITC 101 Introduction to Information Technology", "units": 3},
+        {"title": "GE Area A1 Oral Communication", "units": 3},
+        {"title": "GE Area A2 Written Communication", "units": 3}
+      ],
+      "Spring": [
+        {"title": "CSC 121 Introduction to Computer Science and Programming I (see academic advisor for GE Area A3 credit)", "units": 4},
+        {"title": "BIO 102 General Biology (GE B2)", "units": 3},
+        {"title": "BIO 103 General Biology Laboratory (GE B3)", "units": 1},
+        {"title": "POL 101 American Institutions (statutory requirements)", "units": 3},
+        {"title": "GE Area C1 Arts Courses", "units": 3}
+      ]
+    },
+    "Year 2": {
+      "Fall": [
+        {"title": "CSC 123 Introduction to Computer Science and Programming II", "units": 4},
+        {"title": "CSC 255 Dynamic Web Programming", "units": 3},
+        {"title": "CSC 281 Discrete Structures", "units": 3},
+        {"title": "GE Area C2 Letters Course", "units": 3}
+      ],
+      "Spring": [
+        {"title": "ITC 251 System Programming in C and Unix", "units": 3},
+        {"title": "CTC 228 Introduction to Operating Systems and Networks", "units": 4},
+        {"title": "CSC 311 Data Structures", "units": 3},
+        {"title": "GE Area D1 Perspectives on Individuals, Groups, and Society", "units": 3},
+        {"title": "PHY 100 Patterns In Nature (GE B1)", "units": 3}
+      ]
+    },
+    "Year 3": {
+      "Fall": [
+        {"title": "ENG 350 Advanced Composition (GWAR satisfying course)", "units": 3},
+        {"title": "CSC 301 Computers And Society (GE Area B5)", "units": 3},
+        {"title": "CTC 316 Operating Systems and Networks Support", "units": 3},
+        {"title": "ITC 399 IT Practicum", "units": 3},
+        {"title": "GE Area C1 or C2", "units": 3}
+      ],
+      "Spring": [
+        {"title": "ITC 310 IT Project Management", "units": 3},
+        {"title": "ITC 453 Database Management Systems (DBMS)", "units": 3},
+        {"title": "GE Area D2 Global and Historical Perspectives", "units": 3},
+        {"title": "GE Area C3 Integrative Studies in the Humanities", "units": 3},
+        {"title": "Additional PHY or Life Science Course", "units": 3}
+      ]
+    },
+    "Year 4": {
+      "Fall": [
+        {"title": "CTC 362 Communication Systems Security", "units": 3},
+        {"title": "CTC 452 Network Security and Hacking Prevention", "units": 3},
+        {"title": "ITC 459 IT Security", "units": 3},
+        {"title": "GE Area E Lifelong Learning and Self-Development", "units": 3},
+        {"title": "GE Area D3 Integrative Studies in the Social Sciences", "units": 3},
+        {"title": "Elective to meet 120 units", "units": 3}
+      ],
+      "Spring": [
+        {"title": "ITC 492 Senior Design", "units": 3},
+        {"title": "CSC or ITC Elective Course 1", "units": 3},
+        {"title": "GE Area F Ethnic Studies", "units": 3},
+        {"title": "GE Area A3 Logic/Critical Thinking", "units": 3},
+        {"title": "CSC or ITC Elective Course 2", "units": 3}
+      ]
+    }
+  }
+}
+
+
+
+{
+  "track": "BSIT",
+  "type": "2-Year Roadmap",
+  "total_units": 60,
+  "years": {
+    "Year 1": {
+      "Fall": [
+        {"title": "CSC 301 Computers And Society (GE B5)", "units": 3},
+        {"title": "CSC 311 Data Structures", "units": 3},
+        {"title": "CTC 316 Operating Systems and Networks Support", "units": 3},
+        {"title": "ITC 399 IT Practicum", "units": 3},
+        {"title": "Elective to meet 120 units", "units": 3}
+      ],
+      "Spring": [
+        {"title": "ITC 310 IT Project Management", "units": 3},
+        {"title": "ITC 453 Database Management Systems (DBMS)", "units": 3},
+        {"title": "ENG 350 Advanced Composition (GWAR satisfying course)", "units": 3},
+        {"title": "Elective to meet 120 units", "units": 3},
+        {"title": "GE Area C3 Integrative Studies in the Humanities", "units": 3}
+      ]
+    },
+    "Year 2": {
+      "Fall": [
+        {"title": "CTC 362 Communication Systems Security", "units": 3},
+        {"title": "CTC 452 Network Security and Hacking Prevention", "units": 3},
+        {"title": "ITC 459 IT Security", "units": 3},
+        {"title": "GE Area D3 Integrative Studies in the Social Sciences", "units": 3},
+        {"title": "Elective to meet 120 units", "units": 3}
+      ],
+      "Spring": [
+        {"title": "ITC 492 Senior Design", "units": 3},
+        {"title": "CSC or ITC Upper Division Elective 1", "units": 3},
+        {"title": "CSC or ITC Upper Division Elective 2", "units": 3},
+        {"title": "Elective to meet 120 units", "units": 3},
+        {"title": "Elective to meet 120 units", "units": 3}
+      ]
+    }
+  }
+}
+
+
+

@@ -1,0 +1,359 @@
+{ 
+    "MAT 191": {
+        "title": "Calculus I", 
+        "units": 4, 
+        "prerequisites": [],
+	"corequisites": [], 
+        "offered": "Fall Spring", 
+        "description": "", 
+        "level": "Lower Division", 
+        "notes": "" 
+    },
+    "MAT 153": {
+        "title": "Pre-Calculus with Trigonometry", 
+        "units": 4, 
+        "prerequisites": [],
+	"corequisites": [], 
+        "offered": "Fall Spring", 
+        "description": "Topics include functions and their graphs; linear, quadratic, rational, exponential, and logarithmic functions; composition, transformation and arithmetic of functions; inverse function; inequalities; right-triangle trigonometry and circular motion; applications to contextual problems. This course is supported with Supplemental Instruction. Preparation for MAT 191: Calculus.", 
+        "level": "Lower Division", 
+        "notes":"Math Placement Category Level 2 or completed GE Quantitative Reasoning"
+    },
+    "MAT 193": {
+        "title": "Calculus II",
+        "units": 4, 
+        "prerequisites": ["MAT 191"],
+	"corequisites": [], 
+        "offered": "Fall Spring", 
+        "description": "", 
+        "level": "Lower Division", 
+        "notes": ""
+    },
+    "MAT 271": {
+        "title": "Foundations of Higher Mathematics",
+        "units": 3, 
+        "prerequisites": ["MAT 193"],
+	"corequisites": [], 
+        "offered": "Fall Spring", 
+        "description": "", 
+        "level": "Upper Division", 
+        "notes": ""
+    },
+    "MAT 281": {
+        "title": "Discrete Mathematics",
+        "units": 3, 
+        "prerequisites": ["MAT 153"],
+	"corequisites": [], 
+        "offered": "Fall Spring", 
+        "description": "",  
+        "level": "Upper Division", 
+        "notes": ""
+    },
+
+    "MAT 361": {
+        "title": "Finite Automata",
+        "units": 3,
+        "prerequisites": ["MAT 181"],
+	"corequisites": [],
+        "offered": "Offered Infrequent",
+        "description": "Study of the abstract formalization of digital computers. Applications to computation theory and formal linguistics.",
+        "level": "Upper Division",
+        "notes": "ELECTIVES: SELECT TWO COURSES FROM THE FOLLOWING (6 UNITS) CSC 431, 441, 451, 451, 461 463, 471, 490, 492 MAT 361 367 369 CIS 372 373 375"
+    },
+
+    "MAT 321": {
+        "title": "Probability and Statistics",
+        "units": 3, 
+        "prerequisites": ["MAT 193"],
+	"corequisites": [], 
+        "offered": "Fall Spring", 
+        "description": "", 
+        "level": "Upper Division", 
+        "notes": "ELECTIVES: SELECT TWO COURSES FROM THE FOLLOWING (6 UNITS) CSC 431, 441, 451, 451, 461 463, 471, 490, 492 MAT 361 367 369 CIS 372 373 375"
+    },
+    "MAT 367": {
+        "title": "Numerical Analysis I",
+        "units": 3, 
+        "prerequisites": ["MAT 193"],
+	"corequisites": [],
+        "offered": "Fall Spring", 
+        "description": "", 
+        "level": "Upper Division", 
+        "notes": "ELECTIVES: SELECT TWO COURSES FROM THE FOLLOWING (6 UNITS) CSC 431, 441, 451, 451, 461 463, 471, 490, 492 MAT 361 367 369 CIS 372 373 375"
+    },
+    "MAT 369": {
+        "title": "Numerical Analysis II",
+        "units": 3, 
+        "prerequisites": ["MAT 367"],
+	"corequisites": [],
+        "offered": "Fall Spring", 
+        "description": "", 
+        "level": "Upper Division", 
+        "notes": "ELECTIVES: SELECT TWO COURSES FROM THE FOLLOWING (6 UNITS) CSC 431, 441, 451, 451, 461 463, 471, 490, 492 MAT 361 367 369 CIS 372 373 375"
+    },
+
+
+    "CSC 115": {
+        "title": "Introduction to Programming Concepts",
+        "units": 3,
+        "prerequisites": [],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Introduction to microcomputer hardware and operating systems. Students will be required to use application software to research, generate and prepare a semester project.",
+        "level": "", 
+        "notes": ""
+    },
+    "CSC 121": {
+        "title": "Introduction to Computer Science and Programming I",
+        "units": 4,
+        "prerequisites": ["CSC 115", "MAT 153"],
+	"corequisites": [],
+        "offered": "Fall Spring Summer",
+        "description": "Fundamental programming concepts using arrays, records, pointers, linked list, trees, and recursion. Good style, documentation and structure will be emphasized. Introduction to analysis of algorithms for efficiency and correctness.",
+        "level": "Lower Division", 
+        "notes": " CSC 115 or equivalent and MAT 153 or Consent of Instructor "
+    },
+    "CSC 123": {
+        "title": "Introduction to Computer Science and Programming II",
+        "units": 4,
+        "prerequisites": ["CSC 121"],
+	"corequisites": [],
+        "offered": "As needed",
+        "description": "Continuation of CSC 121. Topics in computer science not covered by current course offerings.",
+        "level": "Lower Division", 
+        "notes": ""
+    },
+    "CSC 221": {
+        "title": "Assembly Language and Introduction to Computer Organization",
+        "units": 3,
+        "prerequisites": ["CSC 121"],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Introduction to programming in the C language and its use in systems programming in the UNIX operating system.",
+        "level": "Lower Division", 
+        "notes": ""
+    },
+    "CSC 311": {
+        "title": "Data Structures",
+        "units": 3,
+        "prerequisites": ["CSC 123", ["MAT 281", "CSC 281"]],
+        "corequisites": [],
+        "offered": "Fall Spring",
+        "description": "More advanced and detailed treatment of concepts of data organization introduced in CSC 123. Includes lists, trees, graphs, and storage allocation and collection. Applications to such areas as symbol tables, string search and optimization.",
+        "level": "Upper Division Core", 
+        "notes": "CSC 281 or MAT 281 Upper Division Core"
+    },
+    "CSC 321": {
+        "title": "Programming Languages",
+        "units": 3,
+        "prerequisites": ["CSC 123"],
+	"corequisites": [],
+        "offered": "Fall Spring Summer",
+        "description": "A comparative study of programming languages. Characteristics of languages and formal description of languages. Assignments in several languages.",
+        "level": "Upper Division Required", 
+        "notes": "ELECTIVES : Select two courses from the following, one of which must have a CSC prefix (6 UNITS): CSC 321 331 341 401 421"
+    },
+    "CSC 331": {
+        "title": "Computer Organization",
+        "units": 3,
+        "prerequisites": ["CSC 221", "MAT 281"],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Structure of the modern digital computer. Introduction to Boolean algebra and design of digital circuits. Arithmetic, control, storage, and input/output systems.",
+        "level": "Upper Division Required", 
+        "notes": "ELECTIVES : Select two courses from the following, one of which must have a CSC prefix (6 UNITS): CSC 321 331 341 401 421"
+    },
+    "CSC 341": {
+        "title": "Operating Systems",
+        "units": 3,
+        "prerequisites": ["CSC 311", "CSC 321", "CSC 331"],
+	"corequisites": [],
+        "offered": "Fall Spring Summer",
+        "description": "Overall structure of batch and time-shared operating systems. Scheduling of jobs, CPU and I/O devices. Paged and segmented memory management. I/O programming and file handling. Synchronization of concurrent processes.",
+        "level": "Upper Division Required", 
+        "notes": "ELECTIVES : Select two courses from the following, one of which must have a CSC prefix (6 UNITS): CSC 321 331 341 401 421"
+    },
+    "CSC 401": {
+        "title": "Analysis of Algorithms",
+        "units": 3,
+        "prerequisites": ["CSC 311"],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Mathematical study of non-numeric computer algorithms. Topics include combinatorial techniques, algorithm proof, and program complexity.",
+        "level": "Upper Division Required",
+        "notes": "ELECTIVES : Select two courses from the following, one of which must have a CSC prefix (6 UNITS): CSC 321 331 341 401 421"
+    },
+    "CSC 421": {
+        "title": "Advanced Programming Languages",
+        "units": 3,
+        "prerequisites": ["CSC 311", "CSC 321", "CSC 341"],
+	"corequisites": [],
+        "offered": "Fall",
+        "description": "Continuation of CSC 321. Methods of formal specification of syntax and semantics of programming languages and special purpose language features for such areas as simulation and systems programming.",
+        "level": "Upper Division Required", 
+        "notes": "ELECTIVES : Select two courses from the following, one of which must have a CSC prefix (6 UNITS): CSC 321 331 341 401 421"
+    },
+    "CSC 431": {
+        "title": "Advanced Computer Organization",
+        "units": 3,
+        "prerequisites": ["CSC 221", "CSC 331", "CSC 341", "MAT 271", "MAT 281"],
+	"corequisites": [],
+        "offered": "Infrequent",
+        "description": "Alternate computer architectures and features of large scale systems. Microprogramming, parallel processing, memory organization, input/output systems, interprocessor communications and multiprocessing.",
+        "level": "Upper Division", 
+        "notes": "ELECTIVES: SELECT TWO COURSES FROM THE FOLLOWING (6 UNITS) CSC 431, 441, 451, 451, 461 463, 471, 490, 492 MAT 361 367 369 CIS 372 373 375"
+    },
+    "CSC 441": {
+        "title": "Advanced Operating Systems",
+        "units": 3,
+        "prerequisites": ["CSC 311", "CSC 321", "CSC 331", "CSC 341"],
+	"corequisites": [],
+        "offered": "Infrequent",
+        "description": "Theoretical study of important topics in operating system design. Substantial individual and group programming projects.",
+        "level": "Upper Division", 
+        "notes": "ELECTIVES: SELECT TWO COURSES FROM THE FOLLOWING (6 UNITS) CSC 431, 441, 451, 451, 461 463, 471, 490, 492 MAT 361 367 369 CIS 372 373 375"
+    },
+    "CSC 451": {
+        "title": "Computer Networks",
+        "units": 3,
+        "prerequisites": ["CSC 311", "CSC 321", "CSC 331", "CSC 341"],
+	"corequisites": [],
+        "offered": "Infrequent",
+        "description": "An introduction to computer networks including both long haul and local area networks. Topics include network topology, network access methodology, transmission media, protocols and applications.",
+        "level": "Upper Division", 
+        "notes": "ELECTIVES: SELECT TWO COURSES FROM THE FOLLOWING (6 UNITS) CSC 431, 441, 451, 451, 461 463, 471, 490, 492 MAT 361 367 369 CIS 372 373 375"
+    },
+    "CSC 453": {
+        "title": "Data Management",
+        "units": 3,
+        "prerequisites": ["CSC 311"],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Fundamental concepts in design, analysis and implementation of computerized database systems. Database models, user and program interfaces and database control.",
+        "level": "Upper Division", 
+        "notes": "ELECTIVES: SELECT TWO COURSES FROM THE FOLLOWING (6 UNITS) CSC 431, 441, 451, 451, 461 463, 471, 490, 492 MAT 361 367 369 CIS 372 373 375"
+    },
+    "CSC 455": {
+        "title": "WWW Design and Management",
+        "units": 3,
+        "prerequisites": ["CSC 251", "CSC 311", "CSC 321"],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "An introduction to the design, implementation and management of World Wide Web over the Internet and Intranet networks. Topics include Internet overview, web authoring, web programming, server setting and maintenance.",
+        "level": "Upper Division", 
+        "notes": "ELECTIVES: SELECT TWO COURSES FROM THE FOLLOWING (6 UNITS) CSC 431, 441, 451, 451, 461 463, 471, 490, 492 MAT 361 367 369 CIS 372 373 375"
+    },
+    "CSC 461": {
+        "title": "Computer Graphics I",
+        "units": 3,
+        "prerequisites": ["CSC 311"],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Fundamental concepts of programming for computer graphics. Graphics devices, languages and algorithms. Substantial graphics programming projects.",
+        "level": "Upper Division", 
+        "notes": "ELECTIVES: SELECT TWO COURSES FROM THE FOLLOWING (6 UNITS) CSC 431, 441, 451, 451, 461 463, 471, 490, 492 MAT 361 367 369 CIS 372 373 375"
+    },
+    "CSC 463": {
+        "title": "Computer Graphics II",
+        "units": 3,
+        "prerequisites": ["CSC 461"],
+	"corequisites": [],
+        "offered": "Spring",
+        "description": "Advanced topics in computer graphics. Interactive graphics, animation, color and three dimensional modeling.",
+        "level": "Upper Division", 
+        "notes": "ELECTIVES: SELECT TWO COURSES FROM THE FOLLOWING (6 UNITS) CSC 431, 441, 451, 451, 461 463, 471, 490, 492 MAT 361 367 369 CIS 372 373 375"
+    },
+    "CSC 471": {
+        "title": "Compiler Construction I",
+        "units": 3,
+        "prerequisites": ["CSC 221", "CSC 311", "MAT 361"],
+	"corequisites": [],
+        "offered": "Infrequent",
+        "description": "Introduction to the theory and practice of compiler construction. Overall structure of compilers. Lexical and syntactic analysis, code generation for block structured languages and code optimization.",
+        "level": "Upper Division", 
+        "notes": "Upper Division Core"
+    },
+    "CSC 490": {
+        "title": "Senior Seminar",
+        "units": 3,
+        "prerequisites": ["CSC 301", "CSC 311", "CSC 321"],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Intense, structured seminar. Exposure to current areas of research in Computer Science. Students will attend department colloquia; conduct research; present individual and group projects; and, prepare a written proposal for a senior project.",
+        "level": "Upper Division", 
+        "notes": "ELECTIVES: SELECT TWO COURSES FROM THE FOLLOWING (6 UNITS) CSC 431, 441, 451, 451, 461 463, 471, 490, 492 MAT 361 367 369 CIS 372 373 375"
+    },
+    "CSC 492": {
+        "title": "Senior Design",
+        "units": 3,
+        "prerequisites": ["CSC 301", "CSC 321", "CSC 481"],
+	"corequisites": [],
+        "offered": "Infrequent",
+        "description": "Intensive study under the guidance of a member of the Computer Science faculty which continues and expands the research carried out in Senior Seminar. Students will study system design and total project planning and management. A formal written report and oral presentation are required.",
+        "level": "Upper Division", 
+        "notes": "ELECTIVES: SELECT TWO COURSES FROM THE FOLLOWING (6 UNITS) CSC 431, 441, 451, 451, 461 463, 471, 490, 492 MAT 361 367 369 CIS 372 373 375"
+    },
+
+    "CIS 270": {
+        "title": "Info Sys/Tech Fundamentals",
+        "units": 3,
+        "prerequisites": [],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Provides an introduction to information technology, systems concepts, and application software. Covers system components and relationships, cost/value and quality of information, and package software solutions. Includes basic skills related to operating systems, word processing, spreadsheet software, and the Internet",
+        "level": "",
+        "notes": ""
+    },
+    "CIS 272": {
+        "title": "Business Programming ",
+        "units": 3,
+        "prerequisites": [ ["CIS 270",  "CSC 111", "CSC 121"] ],
+	"corequisites": [ ],
+        "offered": "Fall Spring",
+        "description": "Provides an understanding of algorithm development, programming, computer concepts and the design and application of data and file structure. Topics include file processing, data analysis, form design, and report generation.",
+        "level": "",
+        "notes": ""
+    },
+
+    "CIS 370": {
+        "title": "Info Sys Theory and Practice",
+        "units": 3,
+        "prerequisites": [ [ "CSC 111", "CSC 121" ] ],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Provides an introduction to organizational systems, planning, and decision process, and how information is used for decision support in organization. Covers the concepts of information systems for competitive advantage, data as a resource,",
+        "level": "",
+        "notes": ""
+    },
+    "CIS 372": {
+        "title": "Systems Analysis and Design",
+        "units": 3,
+        "prerequisites": ["CIS 370"],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": " Business computing systems, with emphasis on system analysis; tools and techniques of systems study; problem definition, data requirements and analytical approaches.",
+        "level": "Upper Division", 
+        "notes": "ELECTIVES: SELECT TWO COURSES FROM THE FOLLOWING (6 UNITS) CSC 431, 441, 451, 451, 461 463, 471, 490, 492 MAT 361 367 369 CIS 372 373 375"
+    },
+    "CIS 373": {
+        "title": "Database Systems",
+        "units": 3,
+        "prerequisites": ["CIS 370", "CIS 272"],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Concepts of data structures and data base processing; major approaches to design and implementation of data base applications; discussion of commercial systems.",
+        "level": "Upper Division", 
+        "notes": "ELECTIVES: SELECT TWO COURSES FROM THE FOLLOWING (6 UNITS) CSC 431, 441, 451, 451, 461 463, 471, 490, 492 MAT 361 367 369 CIS 372 374 373 375"
+    },
+    "CIS 375": {
+        "title": "Adv Concepts Bus Systems",
+        "units": 3,
+        "prerequisites": ["CIS 370"],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "History and trends of hardware/software for telecommunications; asynchronous and synchronous protocols; codes; case studies of current commercial applications; distributed processing; carriers, services and regulatory agencies; standards; error management; reliability; design and tuning of networks; security.",
+        "level": "Upper Division", 
+        "notes": "ELECTIVES: SELECT TWO COURSES FROM THE FOLLOWING (6 UNITS) CSC 431, 441, 451, 451, 461 463, 471, 490, 492 MAT 361 367 369 CIS 372 374 373 375"
+    }
+}
+

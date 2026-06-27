@@ -1,0 +1,68 @@
+
+Bachelor of Arts in Computer Technology (BACT) Road Map
+Specialization: Homeland Security
+
+Semester 1
+Course Code	Course Name	Credits
+GSC101	Homeland Security Basics	3
+GSC116	Intro to Security Systems	3
+MAT131	Mathematics (GE)	3
+GE Area A2 – Written Communication {ENG 110} (3)
+GE Area C1 – Arts (3)
+
+Semester 2
+Course Code	Course Name	Credits
+GSC111	Cybersecurity Foundations	3
+GSC115	Network Security	3
+MAT153	Applied Statistics	4
+GE Area A1 – Oral Communication {THE120} (3)
+GE Area D – Social Science {HIS 101} (3)
+
+
+Semester 3
+Course Code	Course Name	Credits
+GSC121	Critical Infrastructure Protection (GE)	3
+CTC228	Security Protocols	4
+CSC255	Data Security & Encryption	4
+GE Area B1 – Physical Science {PHY120} (3) 
+
+
+Semester 4
+Course Code	Course Name	Credits
+CSC123	Cyber Threat Analysis	4
+CTC218	Digital Forensics	3
+CTC328	Advanced Network Security	4
+GE Area B2 – Life Science {BIO102} (3)
+
+
+Semester 5
+Course Code	Course Name	Credits
+CSC221	Cyber Incident Response	3
+CSC301	Security Management (GE)	3
+CTC316	Surveillance Systems	3
+GE Area A3 – Critical Thinking {PHI120 or (CSC121 double-count)} (3)
+
+
+Semester 6
+Course Code	Course Name	Credits
+CTC310	Homeland Security Technologies	3
+CTC362	Biometric Systems	3
+CTC428	Advanced Cybersecurity	3
+UD GE D – Social Science (Upper Division, GE requirement) (3)
+Capstone Prep: 40-U Capstone Project Planning
+CTC/ITC/CSC3**/CSC4**GE 
+
+
+Semester 7
+Course Code	Course Name	Credits
+CTC352	Cyber Warfare & Defense	3
+CTC UD	Homeland Security Elective	3
+Free Elective or GE Area C2 (3 units)
+40-U Cap	Capstone Project	3
+
+Semester 8
+Course Code	Course Name	Credits
+CCC492	Homeland Security Capstone	3
+CCC492	Internship/Fieldwork	3
+CTC Upper Division Elective or Homeland Security Elective (3 units)
+GE Area E – Lifelong Learning (e.g., PSY 110) (3 units)

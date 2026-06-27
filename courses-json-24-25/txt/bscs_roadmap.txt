@@ -1,0 +1,66 @@
+4- Year Roadmap
+First Year
+Fall Hours
+CSC 121 Introduction to Computer Science and Programming I 4
+HIS 101 History Of United States 3
+GE Area A1 Oral Communication 3
+GE Area A2 Written Communication 3
+GE Area C1 Arts Courses 3
+Hours 16
+Spring
+MAT 191 Calculus I (satisfies GE Area B4) 5
+CSC 123 Introduction to Computer Science and Programming II 4
+PHY 130 General Physics I (satisfy GE Areas B1 and B3) 5
+GE Area C2 Letters Course 3
+Hours 17
+Second Year
+Fall
+MAT 193 Calculus II 5
+POL 101 American Institutions 3
+PHY 132 General Physics II 5
+GE Area A3 Logic/Critical Thinking 3
+Hours 16
+Spring
+CSC 281 Discrete Structures 3
+CSC 251 C Language Programming and Unix (satisfies CSC
+lower division elective)
+3
+CSC 300 Software Development 3
+CSC 221 Assembly Language and Introduction to Computer
+Organization
+3
+GE Area B2 Life Science 3
+Hours 15
+2024-25 University Catalog 485
+Third Year
+Fall
+CSC 301 Computers and Society (satisfies GE Area B5) 3
+MAT 321 Probability and Statistics 3
+CSC 311 Data Structures 3
+CSC 331 Computer Organization 3
+GE Area D1 Perspectives on Individuals, Groups, and Society 3
+Hours 15
+Spring
+CSC 401 Analysis of Algorithms 3
+CSC 321 Programming Languages 3
+Upper Division CSC Elective 1 3
+Additional GE in Area C1 or C2 3
+GE Area E Lifelong Learning and Self-Development 3
+Hours 15
+Fourth Year
+Fall
+CSC 481 Software Engineering 3
+CSC 341 Operating Systems 3
+CSC 371 Finite Automata 3
+ENG 350 Advanced Composition (satisfies GWAR requirement) 3
+GE Area C3 Integrative Studies in the Humanities 3
+GE Area D2 Global and Historical Perspectives 3
+Hours 18
+Spring
+CSC 492 Senior Design 3
+Upper Division CSC Elective 2 3
+GE Area B5 Integrative Studies in Natural Sciences 3
+GE Area D3 Integrative Studies in the Social Sciences 3
+GE Area F Ethnic Studies 3
+Hours 15
+Total Hours 127

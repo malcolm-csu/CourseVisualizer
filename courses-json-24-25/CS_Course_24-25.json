@@ -1,0 +1,612 @@
+{
+    "CSC101": {
+        "title": "Intro.to Computer Education",
+        "units": 3,
+        "prerequisites": [],
+        "offered": "Fall, Spring",
+        "description": "A computer literacy course designed to familiarize the learner with a\nvariety of computer tools and computer concepts with emphasis on\nutilizing packaged programs. This course provides an introduction to\nthe use of computers, common software programs and peripherals.\nStudents are instructed in the use of a word processor, drawing programs,\nspreadsheet, database, presentation tools, internet applications and\nstatistical package in scientific applications."
+    },
+    "CSC111": {
+        "title": "Introduction to Computers and Basic Programming",
+        "units": 3,
+        "prerequisites": [],
+        "offered": "Fall, Spring",
+        "description": "Introduction to computer programming with particular emphasis on small\nsystems through programming in the BASIC language."
+    },
+    "CSC112": {
+        "title": "Intro Computers And Basic",
+        "units": 20,
+        "prerequisites": [],
+        "offered": "All terms",
+        "description": ""
+    },
+    "CSC115": {
+        "title": "Introduction to Programming Concepts",
+        "units": 3,
+        "prerequisites": [],
+        "offered": "Fall, Spring",
+        "description": "Introduces students to computer programming by teaching techniques\nof problem solving. Students will become acquainted with decision\nconstructs, looping structures, and subroutine modules. Students will\nlearn the vocabulary of object-oriented programming."
+    },
+    "CSC116": {
+        "title": "Introduction to Computer Hardware and Tools",
+        "units": 3,
+        "prerequisites": [],
+        "offered": "Fall, Spring",
+        "description": "Introduction to microcomputer hardware and operating systems.\nStudents will be required to use application software to research,\ngenerate and prepare a semester project."
+    },
+    "CSC121": {
+        "title": "Introduction to Computer Science and Programming I.  (4\nUnits)  \nPrerequisite: CSC 115 or equivalent and MAT 153 or consent of\ninstructor. Organization of sequential, digital machine: CPU, I/O, storage,\ncommunications devices. Functions of operating systems: translators,\neditors, peripheral control utilities. The course covers the development,\ndescription, and analysis of elementary algorithms. It includes three\nhours of lecture and two hours of activity per week.\nOffered Fall, Spring\n\n\nCSC123.  Introduction to Computer Science and Programming II.  (4\nUnits)  \nPrerequisites: CSC 121. Continuation of CSC 121. Fundamental\nprogramming concepts using arrays, records, pointers, linked list,\ntrees and recursion. Good style, documentation and structure will be\nemphasized. Introduction to analysis of algorithms for efficiency and\ncorrectness.\nOffered Fall, Spring, Summer\n\n\nCSC195.  Selected Topics in Computer Science",
+        "units": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "prerequisites": [
+            "Consent of Instructor"
+        ],
+        "offered": "As needed",
+        "description": "Content varies. Topics in computer\nscience not covered by current course offerings."
+    },
+    "CSC221": {
+        "title": "Assembly Language and Introduction to Computer\nOrganization",
+        "units": 3,
+        "prerequisites": [
+            "CSC 121"
+        ],
+        "offered": "Fall, Spring",
+        "description": "Programming problems in assembly language.\nWriting and using macros. Features of modern computer hardware and\noperating systems."
+    },
+    "CSC251": {
+        "title": "C Language Programming and Unix",
+        "units": 3,
+        "prerequisites": [
+            "CSC 121"
+        ],
+        "offered": "Fall, Spring",
+        "description": "Introduction to programming in the C language\nand its use in systems programming in the UNIX operating system."
+    },
+    "CSC255": {
+        "title": "Dynamic Web Programming",
+        "units": 3,
+        "prerequisites": [],
+        "offered": "All terms, Fall, Spring",
+        "description": "The goal of the course is to provide instruction to the design and\nimplementation of dynamic web applications. Topics include origins of\nInternet, TCP/IP basics, Standard Generalized Markup Language SGML,\nXML and XSL languages, client-side and server-side languages: Perl and\nPHP, interactivity in website design, front-end interface to databases,\nwebsite access control, confidentiality, integrity, accessibility and their\napplicability in developing dynamic and distributed client/server web\napplications."
+    },
+    "CSC281": {
+        "title": "Discrete Structures",
+        "units": 3,
+        "prerequisites": [],
+        "offered": "Fall, Spring",
+        "description": "This course introduces fundamental structures and logical principles that\nform the foundation of computer science. Topics will be introduced with\nemphasis on applications in computer science. Students will be required\nto write programs to deepen their understanding about the topics.\u00c2"
+    },
+    "CSC295": {
+        "title": "Sel. Topics in Computer Sci",
+        "units": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "prerequisites": [
+            "Consent of Instructor"
+        ],
+        "offered": "As needed",
+        "description": "Content varies. Topics in computer\nscience not covered by current course offerings. May be used for elective\ncredit in departmental programs. Subject to approval."
+    },
+    "CSC300": {
+        "title": "Software Development",
+        "units": 3,
+        "prerequisites": [
+            "CSC 123 is required"
+        ],
+        "offered": "Fall, Spring",
+        "description": "This is an advanced Java\nprogramming course. Students are expected to have a much deeper\nunderstanding about major aspects of Java and OOP, and significantly\nenhance their programming and problem-solving ability. Several data\nstructure and algorithms will be introduced."
+    },
+    "CSC301": {
+        "title": "Computers And Society",
+        "units": 3,
+        "prerequisites": [],
+        "offered": "Fall, Spring",
+        "description": "Prerequisites: CSC 101 or CSC 111 or CSC 115 or CSC 121 or CSC 272\nor consent of instructor. Ethical, legal, psychological, economic, and\ntheoretical implications and limitations of the uses of digital computers.\nOral and written presentations required."
+    },
+    "CSC311": {
+        "title": "Data Structures",
+        "units": 3,
+        "prerequisites": [
+            "CSC 123",
+            "CSC 281 or MAT 281"
+        ],
+        "offered": "Fall, Spring, Summer",
+        "description": "More advanced\nand detailed treatment of concepts of data organization introduced\nin CSC 123. Includes lists, trees, graphs and storage allocation and\ncollection. Applications to such areas as symbol tables, string search and\noptimization."
+    },
+    "CSC321": {
+        "title": "Programming Languages",
+        "units": 3,
+        "prerequisites": [
+            "CSC 123"
+        ],
+        "offered": "Fall, Spring",
+        "description": "A comparative study of programming languages.\nCharacteristics of languages and formal description of languages.\nAssignments in several languages.\n\n2024-25 University Catalog 205"
+    },
+    "CSC331": {
+        "title": "Computer Organization",
+        "units": 3,
+        "prerequisites": [
+            "CSC 221",
+            "MAT 281"
+        ],
+        "offered": "Fall, Spring, Summer",
+        "description": "Structure of the modern digital\ncomputer. Introduction to Boolean algebra and design of digital circuits.\nArithmetic, control, storage and input/output systems."
+    },
+    "CSC337": {
+        "title": "Microcomputers",
+        "units": 3,
+        "prerequisites": [
+            "CSC 221",
+            "CSC 331",
+            "",
+            "MAT 281"
+        ],
+        "offered": "Infrequent",
+        "description": "The architecture,\nprogramming and interfacing of microcomputers. Topics include input/\noutput, instruction sets, subroutines, interrupts and control. In-class use\nof microcomputer hardware. Repeatable course. Two hours of lecture and\nthree hours of laboratory per week."
+    },
+    "CSC341": {
+        "title": "Operating Systems",
+        "units": 3,
+        "prerequisites": [
+            "CSC 311",
+            "CSC 331",
+            "",
+            "MAT 321"
+        ],
+        "offered": "Fall, Spring",
+        "description": "Overall structure of batch\nand time-shared operating systems. Scheduling of jobs, CPU and I/O\ndevices. Paged and segmented memory management. I/O programming\nand file handling. Synchronization of concurrent processes."
+    },
+    "CSC353": {
+        "title": "File Processing",
+        "units": 3,
+        "prerequisites": [],
+        "offered": "Infrequent",
+        "description": "Prerequisite: CSC 123 and CSC 251 are required; CSC 311 is\nrecommended. Characteristics of secondary storage media. Logical vs.\nphysical organization. Sequential, direct, and indexed access methods.\nTree structure of indices; hashing."
+    },
+    "CSC361": {
+        "title": "Systems Programming",
+        "units": 3,
+        "prerequisites": [
+            "CSC 311",
+            "CSC 331",
+            "",
+            "CSC 341"
+        ],
+        "offered": "As needed",
+        "description": "Design and construction\nof systems programs such as assemblers, macro processors and linking\nloaders. Introduction to software engineering."
+    },
+    "CSC371": {
+        "title": "Finite Automata",
+        "units": 3,
+        "prerequisites": [],
+        "offered": "Fall, Spring, Summer",
+        "description": "Prerequisite(s): CSC 311 is required. Introduces the formal foundations\nof computer science, the limits of computation, and the limits of efficient\ncomputation. The goal is to provide computer science students with a\nbroad understanding of various models of computation and their power."
+    },
+    "CSC395": {
+        "title": "Sel Topics in Computer Science",
+        "units": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "prerequisites": [
+            "Consent of Instructor",
+            "upper division standing in major"
+        ],
+        "offered": "As needed",
+        "description": "Content varies. Advanced topics in computer science not covered by\ncurrent course offerings. May be used for elective credit in departmental\nprograms. Subject to approval."
+    },
+    "CSC401": {
+        "title": "Analysis Of Algorithms",
+        "units": 3,
+        "prerequisites": [
+            "CSC 311"
+        ],
+        "offered": "Fall, Spring",
+        "description": "Mathematical study of non-numeric computer\nalgorithms. Topics include combinatorial techniques, algorithm proof, and\nprogram complexity."
+    },
+    "CSC411": {
+        "title": "Artificial Intelligence",
+        "units": 3,
+        "prerequisites": [
+            "CSC 311",
+            "CSC 321"
+        ],
+        "offered": "Fall",
+        "description": "Introduction to the use of\ncomputers to simulate intelligent behavior; includes game playing,\nproblem solving, use of natural languages and pattern recognition."
+    },
+    "CSC421": {
+        "title": "Advanced Programming Languages",
+        "units": 3,
+        "prerequisites": [
+            "CSC CORE"
+        ],
+        "offered": "Infrequent",
+        "description": "Continuation of CSC 321. Methods of formal\nspecification of syntax and semantics of programming languages and\nspecial purpose language features for such areas as simulation and\nsystems programming."
+    },
+    "CSC431": {
+        "title": "Advanced Computer Organization",
+        "units": 3,
+        "prerequisites": [
+            "CSC 221",
+            "CSC 331",
+            "CSC 341",
+            "MAT 271",
+            "",
+            "MAT 281"
+        ],
+        "offered": "Infrequent",
+        "description": "Alternate computer architectures and features of large scale systems.\nMicroprogramming, parallel processing, memory organization, input/\noutput systems, interprocessor communications and multiprocessing."
+    },
+    "CSC441": {
+        "title": "Advanced Operating Systems",
+        "units": 3,
+        "prerequisites": [
+            "CSC CORE"
+        ],
+        "offered": "Infrequent",
+        "description": "Theoretical study of important topics in\noperating system design. Substantial individual and group programming\nprojects."
+    },
+    "CSC451": {
+        "title": "Computer Networks",
+        "units": 3,
+        "prerequisites": [
+            "CSC 311",
+            "MAT 281"
+        ],
+        "offered": "Fall, Spring",
+        "description": "An introduction to computer\nnetworks including both long haul and local area networks. Topics\ninclude network topology, network access methodology, transmission\nmedia, protocols and applications."
+    },
+    "CSC453": {
+        "title": "Data Management",
+        "units": 3,
+        "prerequisites": [
+            "CSC 311"
+        ],
+        "offered": "Fall, Spring",
+        "description": "Fundamental concepts in design, analysis and\nimplementation of computerized database systems. Database models,\nuser and program interfaces and database control."
+    },
+    "CSC455": {
+        "title": "WWW Design and Management",
+        "units": 3,
+        "prerequisites": [
+            "CSC 251",
+            "CSC 311",
+            "CSC 321"
+        ],
+        "offered": "Infrequent",
+        "description": "An introduction to the\ndesign, implementation and management of World Wide Web over the\nInternet and Intranet networks. Topics include Internet overview, web\nauthoring, web programming, server setting and maintenance."
+    },
+    "CSC459": {
+        "title": "Security Engineering",
+        "units": 3,
+        "prerequisites": [],
+        "offered": "Fall, Spring",
+        "description": "The goal of the course is to provide introduction to the design,\nimplementation and management of systems that remain dependable\nin the face of malice, error or mischance. Topics include the tools,\nprocesses and methods needed to design, implement and test complete\nsystems and to adapt existing systems as their environment evolves.\nSpecifically, it includes cryptography, privacy, hardware tamper resistance,\nfirewalls, intrusion detection and prevention and security policies."
+    },
+    "CSC461": {
+        "title": "Computer Graphics I",
+        "units": 3,
+        "prerequisites": [
+            "CSC 311"
+        ],
+        "offered": "Spring",
+        "description": "Fundamental concepts of programming for\ncomputer graphics. Graphics devices, languages and algorithms.\nSubstantial graphics programming projects."
+    },
+    "CSC463": {
+        "title": "Computer Graphics II",
+        "units": 3,
+        "prerequisites": [
+            "CSC 461"
+        ],
+        "offered": "Infrequent",
+        "description": "Advanced topics in computer graphics. Interactive\ngraphics, animation, color and three dimensional modeling."
+    },
+    "CSC471": {
+        "title": "Compiler Construction I",
+        "units": 3,
+        "prerequisites": [
+            "CSC 221",
+            "CSC 311",
+            "MAT 361"
+        ],
+        "offered": "Infrequent",
+        "description": "Introduction to the theory\nand practice of compiler construction. Overall structure of compilers.\nLexical and syntactic analysis, code generation for block structured\nlanguages and code optimization."
+    },
+    "CSC481": {
+        "title": "Software Engineering",
+        "units": 3,
+        "prerequisites": [
+            "CSC 301",
+            "CSC 311",
+            "CSC 321"
+        ],
+        "offered": "Fall, Spring",
+        "description": "Introduction to software\nengineering, with emphasis on software design and specification. Oral\nand written presentations required.\n\n206 Computer Science (CSC)"
+    },
+    "CSC490": {
+        "title": "Senior Seminar",
+        "units": 3,
+        "prerequisites": [
+            "CSC 301",
+            "CSC 311",
+            "CSC 321"
+        ],
+        "offered": "Infrequent",
+        "description": "Intense, structured seminar.\nExposure to current areas of research in Computer Science. Students will\nattend department colloquia; conduct research; present individual and\ngroup projects; and, prepare a written proposal for a senior project."
+    },
+    "CSC492": {
+        "title": "Senior Design",
+        "units": 3,
+        "prerequisites": [
+            "CSC 301",
+            "CSC 321",
+            "CSC 481"
+        ],
+        "offered": "Fall, Spring, Summer",
+        "description": "Intensive study under the\nguidance of a member of the Computer Science faculty which continues\nand expands the research carried out in Senior Seminar. Students will\nstudy system design and total project planning and management. A\nformal written report and oral presentation are required."
+    },
+    "CSC495": {
+        "title": "Selected Topics:",
+        "units": 3,
+        "prerequisites": [
+            "CSC 311 is required"
+        ],
+        "offered": "Fall, Spring",
+        "description": "Content varies. Advanced topics in\ncomputer science not covered by current course offerings. May be used\nfor elective credit in departmental programs. Subject to approval."
+    },
+    "CSC497": {
+        "title": "Directed Study In Computer Science",
+        "units": [
+            1,
+            2,
+            3
+        ],
+        "prerequisites": [
+            "CSC CORE or consent of instructor"
+        ],
+        "offered": "Infrequent",
+        "description": "A project in computer\nscience carried out on an independent study basis. Repeatable course."
+    },
+    "CSC498": {
+        "title": "Directed Research",
+        "units": [
+            1,
+            2,
+            3
+        ],
+        "prerequisites": [],
+        "offered": "Infrequent",
+        "description": ""
+    },
+    "CSC500": {
+        "title": "Research Methods",
+        "units": 3,
+        "prerequisites": [
+            "Graduate standing",
+            "consent of instructor"
+        ],
+        "offered": "Summer",
+        "description": "Series of\nlectures given by faculty and visiting computer scientists."
+    },
+    "CSC501": {
+        "title": "Design and Analysis of Algorithms",
+        "units": 3,
+        "prerequisites": [
+            "CSC 401"
+        ],
+        "offered": "Fall, Spring, Summer",
+        "description": "Methods for the design of efficient algorithms:\ndivide and conquer, greedy method, dynamic programming, backtracking,\nbrand and bound, problem in string matching, polynomials and matrices,\ngraph theory, NP-problems."
+    },
+    "CSC511": {
+        "title": "Artificial Intelligence and Expert Systems",
+        "units": 3,
+        "prerequisites": [
+            "CSC 411"
+        ],
+        "offered": "Fall",
+        "description": "Introduction to in-depth engineering approach to\nthe field of artificial neural networks. Topics include different types of\nnetwork architectures and applications, and their properties and behavior."
+    },
+    "CSC521": {
+        "title": "Fundamentals and Concepts of Programming Languages.  (3\nUnits)  \nPrerequisite: CSC 321. Study of the principles that form the basis of\nprogramming language design. Research topics in high-level languages\nincluding : data abstraction, parameterization, scooping, generics,\nexception handling, parallelism and concurrency; alternative language\ndesigns; imperative, functional, descriptive, object-oriented and data flow;\noverview of interface with support environments.\nOffered Spring\n\n\nCSC531.  Advanced Computer Architecture",
+        "units": 3,
+        "prerequisites": [
+            "CSC 331"
+        ],
+        "offered": "Fall even",
+        "description": "Covering new technological developments,\nincluding details of multiprocessor systems and specialized machines.\nThe main focus is on the quantitative analysis and cost-performance\ntradeoffs in instruction-set, pipeline, and memory design. Description\nof real systems and performance data are also presented. Topics\ncovered: quantitative performance measures, instruction set design,\npipeline, vector processing, memory organization, input/output, and an\nintroduction to parallel processing."
+    },
+    "CSC541": {
+        "title": "Advanced Operating Systems",
+        "units": 3,
+        "prerequisites": [
+            "CSC 341"
+        ],
+        "offered": "Fall",
+        "description": "Theoretical and practical aspects of\noperating systems: overview of system software, time-sharing and\nmultiprogramming operating systems, network operating systems and\nthe Internet, virtual memory management, inter-process communication\nand synchronization, file organization, and case studies. Giving advanced\ntopics and examples, and simulation techniques used in performance\nevaluation."
+    },
+    "CSC546": {
+        "title": "Human Computer Interaction and Interface Design",
+        "units": 3,
+        "prerequisites": [
+            "CSC 481"
+        ],
+        "offered": "Spring",
+        "description": "Research-oriented course; in-depth analyses of\nselected current topics with emphasis on problems related to computer\nsystems, artificial intelligence, and human computer information\ninteraction and interface design."
+    },
+    "CSC551": {
+        "title": "Data Communications and Computer Networks",
+        "units": 3,
+        "prerequisites": [
+            "CSC 451"
+        ],
+        "offered": "Fall odd",
+        "description": "Topics related to the development of clientserver based application, including two-tiers and multi-tiers Client-Server\nconcepts and programming. Concurrency issues in the design of client\nand server programs. Trade-off of different architectures and usage of\nremote procedure calls. Broadcasting and multicasting."
+    },
+    "CSC552": {
+        "title": "Distributed Computing and Parallel Processing",
+        "units": 3,
+        "prerequisites": [
+            "CSC 451",
+            "CSC 401"
+        ],
+        "offered": "Infrequent",
+        "description": "Comprehensive introduction to the field\nof parallel and distributed computing systems: Algorithms, architectures,\nnetworks, systems, theory and applications. The distributed parallel\ncomputation models, design and analysis of parallel algorithms will be\ndiscussed."
+    },
+    "CSC553": {
+        "title": "Advanced Database Management Systems",
+        "units": 3,
+        "prerequisites": [
+            "CSC 453"
+        ],
+        "offered": "Spring odd",
+        "description": "Provides an in-depth treatment of one or more\nadvanced topics in the management of information systems. The field of\ninformation systems consists of three major components: information\nsystems technology, information systems development and information\nsystems management. Deals with the latter area. Because of the many\nadvances in information technology and the corresponding development\ntechniques, new business opportunities are constantly emerging and with\nthem the need to manage these applications effectively. Explores these\nnew application areas and the management approaches needed to make\nthem successful."
+    },
+    "CSC555": {
+        "title": "Information Assurance and Network Security",
+        "units": 3,
+        "prerequisites": [
+            "CSC 451",
+            "CSC 401 and/or consent of instructor"
+        ],
+        "offered": "Spring even",
+        "description": "Topics\nrelated to communications and IT infrastructures, their vulnerabilities as\nwell as the size and complexity of security threats faced by enterprises,\ndevelopment of security practices, policies, awareness and compliance\nprograms, and legal and regulatory issues will be examined. Fundamental\nencryption algorithms and systems supported in today's IT and secure\ncommunications networks Virtual Private Networks, Tunneling, Secure\nSocket Layer, SSH, and PGP will also be examined."
+    },
+    "CSC561": {
+        "title": "Advanced Computer Graphics",
+        "units": 3,
+        "prerequisites": [
+            "CSC 461"
+        ],
+        "offered": "Spring",
+        "description": "Solid modeling Euler operators, finite element\nmethods. Rendering: filling, shading, ray tracing. Natural modeling: Lsystems, fractals. Image processing: filtering anti-aliasing, enhancement.\nColor: physics, graphics, physiology.\n\n2024-25 University Catalog 207"
+    },
+    "CSC564": {
+        "title": "Numerical Analysis",
+        "units": 3,
+        "prerequisites": [
+            "MAT 361"
+        ],
+        "offered": "Infrequent",
+        "description": "Topics include numerical solution of partial\ndifferential equations by finite difference and finite element algorithms.\nFocus on direct and iterative methods for solving large, sparse linear\nsystems and related eigenvalue and vector problems. Emphasis is placed\non robust mathematical software and its interaction with computer\nhardware and languages."
+    },
+    "CSC565": {
+        "title": "Theory of Computation",
+        "units": 3,
+        "prerequisites": [
+            "CSC 401",
+            "MAT 361"
+        ],
+        "offered": "Infrequent",
+        "description": "Models of computation, complexity\ntheory, intractable problems, complete problems, recursive function\ntheory, incompleteness, formal theory of program semantics and\ncorrectness, logics of programs."
+    },
+    "CSC581": {
+        "title": "Advanced Software Engineering",
+        "units": 3,
+        "prerequisites": [
+            "CSC 481"
+        ],
+        "offered": "Spring",
+        "description": "This course focuses on defining software\nrequirements and provides an overview of advanced analysis and design\ntechniques that can be used to structure applications. Topics of software\nrequirements include interacting with end-users to determine needs\nand expectations, identifying functional requirements and identifying\nperformance requirements. Analysis techniques include prototyping,\nmodeling and simulation. Design topics include design in the system\nlifecycle, hardware vs. software trade-offs, subsystem definition and\ndesign, abstraction, information hiding, modularity and reuse."
+    },
+    "CSC582": {
+        "title": "Object-Oriented Analysis and Design",
+        "units": 3,
+        "prerequisites": [
+            "CSC 481"
+        ],
+        "offered": "Fall",
+        "description": "Object-oriented analysis and design is essential\nin developing high-quality object-oriented systems. Topics will include\nobject-oriented classes, attributes, methods and relations to other\nclasses, objects, classifications and inheritance, encapsulation,\npolymorphism, object-oriented analysis, design and programming."
+    },
+    "CSC583": {
+        "title": "Software Engineering Processes",
+        "units": 3,
+        "prerequisites": [
+            "CSC 581"
+        ],
+        "offered": "Fall",
+        "description": "The course focuses on the engineering of complex\nsystems that have a strong software component. Topics include deriving\nand allocating requirements, system and software architectures, system\nanalysis and design, integration, interface management, configuration\nmanagement, quality, verification and validation, reliability, and risk."
+    },
+    "CSC584": {
+        "title": "Software Project",
+        "units": 3,
+        "prerequisites": [
+            "CSC 581"
+        ],
+        "offered": "Spring",
+        "description": "The main topics of this course address the\nsuccessful management of a software development project. This\nincludes planning, scheduling, tracking, cost and size estimating, risk\nmanagement, quality engineering, and process improvement. The course\nis centered on the concept of a software engineering process and\nincludes discussion of life cycle models for software development."
+    },
+    "CSC585": {
+        "title": "Advanced Software Quality Assurance",
+        "units": 3,
+        "prerequisites": [
+            "CSC 581"
+        ],
+        "offered": "Fall odd",
+        "description": "The relationship of software testing to quality is\nexamined with an emphasis on testing techniques and the role of testing\nin the validation of system requirements. Topics include module and\nunit testing, integration, code inspection, peer reviews, verification and\nvalidation, statistical testing methods, preventing and detecting errors,\nselecting and implementing project metrics and defining test plans and\nstrategies that map to system requirements. Testing principles, formal\nmodels of testing, performance monitoring and measurement also are\nexamined."
+    },
+    "CSC590": {
+        "title": "Master's Project",
+        "units": 3,
+        "prerequisites": [
+            "Graduate standing",
+            "consent of the graduate adviser"
+        ],
+        "offered": "on the letter-grade basis only",
+        "description": ". The equivalent of three lecture\nhours a week."
+    },
+    "CSC594": {
+        "title": "Independent Study",
+        "units": 3,
+        "prerequisites": [
+            "Graduate standing",
+            "consent of instructor"
+        ],
+        "offered": "Infrequent",
+        "description": "Individual\nstudies in advanced computer science and technology."
+    },
+    "CSC595": {
+        "title": "Special Topics in Computer Science",
+        "units": 3,
+        "prerequisites": [
+            "Graduate standing",
+            "consent of instructor"
+        ],
+        "offered": "Infrequent",
+        "description": "Exposes\nstudents to new and emerging concepts and technologies"
+    },
+    "CSC597": {
+        "title": "Directed Reading",
+        "units": 3,
+        "prerequisites": [],
+        "offered": "As needed",
+        "description": ""
+    },
+    "CSC599": {
+        "title": "Master's Thesis",
+        "units": 3,
+        "prerequisites": [
+            "Graduate standing",
+            "consent of the graduate adviser"
+        ],
+        "offered": "Fall, Spring",
+        "description": "Computer research writing of thesis for a master's degree. CR/NC\ngrading."
+    },
+    "CSC600": {
+        "title": "Graduate Continuation Course",
+        "units": 1,
+        "prerequisites": [
+            "Signature of graduate program coordinator required"
+        ],
+        "offered": "Fall, Spring",
+        "description": "Graduate students, who have completed their course work but not\ntheir thesis, project, or comprehensive examination, or who have other\nrequirements remaining for the completion for their degree, may attain\ncontinuous enrollment by enrolling in this course."
+    }
+}

@@ -1,0 +1,186 @@
+{
+  "total_units": 127,
+  "years": {
+    "Year 1": {
+      "Fall": [
+        {
+          "title": "CSC 121 Introduction to Computer Science and Programming I",
+          "units": 4
+        },
+        {
+          "title": "HIS 101 History Of United States",
+          "units": 3
+        },
+        {
+          "title": "GE Area A1 Oral Communication",
+          "units": 3
+        },
+        {
+          "title": "GE Area A2 Written Communication",
+          "units": 3
+        },
+        {
+          "title": "GE Area C1 Arts Courses",
+          "units": 3
+        }
+      ],
+      "Spring": [
+        {
+          "title": "MAT 191 Calculus I (satisfies GE Area B4)",
+          "units": 5
+        },
+        {
+          "title": "CSC 123 Introduction to Computer Science and Programming II",
+          "units": 4
+        },
+        {
+          "title": "PHY 130 General Physics I (satisfy GE Areas B1 and B3)",
+          "units": 5
+        },
+        {
+          "title": "GE Area C2 Letters Course",
+          "units": 3
+        }
+      ]
+    },
+    "Year 2": {
+      "Fall": [
+        {
+          "title": "MAT 193 Calculus II",
+          "units": 5
+        },
+        {
+          "title": "POL 101 American Institutions",
+          "units": 3
+        },
+        {
+          "title": "PHY 132 General Physics II",
+          "units": 5
+        },
+        {
+          "title": "GE Area A3 Logic/Critical Thinking",
+          "units": 3
+        }
+      ],
+      "Spring": [
+        {
+          "title": "CSC 281 Discrete Structures",
+          "units": 3
+        },
+        {
+          "title": "CSC 251 C Language Programming and Unix (satisfies CSC lower division elective)",
+          "units": 3
+        },
+        {
+          "title": "CSC 300 Software Development",
+          "units": 3
+        },
+        {
+          "title": "CSC 221 Assembly Language and Introduction to Computer Organization",
+          "units": 3
+        },
+        {
+          "title": "GE Area B2 Life Science",
+          "units": 3
+        }
+      ]
+    },
+    "Year 3": {
+      "Fall": [
+        {
+          "title": "CSC 301 Computers and Society (satisfies GE Area B5)",
+          "units": 3
+        },
+        {
+          "title": "MAT 321 Probability and Statistics",
+          "units": 3
+        },
+        {
+          "title": "CSC 311 Data Structures",
+          "units": 3
+        },
+        {
+          "title": "CSC 331 Computer Organization",
+          "units": 3
+        },
+        {
+          "title": "GE Area D1 Perspectives on Individuals, Groups, and Society",
+          "units": 3
+        }
+      ],
+      "Spring": [
+        {
+          "title": "CSC 401 Analysis of Algorithms",
+          "units": 3
+        },
+        {
+          "title": "CSC 321 Programming Languages",
+          "units": 3
+        },
+        {
+          "title": "Upper Division CSC Elective 1",
+          "units": 3
+        },
+        {
+          "title": "Additional GE in Area C1 or C2",
+          "units": 3
+        },
+        {
+          "title": "GE Area E Lifelong Learning and Self-Development",
+          "units": 3
+        }
+      ]
+    },
+    "Year 4": {
+      "Fall": [
+        {
+          "title": "CSC 481 Software Engineering",
+          "units": 3
+        },
+        {
+          "title": "CSC 341 Operating Systems",
+          "units": 3
+        },
+        {
+          "title": "CSC 371 Finite Automata",
+          "units": 3
+        },
+        {
+          "title": "ENG 350 Advanced Composition (satisfies GWAR requirement)",
+          "units": 3
+        },
+        {
+          "title": "GE Area C3 Integrative Studies in the Humanities",
+          "units": 3
+        },
+        {
+          "title": "GE Area D2 Global and Historical Perspectives",
+          "units": 3
+        }
+      ],
+      "Spring": [
+        {
+          "title": "CSC 492 Senior Design",
+          "units": 3
+        },
+        {
+          "title": "Upper Division CSC Elective 2",
+          "units": 3
+        },
+        {
+          "title": "GE Area B5 Integrative Studies in Natural Sciences",
+          "units": 3
+        },
+        {
+          "title": "GE Area D3 Integrative Studies in the Social Sciences",
+          "units": 3
+        },
+        {
+          "title": "GE Area F Ethnic Studies",
+          "units": 3
+        }
+      ]
+    }
+  }
+}
+

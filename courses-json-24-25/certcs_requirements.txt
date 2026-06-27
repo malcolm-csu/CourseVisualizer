@@ -1,0 +1,42 @@
+Computer Science, Certificate
+Requirements
+Code Title Hours
+Upper Division Requirements
+CSC 311 Data Structures 3
+CSC 321 Programming Languages 3
+CSC 331 Computer Organization 3
+Electives
+Select three courses from the following: 9
+CSC 337 Microcomputers
+CSC 341 Operating Systems
+CSC 353 File Processing
+CSC 361 Systems Programming
+CSC 395 Sel Topics in Computer Science
+CSC 401 Analysis of Algorithms
+CSC 411 Artificial Intelligence
+CSC 421 Advanced Programming Languages
+CSC 431 Advanced Computer Organization
+CSC 441 Advanced Operating Systems
+CSC 451 Computer Networks
+CSC 453 Data Management
+CSC 455 WWW Design and Management
+CSC 459 Security Engineering
+CSC 461 Computer Graphics I
+CSC 463 Computer Graphics II
+CSC 471 Compiler Construction I
+CSC 490 Senior Seminar
+CSC 492 Senior Design
+CSC 495 Selected Topics:
+MAT 361 Finite Automata
+MAT 367 Numerical Analysis I
+MAT 369 Numerical Analysis II
+Total Hours 18
+Notes:
+1. Adequate preparation in terms of the completion of all lower division
+courses which are prerequisites of courses for this certificate is
+necessary.
+2. At least four of the six upper division courses must be taken at CSU
+Dominguez Hills.
+3. None of the upper division courses may be taken as credit/no credit.
+4. A minimum grade point average of 2.0 is required for all units taken
+for the certificate.

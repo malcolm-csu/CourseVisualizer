@@ -1,0 +1,219 @@
+{
+    "CTC195": {
+        "title": "Special Topics",
+        "units": [
+            1,
+            2,
+            3
+        ],
+        "prerequisites": [],
+        "offered": "As needed",
+        "description": "Topics in computer technology not covered by current course offerings.\nMay be used for elective credit in departmental programs. Subject to\napproval."
+    },
+    "CTC218": {
+        "title": "Digital Logic Design",
+        "units": 3,
+        "prerequisites": [],
+        "offered": "Fall, Spring",
+        "description": "Provides students with a basic understanding of digital device and circuit\nfundamentals. The students should be able to analyze and design both\ncombinational and sequential circuits after completing this course."
+    },
+    "CTC228": {
+        "title": "Introduction to Operating Systems and Networks",
+        "units": 4,
+        "prerequisites": [],
+        "offered": "Fall, Spring",
+        "description": "Course acquaints students with basic networking concepts such as TCP/\nIP, local/wide area networking as well as emerging industry topics such\nas Radio Frequency Identification (RFID), Global Information Systems\n(GIS), Networked Attached Storage (NAS), and WiMAX."
+    },
+    "CTC295": {
+        "title": "Special Topics",
+        "units": [
+            1,
+            2,
+            3
+        ],
+        "prerequisites": [],
+        "offered": "As needed",
+        "description": "Topics in computer technology not covered by current course offerings.\nMay be used for elective credit in departmental programs. Subject to\napproval."
+    },
+    "CTC305": {
+        "title": "Introduction to Game and Mobile Programming",
+        "units": 3,
+        "prerequisites": [],
+        "offered": "Fall",
+        "description": "This course teaches students through lectures, discussions,\ndemonstrations, and classroom labs. Students learn the knowledge,\nskills, and abilities necessary to create games in the C# programming\nlanguage using the Microsoft XNA framework and Silver light.\n\n208 Computer Technology (CTC)"
+    },
+    "CTC310": {
+        "title": "Software Project Management",
+        "units": 3,
+        "prerequisites": [],
+        "offered": "Fall, Spring",
+        "description": "Course will focus on the critical aspects of project management,\nincluding software project management concepts and case studies, and\ndiscuss software project management roadmap, and especially address\nlinear, incremental, iterative, adaptive and extreme effective software\nproject management from the perspectives of project scoping, planning,\nlaunching, monitoring, controlling and closing phases."
+    },
+    "CTC316": {
+        "title": "Operating Systems and Networks Support",
+        "units": 3,
+        "prerequisites": [],
+        "offered": "Fall, Spring",
+        "description": "Course provides an introduction to OS and networking support. Topics\ninclude user engineering, risk management, mission assurance, software\nprocess management, enterprise management tools and processes,\ndisaster recovery, business continuity and information life cycle\nmanagement."
+    },
+    "CTC328": {
+        "title": "Computer Forensics and Investigation",
+        "units": 4,
+        "prerequisites": [],
+        "offered": "Fall, Spring",
+        "description": "Course presents methods to properly conduct a computer forensics\ninvestigation, beginning with a discussion of ethics while mapping to\nthe objectives of the International Association of Computer Investigative\nSpecialists (IACIS) certification."
+    },
+    "CTC362": {
+        "title": "Communication Systems Security",
+        "units": 3,
+        "prerequisites": [],
+        "offered": "Fall, Spring",
+        "description": "Course provides the foundation for understanding the key issues\nassociated with protecting information assets, determining the levels of\nprotection and response to security incidents, and designing a consistent,\nreasonable information security system, with appropriate intrusion\ndetection and reporting features."
+    },
+    "CTC385": {
+        "title": "Introduction to Programming",
+        "units": 3,
+        "prerequisites": [],
+        "offered": "Fall, Spring, Summer",
+        "description": "Introduces computing practice first, and then the concept of\nprogramming using block-based and visual (drag-and-drop) programming\nlanguage such as Scratch. Students will also be exposed to pseudocode\nand algorithm design."
+    },
+    "CTC386": {
+        "title": "Computational Thinking and Programming",
+        "units": 3,
+        "prerequisites": [
+            "CTC 385 is required"
+        ],
+        "offered": "Fall, Spring, Summer",
+        "description": "Restricted to majors. Introduces\ncomputational thinking and problem-solving frameworks first, and then\nuses Python to teach programming concepts and problem-solving skills.\nEthics in computing is also discussed."
+    },
+    "CTC387": {
+        "title": "Computer Networks, Communication Devices and Methods.  (4\nUnits)  \nPrerequisites: CTC 386 is required. Restricted to majors. Introduces\ncomputer system, network and communication devices first, and then\nintroduces how to identify hardware and software failures, and use\ntools to perform diagnosis. Social and legal issues in computing, and\npedagogy in computer science are also discussed.\nOffered Fall, Spring, Summer\n\n\nCTC 389.  Data Structures and Software Design",
+        "units": 3,
+        "prerequisites": [
+            "CTC 387 is required"
+        ],
+        "offered": "Fall, Spring, Summer",
+        "description": "Restricted to majors. Introduces\ndifferent data structures and algorithm design principles first, followed\nby different software design models. Advanced Python programming\ntechniques are also discussed."
+    },
+    "CTC395": {
+        "title": "Special Topics",
+        "units": [
+            1,
+            2,
+            3
+        ],
+        "prerequisites": [],
+        "offered": "As needed",
+        "description": "Advanced topics in computer technology not covered by current course\nofferings. May be used for elective credit in departmental programs.\nSubject to approval."
+    },
+    "CTC399": {
+        "title": "IT Practicum",
+        "units": 3,
+        "prerequisites": [],
+        "offered": "Fall, Spring",
+        "description": "The technology internship program allows students to gain hands on\nexperience in a technology environment by spending one semester as\nan intern in the Information Technology Department at CSUDH. The\nInternship program provides students with the opportunity to gain\ntechnical experience related to their studies, and to prepare for future\ncareer opportunities. CR/NC grading"
+    },
+    "CTC405": {
+        "title": "Advanced Game Development",
+        "units": 3,
+        "prerequisites": [],
+        "offered": "Spring",
+        "description": "Prerequisites: Prerequisites: CTC 305 or CSC 123 Students learn the\nadvanced knowledge in game development including Skills, and the\nabilities necessary to create #D games on multiple platforms. The course\nincludes lectures, discussions, demonstrations, and classroom labs."
+    },
+    "CTC428": {
+        "title": "Operating Systems Security",
+        "units": 3,
+        "prerequisites": [
+            "CTC 316 is required"
+        ],
+        "offered": "Fall, Spring",
+        "description": "Course takes an in depth look at\noperating system security concepts and techniques. It examines\ntheoretical concepts that make the world of security unique. Also,\nthis course will adopt a practical hands-on approach when examining\noperating system security techniques."
+    },
+    "CTC435": {
+        "title": "Fundamentals of Information Technology",
+        "units": 2,
+        "prerequisites": [],
+        "offered": "Fall, Spring, Summer",
+        "description": "This course focuses on the introduction to Python programming\nlanguage, handling data, database, operating systems, and network and\nsecurity. Students are expected to gain significant theoretical knowledge\nof information technology, and know how to write Python programs.\nRestricted to students in the major."
+    },
+    "CTC436": {
+        "title": "Fundamentals of Networking and Hardware",
+        "units": 2,
+        "prerequisites": [],
+        "offered": "Fall, Spring, Summer",
+        "description": "This course focuses on the introduction of computer hardware systems,\ncomputer network, and wireless networking. Students who enroll\nand complete this course are expected to gain significant theoretical\nknowledge and hands-on experience of computer hardware and\nnetworking. Restricted to students in the major."
+    },
+    "CTC437": {
+        "title": "Fundamentals of Information Security",
+        "units": 2,
+        "prerequisites": [],
+        "offered": "Fall, Spring, Summer",
+        "description": "Introduces students to security, network monitoring and access control,\nmalicious activity detection, cryptography and security function.\nStudents who enroll and complete the course are expected to gain\nsignificant theoretical knowledge and hands-on experience of information\nsecurity. Restricted to students in the major."
+    },
+    "CTC452": {
+        "title": "Network Security and Hacking Prevention",
+        "units": 3,
+        "prerequisites": [
+            "CTC 228 or consent of instructor is required"
+        ],
+        "offered": "Fall, Spring",
+        "description": "Course\ntakes an in depth look at network defense concepts and techniques. It\nexamines theoretical concepts that make the world of networking unique.\nThis course also adopts a practical hands-on approach when examining\nnetwork defense techniques and strategies.\n\n2024-25 University Catalog 209"
+    },
+    "CTC454": {
+        "title": "Wireless Security & Forensics",
+        "units": 3,
+        "prerequisites": [],
+        "offered": "Spring",
+        "description": "Examines fundamental topics in wireless technology in wireless\ntechnology, such as planning, designing, installing, securing, using tools,\nand forensics. Students will also examine the maintenance, security, and\nbusiness applications for wireless Local Area Networks."
+    },
+    "CTC456": {
+        "title": "Enterprise System Security",
+        "units": 3,
+        "prerequisites": [
+            "CTC 228 is required"
+        ],
+        "offered": "Spring",
+        "description": "Students learn to identify and fix\nenterprise level network vulnerabilities through the use of existing\ndefense tools. Students also learn the essential skills and techniques\nneeded to develop enterprise level network security skills to protect\nenterprise's information."
+    },
+    "CTC458": {
+        "title": "Network Security Through Penetration Testing",
+        "units": 3,
+        "prerequisites": [
+            "CTC 228 is required"
+        ],
+        "offered": "Fall",
+        "description": "Students learn how to determine the\nfeasibility of a particular set of attack vectors and identify higher-risk\nvulnerabilities. students learn through performing penetration tests\nagainst the setup environment using existing tools, techniques, and\nprogramming languages."
+    },
+    "CTC492": {
+        "title": "Senior Project",
+        "units": 3,
+        "prerequisites": [],
+        "offered": "Fall, Spring",
+        "description": "Intensive study under guidance of a member of the Computer Science\nDepartment to complete a project from start to end. Students will study\nsystem design and total project planning and management. A formal\nwritten report and oral presentation will be required."
+    },
+    "CTC495": {
+        "title": "Special Topics",
+        "units": [
+            1,
+            2,
+            3
+        ],
+        "prerequisites": [],
+        "offered": "Fall, Spring",
+        "description": "Advanced topics in computer technology not covered by current course\nofferings. May be used for elective credit in departmental programs.\nSubject to approval."
+    },
+    "CTC496": {
+        "title": "Internship in Computer Technology",
+        "units": 3,
+        "prerequisites": [],
+        "offered": "As needed",
+        "description": ""
+    },
+    "CTC497": {
+        "title": "Directed Studies",
+        "units": 3,
+        "prerequisites": [],
+        "offered": "As needed",
+        "description": "Software Project Management (CTC 310)"
+    }
+}

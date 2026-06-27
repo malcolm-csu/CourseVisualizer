@@ -1,0 +1,28 @@
+{
+    "No Credit":     {
+                        "MAT":      ["153"].
+                        "CSC":      ["115"]
+                    },
+
+    "Lower Division": 
+                     {
+                        "MAT":      ["191", "193", "281"].
+                        "ITC":      ["101", "251"],
+                        "CSC":      ["121", "123", "228", "255"],
+                        "PHY":      "130",
+                        "units":    37
+                     },
+
+    "Uppwer Division":
+                    {
+                        "MAT":      ["131", "281"].
+                        "ITC":      ["310", "399", "453", "459", "492"],
+                        "CSC":      ["301", "311"],
+                        "CSC":      ["316", "362", "452"],
+                        "Elect1":   ["Any PHY. or Life Science"],
+                        "Elect2":   ["Any PHY. or Life Science"],
+                        "Or":       ["MAT 281", "CSC 281"],
+                        "Or":       ["MAT 271", "CSC 255", "CSC 300", "CSC 2xx"],
+                        "units":    36
+                    }
+}

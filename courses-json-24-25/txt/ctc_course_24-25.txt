@@ -1,0 +1,230 @@
+Computer Technology (CTC) 2024-2025
+
+
+CTC 195.  Special Topics.  (1-3 Units)  
+Topics in computer technology not covered by current course offerings.
+May be used for elective credit in departmental programs. Subject to
+approval.
+Offered As needed
+
+
+CTC 218.  Digital Logic Design.  (3 Units)  
+Provides students with a basic understanding of digital device and circuit
+fundamentals. The students should be able to analyze and design both
+combinational and sequential circuits after completing this course.
+Offered Fall, Spring
+
+
+CTC 228.  Introduction to Operating Systems and Networks.  (4 Units)  
+Course acquaints students with basic networking concepts such as TCP/
+IP, local/wide area networking as well as emerging industry topics such
+as Radio Frequency Identification (RFID), Global Information Systems
+(GIS), Networked Attached Storage (NAS), and WiMAX.
+Offered Fall, Spring
+
+
+CTC 295.  Special Topics.  (1-3 Units)  
+Topics in computer technology not covered by current course offerings.
+May be used for elective credit in departmental programs. Subject to
+approval.
+Offered As needed
+
+
+CTC 305.  Introduction to Game and Mobile Programming.  (3 Units)  
+This course teaches students through lectures, discussions,
+demonstrations, and classroom labs. Students learn the knowledge,
+skills, and abilities necessary to create games in the C# programming
+language using the Microsoft XNA framework and Silver light.
+Offered Fall
+208 Computer Technology (CTC)
+
+
+CTC 310.  Software Project Management.  (3 Units)  
+Course will focus on the critical aspects of project management,
+including software project management concepts and case studies, and
+discuss software project management roadmap, and especially address
+linear, incremental, iterative, adaptive and extreme effective software
+project management from the perspectives of project scoping, planning,
+launching, monitoring, controlling and closing phases.
+Offered Fall, Spring
+
+
+CTC 316.  Operating Systems and Networks Support.  (3 Units)  
+Course provides an introduction to OS and networking support. Topics
+include user engineering, risk management, mission assurance, software
+process management, enterprise management tools and processes,
+disaster recovery, business continuity and information life cycle
+management.
+Offered Fall, Spring
+
+
+CTC 328.  Computer Forensics and Investigation.  (4 Units)  
+Course presents methods to properly conduct a computer forensics
+investigation, beginning with a discussion of ethics while mapping to
+the objectives of the International Association of Computer Investigative
+Specialists (IACIS) certification.
+Offered Fall, Spring
+
+
+CTC 362.  Communication Systems Security.  (3 Units)  
+Course provides the foundation for understanding the key issues
+associated with protecting information assets, determining the levels of
+protection and response to security incidents, and designing a consistent,
+reasonable information security system, with appropriate intrusion
+detection and reporting features.
+Offered Fall, Spring
+
+
+CTC 385.  Introduction to Programming.  (3 Units)  
+Introduces computing practice first, and then the concept of
+programming using block-based and visual (drag-and-drop) programming
+language such as Scratch. Students will also be exposed to pseudocode
+and algorithm design.
+Offered Fall, Spring, Summer
+
+
+CTC 386.  Computational Thinking and Programming.  (3 Units)  
+Prerequisite: CTC 385 is required. Restricted to majors. Introduces
+computational thinking and problem-solving frameworks first, and then
+uses Python to teach programming concepts and problem-solving skills.
+Ethics in computing is also discussed.
+Offered Fall, Spring, Summer
+
+
+CTC 387.  Computer Networks, Communication Devices and Methods.  (4
+Units)  
+Prerequisites: CTC 386 is required. Restricted to majors. Introduces
+computer system, network and communication devices first, and then
+introduces how to identify hardware and software failures, and use
+tools to perform diagnosis. Social and legal issues in computing, and
+pedagogy in computer science are also discussed.
+Offered Fall, Spring, Summer
+
+
+CTC 389.  Data Structures and Software Design.  (3 Units)  
+Prerequisite: CTC 387 is required. Restricted to majors. Introduces
+different data structures and algorithm design principles first, followed
+by different software design models. Advanced Python programming
+techniques are also discussed.
+Offered Fall, Spring, Summer
+
+
+CTC 395.  Special Topics.  (1-3 Units)  
+Advanced topics in computer technology not covered by current course
+offerings. May be used for elective credit in departmental programs.
+Subject to approval.
+Offered As needed
+
+
+CTC 399.  IT Practicum.  (3 Units)  
+The technology internship program allows students to gain hands on
+experience in a technology environment by spending one semester as
+an intern in the Information Technology Department at CSUDH. The
+Internship program provides students with the opportunity to gain
+technical experience related to their studies, and to prepare for future
+career opportunities. CR/NC grading
+Offered Fall, Spring
+
+
+CTC 405.  Advanced Game Development.  (3 Units)  
+Prerequisites: Prerequisites: CTC 305 or CSC 123 Students learn the
+advanced knowledge in game development including Skills, and the
+abilities necessary to create #D games on multiple platforms. The course
+includes lectures, discussions, demonstrations, and classroom labs.
+Offered Spring
+
+
+CTC 428.  Operating Systems Security.  (3 Units)  
+Prerequisites: CTC 316 is required. Course takes an in depth look at
+operating system security concepts and techniques. It examines
+theoretical concepts that make the world of security unique. Also,
+this course will adopt a practical hands-on approach when examining
+operating system security techniques.
+Offered Fall, Spring
+
+
+CTC 435.  Fundamentals of Information Technology.  (2 Units)  
+This course focuses on the introduction to Python programming
+language, handling data, database, operating systems, and network and
+security. Students are expected to gain significant theoretical knowledge
+of information technology, and know how to write Python programs.
+Restricted to students in the major.
+Offered Fall, Spring, Summer
+
+
+CTC 436.  Fundamentals of Networking and Hardware.  (2 Units)  
+This course focuses on the introduction of computer hardware systems,
+computer network, and wireless networking. Students who enroll
+and complete this course are expected to gain significant theoretical
+knowledge and hands-on experience of computer hardware and
+networking. Restricted to students in the major.
+Offered Fall, Spring, Summer
+
+
+CTC 437.  Fundamentals of Information Security.  (2 Units)  
+Introduces students to security, network monitoring and access control,
+malicious activity detection, cryptography and security function.
+Students who enroll and complete the course are expected to gain
+significant theoretical knowledge and hands-on experience of information
+security. Restricted to students in the major.
+Offered Fall, Spring, Summer
+
+
+CTC 452.  Network Security and Hacking Prevention.  (3 Units)  
+Prerequisite: CTC 228 or consent of instructor is required. Course
+takes an in depth look at network defense concepts and techniques. It
+examines theoretical concepts that make the world of networking unique.
+This course also adopts a practical hands-on approach when examining
+network defense techniques and strategies.
+Offered Fall, Spring
+2024-25 University Catalog 209
+
+
+CTC 454.  Wireless Security & Forensics.  (3 Units)  
+Examines fundamental topics in wireless technology in wireless
+technology, such as planning, designing, installing, securing, using tools,
+and forensics. Students will also examine the maintenance, security, and
+business applications for wireless Local Area Networks.
+Offered Spring
+
+
+CTC 456.  Enterprise System Security.  (3 Units)  
+Prerequisite: CTC 228 is required. Students learn to identify and fix
+enterprise level network vulnerabilities through the use of existing
+defense tools. Students also learn the essential skills and techniques
+needed to develop enterprise level network security skills to protect
+enterprise's information.
+Offered Spring
+
+
+CTC 458.  Network Security Through Penetration Testing.  (3 Units)  
+Prerequisite: CTC 228 is required. Students learn how to determine the
+feasibility of a particular set of attack vectors and identify higher-risk
+vulnerabilities. students learn through performing penetration tests
+against the setup environment using existing tools, techniques, and
+programming languages.
+Offered Fall
+
+
+CTC 492.  Senior Project.  (3 Units)  
+Intensive study under guidance of a member of the Computer Science
+Department to complete a project from start to end. Students will study
+system design and total project planning and management. A formal
+written report and oral presentation will be required.
+Offered Fall, Spring
+
+
+CTC 495.  Special Topics.  (1-3 Units)  
+Advanced topics in computer technology not covered by current course
+offerings. May be used for elective credit in departmental programs.
+Subject to approval.
+Offered Fall, Spring
+
+
+CTC 496.  Internship in Computer Technology.  (3 Units)  
+Offered As needed
+
+
+CTC 497.  Directed Studies.  (3 Units)  
+Software Project Management (CTC 310)
+Offered As needed

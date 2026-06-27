@@ -1,0 +1,111 @@
+{
+  "track": "General",
+  "type": "4-Year Roadmap",
+  "total_units": 120,
+  "years": {
+    "Year 1": {
+      "Fall": [
+        {"title": "MAT 131 Elementary Statistics and Probability (GE Area B4)", "units": 3},
+        {"title": "HIS 101 History Of United States", "units": 3},
+        {"title": "GE Area A2 Written Communication", "units": 3},
+        {"title": "CSC 111 Introduction to Computers and Basic Programming", "units": 3},
+        {"title": "CSC 101 Intro.to Computer Education", "units": 3}
+      ],
+      "Spring": [
+        {"title": "MAT 153 Pre-Calculus with Trigonometry with Lab", "units": 4},
+        {"title": "CSC 115 Introduction to Programming Concepts", "units": 3},
+        {"title": "CSC 116 Introduction to Computer Hardware and Tools", "units": 3},
+        {"title": "GE Area B1 Physical Science", "units": 3},
+        {"title": "GE Area B3 Science Laboratory", "units": 1}
+      ]
+    },
+    "Year 2": {
+      "Fall": [
+        {"title": "CSC 121 Introduction to Computer Science and Programming I (see counselor for GE Area A3: Critical Thinking credit)", "units": 4},
+        {"title": "POL 101 American Institutions", "units": 3},
+        {"title": "CSC 255 Dynamic Web Programming", "units": 3},
+        {"title": "CTC 228 Introduction to Operating Systems and Networks", "units": 4}
+      ],
+      "Spring": [
+        {"title": "ITC 300 Security in a Digital Society", "units": 3},
+        {"title": "CTC 218 Digital Logic Design", "units": 3},
+        {"title": "GE Area A1 Oral Communication", "units": 3},
+        {"title": "GE Area C1 Arts Courses", "units": 3},
+        {"title": "GE Area C2 Letters Course", "units": 3}
+      ]
+    },
+    "Year 3": {
+      "Fall": [
+        {"title": "CTC 316 Operating Systems and Networks Support", "units": 3},
+        {"title": "CSC 301 Computers And Society (satisfies GE Area B5)", "units": 3},
+        {"title": "GE Area D1 Perspectives on Individuals, Groups, and Society", "units": 3},
+        {"title": "GE Area D2 Global and Historical Perspectives", "units": 3},
+        {"title": "Elective to meet 120 units", "units": 2}
+      ],
+      "Spring": [
+        {"title": "CTC 310 Software Project Management", "units": 3},
+        {"title": "CTC/CSC Lower Division Elective", "units": 4},
+        {"title": "CTC/CSC Lower Division Elective", "units": 4},
+        {"title": "Additional GE in Area C1 or C2", "units": 3},
+        {"title": "GE Area E Lifelong Learning and Self-Development", "units": 3}
+      ]
+    },
+    "Year 4": {
+      "Fall": [
+        {"title": "CTC 452 Network Security and Hacking Prevention", "units": 3},
+        {"title": "ENG 350 Advanced Composition (GWAR satisfying course)", "units": 3},
+        {"title": "GE Area B2 Life Science", "units": 3},
+        {"title": "CTC/CSC Upper Division Elective", "units": 3},
+        {"title": "CTC/CSC Upper Division Elective", "units": 3}
+      ],
+      "Spring": [
+        {"title": "CSC 492 Senior Design", "units": 3},
+        {"title": "CTC/CSC Upper Division Elective", "units": 4},
+        {"title": "GE Area C3 Integrative Studies in the Humanities", "units": 3},
+        {"title": "GE Area D3 Integrative Studies in the Social Sciences", "units": 3},
+        {"title": "GE Area F Ethnic Studies", "units": 3}
+      ]
+    }
+  }
+}
+
+{
+  "track": "Homeland Security",
+  "type": "2-Year Roadmap (Transfer Students)",
+  "total_units": 60,
+  "years": {
+    "Year 1": {
+      "Fall": [
+        {"title": "CSC 301 Computers And Society (satisfies GE Area B5)", "units": 3},
+        {"title": "CTC 316 Operating Systems and Networks Support", "units": 3},
+        {"title": "CTC 328 Computer Forensics and Investigation", "units": 4},
+        {"title": "ITC 300 Security in a Digital Society (or an alternative GE Area D3 satisfying course)", "units": 3},
+        {"title": "Elective to meet 120 units", "units": 3}
+      ],
+      "Spring": [
+        {"title": "CTC 310 Software Project Management", "units": 3},
+        {"title": "CTC 362 Communication Systems Security", "units": 3},
+        {"title": "CTC 428 Operating Systems Security", "units": 3},
+        {"title": "GE Area C3 Integrative Studies in the Humanities", "units": 3},
+        {"title": "Elective to meet 120 units", "units": 3}
+      ]
+    },
+    "Year 2": {
+      "Fall": [
+        {"title": "CTC 452 Network Security and Hacking Prevention", "units": 3},
+        {"title": "ENG 350 Advanced Composition (GWAR satisfying course)", "units": 3},
+        {"title": "CTC Upper Division Elective", "units": 3},
+        {"title": "CTC Upper Division Elective", "units": 3},
+        {"title": "Elective to meet 120 units", "units": 3}
+      ],
+      "Spring": [
+        {"title": "CSC 492 Senior Design", "units": 3},
+        {"title": "CSC Upper Division Elective", "units": 4},
+        {"title": "Elective to meet 120 units", "units": 3},
+        {"title": "Elective to meet 120 units", "units": 3},
+        {"title": "Elective to meet 120 units", "units": 1}
+      ]
+    }
+  }
+}
+

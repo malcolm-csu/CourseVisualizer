@@ -1,0 +1,63 @@
+{
+        "CSC 101": {
+        "title": "Intro to Computer Education",
+        "units": 3,
+        "prerequisites": [],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "A computer literacy course designed to familiarize the learner with a variety of computer tools and computer concepts with emphasis on utilizing packaged programs. This course provides an introduction to the use of computers, common software programs and peripherals. Students are instructed in the use of a word processor, drawing programs, spreadsheet, database, presentation tools, internet applications and statistical package in scientific applications.",
+        "level": "Lower Division",
+        "notes": ""
+    },
+    "CSC 111": {
+        "title": "Introduction to Computers and Basic Programming",
+        "units": 3,
+        "prerequisites": [],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Introduction to computer programming with particular emphasis on small systems through programming in the BASIC language.",
+        "level": "Lower Dividion",
+        "notes": "Programming (3 UNITS) - Select One Course: CSC 111 or CSC 115"
+    },
+    "CSC 115": {
+        "title": "Introduction to Programming Concepts",
+        "units": 3,
+        "prerequisites": [],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Introduction to microcomputer hardware and operating systems. Students will be required to use application software to research, generate and prepare a semester project.",
+        "level": "Lower Dividion",
+        "notes": "Programming (3 UNITS) - Select One Course: CSC 111 or CSC 115"
+    },
+    "CSC 116": {
+        "title": "Introduction to Computer Hardware and Tools",
+        "units": 3,
+        "prerequisites": [],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "Organization of sequential, digital machine: CPU, I/O, storage, communications devices. Functions of operating systems: translators, editors, peripheral control utilities. The course covers the development, description, and analysis of elementary algorithms. It includes three hours of lecture and two hours of activity per week.",
+        "level": "Lower Dividion",
+        "notes": ""
+    },
+   "CSC 255": {
+        "title": "Dynamic Web Programming",
+        "units": 3,
+        "prerequisites": ["CSC 115"],
+	"corequisites": [],
+        "offered": "Fall Spring",
+        "description": "This course introduces fundamental structures and logical principles that form the foundation of computer science. Topics will be introduced with emphasis on applications in computer science. Students will be required to write programs to deepen their understanding about the topics.",
+        "level": "Lower Division",
+        "notes": ""
+    },
+    "CSC 301": {
+        "title": "Computers And Society",
+        "units": 3,
+        "prerequisites": [ [ "CSC 111", "CSC 115", "CSC 121" ] ],
+	"corequisites": [ ],
+        "offered": "",
+        "description": "Ethical, legal, psychological, economic, and theoretical implications and limitations of the uses of digital computers. Oral and written presentations required.",
+        "level": "Upper Division",
+        "notes": "CSC 272  Upper Division"
+    }
+}
+

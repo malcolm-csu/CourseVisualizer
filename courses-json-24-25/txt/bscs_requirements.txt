@@ -1,0 +1,72 @@
+“Extract course data from this catalog with exact titles, units, prerequisites, and all track variations. Do not omit elective options or range-based units. Preserve wording of learning outcomes verbatim.”Major Requirements (76 units)
+Students entering the Computer Science program must complete the
+following.
+1. Earn an overall grade point average of 2.0 or better in courses taken
+outside of the department.
+484 Computer Science, Bachelor of Science
+2. Earn a grade of "C" or better in each course taken within the
+department.
+3. Earn a grade of "C" or better in all direct and indirect prerequisite
+courses listed in the catalog before advancing to the next level course
+in a sequence for English, Mathematics, and Science courses.
+4. Students must take capstone course CSC 492 Senior Design at
+CSUDH.
+The following courses, or their approved transfer equivalents, are required
+of all candidates for this degree.
+Code Title Hours
+Lower Division Requirements
+CSC 121 Introduction to Computer Science and
+Programming I
+1
+4
+CSC 123 Introduction to Computer Science and
+Programming II
+4
+CSC 221 Assembly Language and Introduction to Computer
+Organization
+3
+CSC 2xx 3
+MAT 191 Calculus I 5
+MAT 193 Calculus II 5
+MAT 271 Foundations Of Higher Math 3
+MAT 281 Discrete Mathematics 3
+PHY 130 General Physics I 5
+PHY 132 General Physics II 5
+Upper Division Requirements 2
+Core Requirements:
+CSC 311 Data Structures 3
+CSC 321 Programming Languages 3
+CSC 331 Computer Organization 3
+CSC 341 Operating Systems 3
+Required Courses:
+CSC 301 Computers and Society 3
+CSC 401 Analysis of Algorithms 3
+CSC 481 Software Engineering 3
+CSC 492 Senior Design 3
+MAT 321 Probability and Statistics 3
+MAT 361 Finite Automata 3
+Electives
+Select two courses from the following: 6
+CSC 395 Sel Topics in Computer Science
+CSC 411 Artificial Intelligence
+CSC 421 Advanced Programming Languages
+CSC 431 Advanced Computer Organization
+CSC 441 Advanced Operating Systems
+CSC 451 Computer Networks
+CSC 453 Data Management
+CSC 455 WWW Design and Management
+CSC 459 Security Engineering
+CSC 461 Computer Graphics I
+CSC 463 Computer Graphics II
+CSC 471 Compiler Construction I
+CSC 490 Senior Seminar
+CSC 495 Selected Topics:
+MAT 367 Numerical Analysis I
+MAT 369 Numerical Analysis II
+Total Hours 76
+1 Major students may substitute this course for General Education Area
+A3. Please contact the CNBS Student Success Center to request the
+course substitution.
+2
+A minimum of 18 upper division units in the major must be taken in
+residence at CSU Dominguez Hills.

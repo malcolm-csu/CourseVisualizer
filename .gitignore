@@ -1,0 +1,25 @@
+# Generated outputs
+*.html
+*.pdf
+
+# Student data (PII)
+student/
+
+# Python venv (embedded in lib/)
+bin/
+include/
+lib/
+share/
+path/
+pyvenv.cfg
+__pycache__/
+*.pyc
+
+# Old/scratch
+old/
+
+# macOS
+.DS_Store
+
+# Claude session files
+.claude/

@@ -1,0 +1,64 @@
+Information Technology, Bachelor of
+Science
+Requirements
+Total Course Requirements for the Bachelor's Degree
+See the "Requirements for the Bachelor's Degree (p. 95)" in the University
+Catalog for complete details on general degree requirements. A minimum
+of 40 units, including those required for the major, must be upper division.
+Elective Requirements
+Completion of elective courses (beyond the requirements listed below) to
+reach a total of a minimum of 120 units.
+General Education Requirements (49 units)
+See the "General Education (p. 158)" requirements in the University
+Catalog or the Class Schedule for the most current information on
+General Education requirements and course offerings.
+Graduation Writing Assessment Requirement
+See the "Graduation Writing Assessment Requirement (p. 112)" in the
+University Catalog.
+Minor Requirements
+Single field major, no minor required.
+Major Requirements (73 units)
+Students entering the Information Technology program must complete
+the following:
+1. Earn an overall grade point average of 2.0 or better in courses taken
+outside of the department;
+2. Earn a grade of “C” or better in each course taken within the
+department;
+3. Students must take capstone course ITC 492 Senior Design at
+CSUDH.
+The following courses, or their approved transfer equivalents, are required
+of all candidates for this degree.
+Code Title Hours
+Lower Division Requirements
+ITC 101 Introduction to Information Technology 3
+CSC 121 Introduction to Computer Science and
+Programming I
+4
+CSC 123 Introduction to Computer Science and
+Programming II
+4
+614 Information Technology, Bachelor of Science
+ITC 251 System Programming in C and Unix 3
+CTC 228 Introduction to Operating Systems and Networks 4
+CSC 255 Dynamic Web Programming 3
+BIO 102 General Biology 3
+BIO 103 General Biology Laboratory 1
+PHY 100 Patterns In Nature 3
+MAT 131 Elementary Statistics and Probability 3
+MAT 281 Discrete Mathematics 3
+Science- Any Physical or Life Science 3
+Any Physical Science with Lab and/or any Life Science with lab 10
+Upper Division Requirements 1
+CSC 301 Computers and Society 3
+ITC 310 IT Project Management 3
+CSC 311 Data Structures 3
+CTC 316 Operating Systems and Networks Support 3
+CTC 362 Communication Systems Security 3
+CTC 452 Network Security and Hacking Prevention 3
+ITC 453 Database Management Systems (DBMS) 3
+ITC 459 IT Security 3
+ITC 492 Senior Design 3
+Complete two CSC Elective Courses - Recommended IT Architecture 6
+Total Hours 80
+1 A minimum of 18 upper division units in the major must be taken in
+residence at CSU Dominguez Hills.
