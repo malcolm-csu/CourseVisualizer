@@ -1,5 +1,7 @@
 # Course Visualizer — Academic Advising Tool
 
+[![Tests](https://github.com/malcolm-csu/CourseVisualizer/actions/workflows/tests.yml/badge.svg)](https://github.com/malcolm-csu/CourseVisualizer/actions/workflows/tests.yml)
+
 Generates an interactive HTML prerequisite map for a student, showing which courses are complete, which are available to take next, and which are still locked.
 
 ## Quick Start
