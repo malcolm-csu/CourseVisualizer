@@ -1,0 +1,4 @@
+networkx>=3.0
+pyvis>=0.3
+pypdf>=5.0
+pytest>=8.0
