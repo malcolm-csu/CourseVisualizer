@@ -4,6 +4,7 @@
 
 # Student data (PII)
 student/
+test_data/
 
 # Python venv (embedded in lib/)
 bin/

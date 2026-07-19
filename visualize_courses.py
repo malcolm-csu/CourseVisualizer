@@ -118,6 +118,25 @@ def _parse_navigate(lines):
                 degree = code
         prev_non_blank = low
 
+    # Fallback: many real advisor exports carry no labels at all — just a
+    # bare "Name" / student-ID / degree-code line somewhere in the header,
+    # ahead of the term-by-term history. Name/ID are only ever the first
+    # two non-blank lines in that layout; degree can appear anywhere in the
+    # header, so scan until the course history actually starts.
+    non_blank = [s for s in stripped if s]
+    if not name and non_blank and re.match(r"^[A-Z][a-zA-Z.'-]*(\s+[A-Z][a-zA-Z.'-]*)+$", non_blank[0]):
+        name = non_blank[0]
+    if not sid and len(non_blank) > 1 and re.match(r'^\d{6,12}$', non_blank[1]):
+        sid = non_blank[1]
+    if not degree:
+        for s in non_blank:
+            if s.lower() == 'term details' or _NAV_LINE.match(s):
+                break                        # course history starts here
+            cand = _normalize_degree(s)
+            if cand in _KNOWN_DEGREES:
+                degree = cand
+                break
+
     # Main loop: collect completed courses
     for line in stripped:
         if not line or line.startswith('#'):
@@ -150,6 +169,83 @@ def _extract_text(path):
 
 _KNOWN_DEGREES = {'BSCS','BSIT','BAITG','BAITHS','BAITP','MINORCS','MINORIT',
                   'MSCSDSN','MSCSSE','CERTIT'}
+
+# Alternate spellings advisors use → canonical degree code
+_DEGREE_ALIASES = {
+    'BACTG': 'BAITG', 'BACT': 'BAITG', 'BACT GENERAL': 'BAITG', 'BACT G': 'BAITG',
+    'BAIT G': 'BAITG',
+    'BACTHS': 'BAITHS', 'BACTS': 'BAITHS', 'BACT HOMELAND': 'BAITHS',
+    'BACT HS': 'BAITHS', 'BACT H': 'BAITHS',
+    'BACTP': 'BAITP',  'BACT PROGRAMMING': 'BAITP', 'BACT P': 'BAITP',
+}
+
+def _normalize_degree(raw):
+    """Map alias spellings to the canonical degree code, or return uppercased raw."""
+    # Collapse whitespace *and* dashes together so "BACT-HS", "BACT -HS",
+    # and "BACT HS" all land on the same lookup key — advisors punctuate
+    # these inconsistently.
+    u = re.sub(r'[\s-]+', ' ', raw.strip().upper()).strip()
+    return _DEGREE_ALIASES.get(u, u)
+
+# Tabular course history: "CSC281   Discrete Structures   B-"
+# (advisor notes / PeopleSoft copy-paste; no pipe separators)
+_TAB_LINE = re.compile(
+    r'^([A-Z]{2,6}\d{3}[A-Z0-9]?)'   # course code
+    r'\s{2,}'                          # 2+ spaces
+    r'(?:TRANSFER\s+)?'                # optional TRANSFER prefix in title
+    r'.+'                              # title
+    r'\s{2,}'                          # 2+ spaces
+    r'([A-Z]{1,3}[+\-]?|\d{2,3})'    # grade: letter or numeric transfer code
+    r'\s*$'
+)
+_TAB_SKIP_GRADES = {'', '-', 'E', 'F', 'N', 'NC', 'W', 'WU', 'I', 'RD', 'RP'}
+
+def _is_tabular_format(lines):
+    """True if the file has tabular course lines (CODE   Title   GRADE)."""
+    return sum(1 for l in lines if _TAB_LINE.match(l.strip())) >= 3
+
+def _parse_tabular(lines):
+    """Parse advisor-note / copy-paste tabular format. Returns (name, sid, degree, completed)."""
+    name = sid = degree = ''
+    seen = {}   # code → best grade (deduplicate retakes)
+
+    # Scan the first 12 non-blank lines for identity
+    non_blank = [l.strip() for l in lines if l.strip()][:12]
+    for i, s in enumerate(non_blank):
+        low = s.lower()
+        if low.startswith('name:') and not name:
+            name = s.split(':', 1)[1].strip(); continue
+        if low.startswith('id:') and not sid:
+            sid = s.split(':', 1)[1].strip(); continue
+        if low.startswith('degree:') and not degree:
+            degree = _normalize_degree(s.split(':', 1)[1]); continue
+        # bare digits line → ID
+        if not sid and re.match(r'^\d{6,12}$', s):
+            sid = s; continue
+        # line that resolves to a known degree → degree
+        if not degree:
+            cand = _normalize_degree(s)
+            if cand in _KNOWN_DEGREES:
+                degree = cand; continue
+        # first line that looks like a name (two words, not all-caps, no digits)
+        if not name and re.match(r'^[A-Z][a-z]+ [A-Z][a-z]', s):
+            name = s; continue
+
+    # Collect completed courses from tabular lines
+    for line in lines:
+        m = _TAB_LINE.match(line.strip())
+        if not m:
+            continue
+        code, grade = m.group(1), m.group(2).upper()
+        if grade in _TAB_SKIP_GRADES:
+            continue
+        # Skip pure-numeric "grades" (transfer point values like 20, 30, 40)
+        if re.match(r'^\d+$', grade):
+            continue
+        code = _course_code(code)
+        seen[code] = grade   # last winning grade wins (file is newest-first)
+
+    return name, sid, degree, list(seen.keys())
 
 _LLM_STUDENT_PROMPT = """\
 Extract student information from the text below.
@@ -218,14 +314,26 @@ def parse_student_file(path):
     # Navigate360 export
     if _is_navigate_format(lines):
         result = _parse_navigate(lines)
-        # If Navigate found courses but no degree, try LLM to fill the gap
         name, sid, degree, completed = result
+        degree = _normalize_degree(degree) if degree else degree
         if completed and not degree:
             llm = _llm_parse_student(raw)
             if llm:
-                degree = llm[2] or degree
+                degree = _normalize_degree(llm[2]) if llm[2] else degree
                 name   = name or llm[0]
                 sid    = sid  or llm[1]
+        return name, sid, degree, completed
+
+    # Tabular course history (advisor notes / PeopleSoft copy-paste)
+    if _is_tabular_format(lines):
+        name, sid, degree, completed = _parse_tabular(lines)
+        if not degree or not completed:
+            llm = _llm_parse_student(raw)
+            if llm:
+                name      = name      or llm[0]
+                sid       = sid       or llm[1]
+                degree    = degree    or (_normalize_degree(llm[2]) if llm[2] else '')
+                completed = completed or llm[3]
         return name, sid, degree, completed
 
     # Plain text (Name/ID/Degree headers + one course per line)
