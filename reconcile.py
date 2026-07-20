@@ -119,14 +119,14 @@ def parse_navigate_detail(path):
 # PeopleSoft PDF parser
 # ---------------------------------------------------------------------------
 
-_TABLE_HDR = re.compile(r'^Course\s+Description\s+Units\s+When\s+Grade\s+Status')
+_TABLE_HDR = re.compile(r'Course\s+Description\s+Units\s+When\s+Grade')
 _COURSE_ROW = re.compile(
-    r'^([A-Z]{2,5} \d{3}[A-Z0-9]*)\s+'     # course code
+    r'([A-Z]{2,5} \d{3}[A-Z0-9]*)\s+'         # course code
     r'(.+?)\s+'                               # title
     r'(\d+\.\d{2})\s+'                       # units
-    r'((?:Fall|Spring|Summer|Winter)\s+\d{4}|Infrequently offered|[A-Z][a-z]+ \d{4})'
+    r'((?:Fall|Spring|Summer|Winter)(?:,\s*(?:Fall|Spring|Summer|Winter))*\s*\d{0,4}'
+    r'|Infrequently offered|[A-Z][a-z]+ \d{4})'  # specific term, or a generic "offered in" list
     r'(?:\s+([A-DF][+-]?|NC|CR|W[U]?|I|RD|RP))?'  # optional grade
-    r'\s*$'
 )
 _SECTION_MAP = {
     # Computer Science
@@ -178,6 +178,12 @@ _PLAN_MAP = [
     (r'Plan:\s*Information Tech(?:nology)?[:\s]+Minor',   'MinorIT'),
     (r'Plan:\s*Computer Science[:\s]+Minor',              'MinorCS'),
     (r'Plan:\s*Cert(?:ificate)?.*Information Tech',       'CertIT'),
+    # Bare "Plan: Information Technology" with no track suffix — real
+    # PeopleSoft exports sometimes omit General/Homeland/Prog entirely
+    # (the term glues directly onto "Technology" with no separator, e.g.
+    # "Information TechnologyFall 2025"). Must stay last: any of the
+    # track-specific patterns above should win if they also matched.
+    (r'Plan:\s*Information Tech(?:nology)?',              'BSIT'),
 ]
 
 _LLM_PROMPT = """\
@@ -270,15 +276,22 @@ def _regex_parse_sections(full_text):
                 current_section = tag
                 in_table = False
                 break
-        if _TABLE_HDR.match(s):
+        if _TABLE_HDR.search(s):
             in_table = True
-            continue
+            # Don't `continue` here — pypdf sometimes glues the header onto
+            # the preceding sentence with no line break before it, but
+            # never glues a real course row onto the header text itself,
+            # so falling through to the row scan below is harmless and
+            # covers layouts where a row does end up on the same line.
         if s.startswith('View All') or s.startswith('First') or s == 'Return':
             in_table = False
             continue
         if in_table and current_section:
-            m = _COURSE_ROW.match(s)
-            if m:
+            # A single extracted "line" can hold multiple course rows
+            # crammed together with no delimiter beyond whitespace (pypdf
+            # drops the line breaks between some table rows), so scan for
+            # every match rather than assuming one row per line.
+            for m in _COURSE_ROW.finditer(s):
                 code, title, units, term, grade = (
                     m.group(1), m.group(2), m.group(3), m.group(4), m.group(5) or ''
                 )
