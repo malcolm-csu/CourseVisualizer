@@ -622,15 +622,19 @@ def main():
     sid    = args.id     or ps_sid    or nav_sid
     degree = (args.degree or ps_degree or nav_degree).upper()
 
-    # LLM fallback for degree when neither source supplied it
+    # Fallback for degree when neither source supplied it: scan the raw
+    # Navigate360 text for a "Plan:" line via the same _PLAN_MAP patterns
+    # used for PeopleSoft PDFs. (This used to also call _llm_parse_sections
+    # on source_text first — that's prompt-engineered for PeopleSoft PDF
+    # table layouts, not Navigate360 exports, and its result was discarded
+    # unused either way, so it was just a wasted/misleading Ollama round
+    # trip. Removed rather than wired up, since degree detection here has
+    # always actually been this regex scan, not LLM-based.)
     if not degree:
-        print('  [Ollama] degree not found in files — asking LLM...', file=sys.stderr)
         source_text = ''
         if nav_path:
             with open(nav_path, errors='replace') as f:
                 source_text = f.read()
-        llm_sections = _llm_parse_sections(source_text) if source_text else None
-        # Try to detect degree from the text via plan-map patterns
         for line in source_text.splitlines():
             for pattern, code in _PLAN_MAP:
                 if re.search(pattern, line, re.I):
