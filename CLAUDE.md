@@ -3,8 +3,9 @@
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 - Always run `pytest -x` after code changes
-- Run `ruff check .` before considering a task complete
+- Run `ruff check .` before considering a task complete (installed via `python3 -m pip install ruff`; not in the embedded venv, since it's a dev-only lint tool, not a runtime dependency of the app)
 - Never mark work done with failing tests
+- `ruff check .` will report pre-existing style findings (E701/E702 compact statements, E741 ambiguous `l` names) in legacy code predating this policy — only fix findings in files you're actually touching for the task at hand; don't blanket-refactor unrelated code to silence the full-repo count.
 
 ## Verification
 
@@ -99,8 +100,9 @@ Both `visualize_courses.py` and `reconcile.py` independently define `OLLAMA_BASE
 **`reconcile.py`** — compares Navigate360 + PeopleSoft PDF, writes reconciled JSON, optionally calls visualizer:
 1. `parse_navigate_detail()` — parses Navigate360 text export (term-grouped, pipe-delimited)
 2. `parse_peoplesoft_pdf()` — extracts identity via regex; tries **Ollama LLM** for section extraction, falls back to `_regex_parse_sections()` if Ollama is unreachable
-3. `reconcile()` — flags `grade_mismatch`, `navigate_only`, `peoplesoft_only`; applies overrides file
-4. Outputs `{id}_{degree}_reconciled.json` (valid input for `visualize_courses.py`)
+3. `completed_from_sections()` — flattens a `parse_peoplesoft_pdf()` sections dict into a flat list of passing-grade course codes from major sections only (`_MAJOR_SECTIONS`), applying the same no-credit-grade filtering (`_BAD_GRADES`) as `reconcile()`. Module-level so both `reconcile()` and `ingest_student.py` share one implementation.
+4. `reconcile()` — flags `grade_mismatch`, `navigate_only`, `peoplesoft_only`; applies overrides file
+5. Outputs `{id}_{degree}_reconciled.json` (valid input for `visualize_courses.py`)
 
 **Generated HTML** — fully self-contained; no server needed. Embeds `vis-network` from CDN. All prerequisite logic is duplicated in JavaScript for client-side interactivity (click to mark complete, filter by division, etc.).
 
@@ -117,16 +119,24 @@ OLLAMA_MODEL    = os.environ.get('OLLAMA_MODEL',    'qwen2.5:7b-instruct-q4_K_M'
 
 ## PeopleSoft PDF Section Detection (regex fallback)
 
-`_SECTION_MAP` maps PDF header strings to internal section tags (`CS_LD`, `CS_UD`, `CS_Elective`, `CS_Major`, `Not_Used`, `Minor`). Only courses in `_major_sections = {'CS_LD', 'CS_UD', 'CS_Elective', 'CS_Major'}` are compared for discrepancies. Degree is auto-detected from `Plan:` lines in the PDF; known mappings:
+`_SECTION_MAP` maps PDF header strings to internal section tags (`CS_LD`, `CS_UD`, `CS_Elective`, `CS_Major`, `Not_Used`, `Minor`). Only courses in `_MAJOR_SECTIONS = {'CS_LD', 'CS_UD', 'CS_Elective', 'CS_Major'}` are compared for discrepancies (module-level constant, also used by `completed_from_sections()`). Degree is auto-detected from `Plan:` lines in the PDF via `_PLAN_MAP`; known mappings:
 
 | PDF Plan text | Degree code |
 |---|---|
-| `Computer Tech: General` | `BAITG` |
-| `Computer Tech: Homeland` | `BAITHS` |
-| `Computer Tech: Prog` | `BAITP` |
 | `Computer Science` | `BSCS` |
+| `Information Technology` (bare, no track suffix) | `BSIT` |
+| `Computer Tech(nology): General` / `Information Tech(nology): General` | `BAITG` |
+| `Computer Tech(nology): Homeland` / `Information Tech(nology): Homeland` | `BAITHS` |
+| `Computer Tech(nology): Prog` / `Information Tech(nology): Prog` | `BAITP` |
 | `CS … Data Sci` | `MSCSDSN` |
 | `CS … Software Eng` | `MSCSSE` |
+| `Information Tech(nology): Minor` | `MinorIT` |
+| `Computer Science: Minor` | `MinorCS` |
+| `Cert(ificate) … Information Tech` | `CertIT` |
+
+The bare `Information Technology` pattern must stay last in `_PLAN_MAP` (order-dependent — the loop breaks on first match, so any track-specific pattern above it should win if the PDF text also matches one of those).
+
+`_TABLE_HDR`/`_COURSE_ROW` (course-row extraction) were previously broken against real PeopleSoft exports — see the Testing section above for the pypdf text-mangling root cause and fix.
 
 ## Catalog Format
 

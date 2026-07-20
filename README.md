@@ -10,6 +10,25 @@ Generates an interactive HTML prerequisite map for a student, showing which cour
 ./run.sh student.txt --open
 ```
 
+## Other Tools
+
+**Reconcile a Navigate360 export against a PeopleSoft degree audit PDF** (auto-detects degree, flags discrepancies between the two sources):
+```bash
+./reconcile.sh navigate.txt audit.pdf --open
+```
+
+**Normalize any transcript** (text, JSON, or PDF — including non-CSUDH forms like a community college transcript) into the JSON/text format `run.sh` expects:
+```bash
+./ingest_student.sh transcript.pdf --out student.json
+./ingest_student.sh transcript.pdf --force-llm --degree BSCS   # non-CSUDH transcript form
+```
+
+**Generate synthetic test student files** (no real student data — walks the real degree catalogs' prerequisite graphs to build achievable transcripts, or writes a library of deliberately tricky edge cases):
+```bash
+./gen_test_student.sh --count 5 --out-dir synthetic_students/
+./gen_test_student.sh --edge-cases --out-dir synthetic_students/
+```
+
 ## Student File Formats
 
 **Text** (easiest to type):
@@ -87,16 +106,27 @@ Dashed edges = OR prerequisite (either course satisfies it).
 
 ```
 CourseVisualizer/
-  run.sh                      # wrapper script
-  visualize_courses.py        # main script
+  run.sh / visualize_courses.py           # generate advising HTML
+  reconcile.sh / reconcile.py             # Navigate360 + PeopleSoft PDF reconciliation
+  ingest_student.sh / ingest_student.py   # normalize any transcript into run.sh's input format
+  gen_test_student.sh / gen_test_student.py  # generate synthetic test student files
   courses-json-24-25/         # degree catalog JSONs + sidecar files
     BSCS.json
     BSCS_electives.json
     BSCS_unitRequirements.json
     BSCS_colors.json          # optional — falls back to built-in colors
     ...
+  tests/                       # pytest suite (see Testing below)
   old/                        # previous versions and reference files
 ```
+
+## Testing
+
+```bash
+python3 -m pytest tests/ -v
+```
+
+No real student data required — `tests/generators.py` builds synthetic test files on the fly from the real catalog JSONs. (If you have `test_data/` populated locally with real exports, an additional smoke test runs against it too; it's gitignored and skips automatically when absent.)
 
 ## Catalog Sidecar Files
 
