@@ -14,8 +14,6 @@ Both are consumed by gen_test_student.py (CLI, writes files to disk for
 manual `./run.sh` testing) and tests/test_generated_students_fuzz.py
 (pytest, feeds them straight into the parser + graph pipeline in-memory).
 """
-import random
-
 from visualize_courses import can_take_course
 
 FIRST_NAMES = [
