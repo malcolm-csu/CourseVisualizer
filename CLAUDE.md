@@ -2,6 +2,17 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+- Always run `pytest -x` after code changes
+- Run `ruff check .` before considering a task complete
+- Never mark work done with failing tests
+
+## Verification
+
+- After completing any code change, run:
+  `codex review --uncommitted "review for bugs, edge cases, missing tests"`
+- Fix legitimate findings; note and skip false positives.
+- Run the actual test suite regardless of Codex's opinion.
+
 ## What This Is
 
 Academic advising tool for CSUDH. Takes a student's completed course list, loads a degree catalog, and generates a self-contained interactive HTML prerequisite map showing which courses are done, available, and locked.

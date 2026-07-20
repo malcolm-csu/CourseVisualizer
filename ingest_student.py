@@ -10,6 +10,16 @@ Accepts everything parse_student_file() already understands:
   - PDF           any of the above, extracted via pypdf
   - Anything else falls back to the Ollama LLM (--force-llm to always use it)
 
+PDF inputs are tried against reconcile.py's dedicated PeopleSoft-degree-audit
+parser first (parse_peoplesoft_pdf) — that's a structurally different report
+layout ("Plan:", per-requirement course tables) that parse_student_file's
+generic detectors don't recognize at all, so without this a PeopleSoft audit
+PDF would silently fall through to the plain-text line-by-line parser and
+produce garbage "completed courses" out of page furniture like "New Window"
+and "ReturnPrint Report". Only falls back to parse_student_file if the
+PeopleSoft parser finds neither a degree nor any completed course — e.g. a
+Navigate360-exported PDF, or a non-CSUDH transcript PDF.
+
 This does NOT remap course codes between institutions — a community
 college transcript comes through with its OWN course codes (e.g.
 "MATH 100"), not CSUDH equivalents. Record transfer-credit mappings via a
@@ -27,6 +37,25 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from visualize_courses import parse_student_file, _extract_text, _llm_parse_student  # noqa: E402
+
+
+def _try_peoplesoft_pdf(path):
+    """Try reconcile.py's PeopleSoft-degree-audit-specific PDF parser.
+    Returns (name, sid, degree, completed) if it found a degree or at
+    least one completed course, else None (so the caller can fall back to
+    the generic parser — this PDF probably isn't a PeopleSoft audit).
+
+    Imported lazily (only when actually handling a .pdf) so JSON/text
+    ingestion keeps working in an environment without pypdf — reconcile.py
+    hard sys.exit()s at import time if pypdf is missing, which would
+    otherwise abort ingest_student.py before it even parses --input_file.
+    """
+    from reconcile import parse_peoplesoft_pdf, completed_from_sections
+    name, sid, degree, _catalog_year, sections = parse_peoplesoft_pdf(path)
+    completed = completed_from_sections(sections)
+    if degree or completed:
+        return name, sid, degree, completed
+    return None
 
 
 def render_text(name, sid, degree, completed):
@@ -69,6 +98,13 @@ def main():
                       "output). Check OLLAMA_BASE_URL, or omit --force-llm to try "
                       "structured parsing first.")
         name, sid, degree, completed = llm
+    elif args.input_file.lower().endswith(".pdf"):
+        result = _try_peoplesoft_pdf(args.input_file)
+        if result:
+            print("  [ingest] detected a PeopleSoft-style degree audit PDF", file=sys.stderr)
+            name, sid, degree, completed = result
+        else:
+            name, sid, degree, completed = parse_student_file(args.input_file)
     else:
         name, sid, degree, completed = parse_student_file(args.input_file)
 

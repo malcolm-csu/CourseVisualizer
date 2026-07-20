@@ -51,7 +51,11 @@ _SKIP_LINES = {'term at a glance', 'credits:', 'credit comp', 'term gpa', 'cum g
                'academic standing', 'high school', 'early assessment', 'pre-enrollment'}
 
 # Grades that mean "did not earn credit"
-_BAD_GRADES = {'NC', 'W', 'WU', 'I', 'RD', 'RP', '-', ''}
+_BAD_GRADES = {'NC', 'W', 'WU', 'I', 'RD', 'RP', 'F', '-', ''}
+
+# parse_peoplesoft_pdf() section tags that count toward the major (excludes
+# GE, Minor, and Not_Used)
+_MAJOR_SECTIONS = {'CS_LD', 'CS_UD', 'CS_Elective', 'CS_Major'}
 
 def parse_navigate_detail(path):
     """Return (name, sid, degree, records).
@@ -351,6 +355,21 @@ def parse_peoplesoft_pdf(path):
     return name, sid, degree, catalog_year, sections
 
 
+def completed_from_sections(sections):
+    """Flatten a parse_peoplesoft_pdf() sections dict into a flat list of
+    passing-grade course codes from major sections only (excludes GE,
+    Minor, Not_Used, and in-progress/blank-grade/no-credit rows)."""
+    completed = []
+    for section, rows in sections.items():
+        if section not in _MAJOR_SECTIONS:
+            continue
+        for r in rows:
+            grade = r['grade']
+            if grade and grade not in _BAD_GRADES:
+                completed.append(r['code'])
+    return completed
+
+
 # ---------------------------------------------------------------------------
 # Overrides file
 # ---------------------------------------------------------------------------
@@ -407,7 +426,6 @@ def reconcile(nav_records, ps_sections, overrides):
         nav_done[code] = r  # last record wins (most recent attempt)
 
     # PeopleSoft completed in major sections (excludes GE, Not_Used)
-    _major_sections = {'CS_LD', 'CS_UD', 'CS_Elective', 'CS_Major'}
     ps_done     = {}   # code → record
     ps_not_used = {}   # code → record
     ps_future   = {}   # code → record (blank grade, not in Not_Used)
@@ -417,7 +435,7 @@ def reconcile(nav_records, ps_sections, overrides):
             code = r['code']
             if section == 'Not_Used':
                 ps_not_used[code] = r
-            elif section in _major_sections:
+            elif section in _MAJOR_SECTIONS:
                 grade = r['grade']
                 if grade and grade not in _BAD_GRADES and grade != 'NC':
                     ps_done[code] = r
