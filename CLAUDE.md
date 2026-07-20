@@ -14,6 +14,15 @@ Academic advising tool for CSUDH. Takes a student's completed course list, loads
 
 # Reconcile Navigate360 export with PeopleSoft PDF (auto-detects degree)
 ./reconcile.sh navigate.txt audit.pdf --open
+
+# Normalize ANY supported transcript (txt/json/pdf, including non-CSUDH
+# forms like a community college transcript) into the JSON/text format
+# run.sh expects
+./ingest_student.sh transcript.pdf --out student.json
+
+# Generate synthetic (no-PII) student files for testing
+./gen_test_student.sh --count 5 --out-dir synthetic_students/
+./gen_test_student.sh --edge-cases --out-dir synthetic_students/
 ```
 
 Both wrapper scripts set `PYTHONPATH` to `lib/python3.13/site-packages/` (the embedded venv). Dependencies: `networkx`, `pyvis`, `pypdf`. Run directly with `python3 visualize_courses.py ...` only if you set `PYTHONPATH` yourself.
@@ -41,6 +50,16 @@ python3 -m pytest tests/ -v
 Verified against 5 real audit PDFs in `test_data/`: completed-course extraction went from 0/5 to 4/5 nonzero (the 5th genuinely has no passing grades in the source PDF — confirmed by grepping the full extracted text for grade tokens, not a parsing miss).
 
 **The embedded venv (`lib/python3.13/site-packages`) was missing `pypdf` entirely**, despite both scripts importing it and the docs listing it as a dependency — a clean checkout's `./reconcile.sh some.pdf` would hard-fail with `ERROR: pypdf not installed`. Fixed by installing directly into that directory: `/usr/local/bin/python3.13 -m pip install --target=lib/python3.13/site-packages pypdf` (there's no system-wide `python3.13` + `pip` pair other than the Homebrew one at that path; the venv's own `bin/pip` is broken — its shebang still points at the project's old pre-move directory, `~/Dropbox/classes/Advising/visualize_courses`, so don't use it to install things here). Verified with `python3 -I` (ignores user site-packages) that `pypdf` now resolves from the embedded venv itself, not a leftover global install.
+
+## Additional Tools
+
+**`ingest_student.py`** — normalizes any supported transcript into the JSON/text format `visualize_courses.py` expects, as a standalone step separate from generating the HTML. Reuses `parse_student_file()` (JSON/Navigate360/tabular/plain-text/PDF detection + Ollama LLM fallback) rather than duplicating it. `--force-llm` skips structured detection entirely and goes straight to the LLM — for transcripts from other institutions (e.g. a community college transcript) that won't match any CSUDH-specific pattern and would otherwise just get misparsed as generic plain text. It does **not** remap course codes between institutions — output keeps whatever codes the source uses; transfer-credit mapping still goes through a `{DEGREE}_equivalents.json` sidecar or manual edit of the output.
+
+**`gen_test_student.py`** — generates synthetic (no real PII) student files for testing, two modes:
+- Plausible mode (default): walks a real degree catalog's prerequisite graph using `can_take_course` (the same function the real app uses, imported from `visualize_courses.py` — not reimplemented) to build an actually-achievable random transcript. Covers all degrees in `tests/generators.py`'s `DEGREE_CODES` except `MinorIT` (deliberately excluded — its catalog JSON is documented-broken, see Known Issues below; generating against it would just re-report that known bug).
+- `--edge-cases`: writes the fixed `EDGE_CASES` library from `tests/generators.py` — missing degree, empty file, duplicate courses, unknown/out-of-catalog courses, unicode names, comment-heavy files, CRLF/tab whitespace chaos, lowercase/glued course codes, a fully-completed transcript, and more. Each entry documents what it's testing and why.
+
+Both the plausible-generator and edge-case logic live in `tests/generators.py` so `gen_test_student.py` (CLI, writes to disk) and `tests/test_generated_students_fuzz.py` (pytest, in-memory) share one implementation. The fuzz test runs the real pipeline (`parse_student_file` → `load_catalog` → `calculate_needed_courses` → `build_network`) against every degree + every edge case on a fixed seed, network-free (`_llm_parse_student` monkeypatched to a no-op) — unlike `test_real_data_smoke.py`, this needs no external data and always runs, including in CI, since it's 100% synthetic.
 
 Direct invocation with overrides:
 ```bash
