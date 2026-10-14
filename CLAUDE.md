@@ -10,7 +10,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Verification
 
 - After completing any code change, run:
-  `codex review --uncommitted "review for bugs, edge cases, missing tests"`
+  `codex review --uncommitted` (or `codex review --commit <sha>` if already committed).
+  Don't pass a custom prompt — this Codex version rejects `--uncommitted`/`--commit` combined
+  with a `[PROMPT]` argument. If it fails with `401 Unauthorized`, run `codex login` first.
 - Fix legitimate findings; note and skip false positives.
 - Run the actual test suite regardless of Codex's opinion.
 
