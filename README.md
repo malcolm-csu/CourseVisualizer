@@ -10,6 +10,12 @@ Generates an interactive HTML prerequisite map for a student, showing which cour
 ./run.sh student.txt --open
 ```
 
+To preview a degree's course map with nothing marked complete, skip the student file and pass `--degree` alone:
+
+```bash
+./run.sh --degree BSCS --open
+```
+
 ## Other Tools
 
 **Reconcile a Navigate360 export against a PeopleSoft degree audit PDF** (auto-detects degree, flags discrepancies between the two sources):
@@ -95,11 +101,16 @@ Dashed edges = OR prerequisite (either course satisfies it).
 ## CLI Options
 
 ```
-./run.sh <student_file> [--catalog-dir DIR] [--open]
+./run.sh [student_file] [--catalog-dir DIR] [--open] [--degree DEGREE] [--name NAME] [--id ID]
 
-  student_file     Text or JSON file describing the student
+  student_file     Text or JSON file describing the student.
+                    Optional if --degree is given — omitting it renders a
+                    blank catalog view for that degree with nothing completed.
   --catalog-dir    Path to degree JSON catalogs (default: courses-json-24-25/)
   --open           Open the HTML in the default browser after generation
+  --degree         Degree code (e.g. BSCS). Overrides the file's degree, or
+                    stands alone to view a degree's catalog with no student file.
+  --name / --id    Override the student's name / ID
 ```
 
 ## Files

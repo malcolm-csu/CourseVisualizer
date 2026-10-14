@@ -4,6 +4,8 @@ Academic advising course visualizer.
 Usage:
     python visualize_courses.py <student_file> [--catalog-dir DIR] [--open]
                                 [--name NAME] [--id ID] [--degree DEGREE]
+    python visualize_courses.py --degree DEGREE [--catalog-dir DIR] [--open]
+                                (student_file omitted: blank catalog view, nothing completed)
 
 Accepted student file formats (auto-detected)
 ──────────────────────────────────────────────
@@ -21,7 +23,6 @@ import argparse
 import json
 import os
 import re
-import subprocess
 import sys
 import urllib.request
 import webbrowser
@@ -280,8 +281,8 @@ def _llm_parse_student(text):
         with urllib.request.urlopen(req, timeout=60) as resp:
             data = json.loads(resp.read())
         content = data.get('message', {}).get('content', '').strip()
-        content = re.sub(r'^```(?:json)?\s*', '', content, flags=re.M)
-        content = re.sub(r'\s*```\s*$', '', content, flags=re.M).strip()
+        content = re.sub(r'^```(?:json)?\s*', '', content, flags=re.MULTILINE)
+        content = re.sub(r'\s*```\s*$', '', content, flags=re.MULTILINE).strip()
         d = json.loads(content)
         name      = str(d.get('name', '') or '')
         sid       = str(d.get('id',   '') or '')
@@ -510,7 +511,7 @@ def build_network(courses, completed, colors, equivalents=None, needed=None):
             G.add_edge(course, coreq)
 
     # Starting positions: group by dept, sort within dept
-    depts = sorted(set(c.split()[0] for c in courses))
+    depts = sorted({c.split()[0] for c in courses})
     positions = {}
     for x, dept in enumerate(depts):
         dept_courses = sorted(c for c in courses if c.startswith(dept))
@@ -665,6 +666,13 @@ var network = new vis.Network(container, {{nodes: nodes, edges: edges}}, {{
 network.once('stabilizationIterationsDone', function () {{
     network.setOptions({{physics: {{enabled: false}}}});
     network.fit();
+    // fit() can zoom out so far (large sprawling layouts) that vis-network's
+    // canvas-rendered labels shrink to sub-pixel and disappear, while the
+    // solid node dots stay barely visible — clamp to a legible minimum.
+    var MIN_LABEL_SCALE = 0.5;
+    if (network.getScale() < MIN_LABEL_SCALE) {{
+        network.moveTo({{scale: MIN_LABEL_SCALE}});
+    }}
 }});
 
 // Store original colors so we can restore after un-completing a course
@@ -992,18 +1000,27 @@ def main():
     default_catalog = os.path.join(script_dir, 'courses-json-24-25')
 
     parser = argparse.ArgumentParser(description="Generate advising visualization for a student")
-    parser.add_argument("student_file", help="Student text, JSON, or Navigate360 export file")
+    parser.add_argument("student_file", nargs='?', default=None,
+                        help="Student text, JSON, or Navigate360 export file "
+                             "(omit to view a blank degree catalog with --degree)")
     parser.add_argument("--catalog-dir", default=default_catalog,
                         help=f"Directory containing degree JSON catalogs (default: {default_catalog})")
     parser.add_argument("--open", action="store_true", dest="open_browser",
                         help="Open generated HTML in browser")
     parser.add_argument("--name",   default='', help="Override student name")
     parser.add_argument("--id",     default='', help="Override student ID")
-    parser.add_argument("--degree", default='', help="Override degree code (e.g. BSCS)")
+    parser.add_argument("--degree", default='', help="Override degree code (e.g. BSCS); "
+                        "with no student_file, loads that degree's catalog with nothing completed")
     args = parser.parse_args()
 
+    if not args.student_file and not args.degree:
+        parser.error("student_file is required unless --degree is given")
+
     # --- Parse student ---
-    name, sid, degree, completed = parse_student_file(args.student_file)
+    if args.student_file:
+        name, sid, degree, completed = parse_student_file(args.student_file)
+    else:
+        name, sid, degree, completed = '', '', '', []
     # CLI overrides win
     if args.name:   name   = args.name
     if args.id:     sid    = args.id

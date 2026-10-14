@@ -24,6 +24,9 @@ Academic advising tool for CSUDH. Takes a student's completed course list, loads
 # Generate advising HTML for a student
 ./run.sh student.txt --open
 
+# Blank catalog view for a degree (no student file — nothing marked complete)
+./run.sh --degree BSCS --open
+
 # Reconcile Navigate360 export with PeopleSoft PDF (auto-detects degree)
 ./reconcile.sh navigate.txt audit.pdf --open
 
@@ -76,6 +79,7 @@ Both the plausible-generator and edge-case logic live in `tests/generators.py` s
 Direct invocation with overrides:
 ```bash
 ./run.sh student.txt --catalog-dir courses-json-24-25/ --degree BSCS --open
+./run.sh --degree BSCS --open   # student_file is optional; --degree alone loads a blank catalog
 ./reconcile.sh nav.txt audit.pdf --overrides overrides.txt --out result.json --open
 OLLAMA_BASE_URL=http://... OLLAMA_MODEL=llama3:8b ./reconcile.sh nav.txt audit.pdf
 ```
@@ -83,6 +87,9 @@ OLLAMA_BASE_URL=http://... OLLAMA_MODEL=llama3:8b ./reconcile.sh nav.txt audit.p
 ## Architecture
 
 **`visualize_courses.py`** — single-file pipeline:
+0. `student_file` is optional — `--degree CODE` alone (no file) skips parsing entirely and
+   renders that degree's catalog with nothing marked complete (a blank map for previewing a
+   degree plan). `main()` errors out if neither `student_file` nor `--degree` is given.
 1. `parse_student_file()` — auto-detects and parses one of four formats, in order:
    - **JSON** — `{"name","id","degree","completed":[...]}`
    - **Navigate360** — pipe-delimited export (`_is_navigate_format` / `_parse_navigate`)

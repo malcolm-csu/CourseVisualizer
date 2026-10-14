@@ -14,7 +14,6 @@ import pytest
 
 import visualize_courses as vc
 
-
 # ---------------------------------------------------------------------------
 # _course_code
 # ---------------------------------------------------------------------------
@@ -106,7 +105,7 @@ def test_parse_tabular_identity_and_completed():
         "CSC115   Intro to Programming   A",
         "MAT191   Calculus I   B+",
     ]
-    name, sid, degree, completed = vc._parse_tabular(lines)
+    _name, _sid, degree, completed = vc._parse_tabular(lines)
     assert degree == "BSCS"
     assert set(completed) == {"CSC 281", "CSC 115", "MAT 191"}
 
@@ -248,3 +247,26 @@ def test_expand_with_equivalents():
 def test_expand_with_equivalents_no_match_is_noop():
     expanded = vc.expand_with_equivalents(["CSC 115"], {"CSC 471": ["MAT 361"]})
     assert expanded == {"CSC 115"}
+
+
+# ---------------------------------------------------------------------------
+# main() — blank catalog view (no student_file, --degree only)
+# ---------------------------------------------------------------------------
+
+def test_main_degree_only_renders_blank_catalog(tmp_path, monkeypatch):
+    monkeypatch.chdir(tmp_path)
+    monkeypatch.setattr("sys.argv", ["visualize_courses.py", "--degree", "bscs"])
+    vc.main()
+    out = tmp_path / "student_BSCS_advising.html"
+    assert out.exists()
+    html = out.read_text()
+    assert "new Set([]);" in html
+    assert "MIN_LABEL_SCALE" in html
+
+
+def test_main_requires_student_file_or_degree(monkeypatch, capsys):
+    monkeypatch.setattr("sys.argv", ["visualize_courses.py"])
+    with pytest.raises(SystemExit) as exc:
+        vc.main()
+    assert exc.value.code == 2
+    assert "--degree" in capsys.readouterr().err
