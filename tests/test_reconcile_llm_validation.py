@@ -249,3 +249,9 @@ def test_header_glued_onto_first_row_still_located():
             "Course Description Units When GradeStatusCSC 321 Prog Lang 3.00 Fall 2024 A")
     assert rc._grade_on_row("CSC 321", "A", text)
     assert not rc._code_occurrences("SC 321", text)
+
+
+def test_llm_only_transfer_grade_verifies():
+    text = ("CSC 115 Programming 3.00 Fall 2022 A\n"
+            "MAT 191 Calculus I 5.00 Fall 2022 T")
+    assert rc._grade_on_row("MAT 191", "T", text)

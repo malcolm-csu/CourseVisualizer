@@ -131,7 +131,8 @@ _TERM_SRC = (r'(?:Fall|Spring|Summer|Winter)(?:,\s*(?:Fall|Spring|Summer|Winter)
              r'|Infrequently offered|[A-Z][a-z]+ \d{4}')
 # Multi-letter grades must come first: with [A-DF] first, "CR" (credit)
 # matched as just "C".
-_GRADE_SRC = r'NC|CR|WU|RD|RP|[A-DF][+-]?|W|I'
+# T = transfer credit (real audits list transfer work with grade T).
+_GRADE_SRC = r'NC|CR|WU|RD|RP|[A-DF][+-]?|W|I|T'
 _COURSE_ROW = re.compile(
     r'([A-Z]{2,5} \d{3}[A-Z0-9]*)\s+'         # course code
     r'(.+?)\s+'                               # title
@@ -272,7 +273,7 @@ def _llm_parse_sections(full_text):
 _PREFIX_CANDIDATE = re.compile(r'(?:(?<=\s)|^)([A-Z]{2,5}) ?\d{3}', re.MULTILINE)
 # Letter-only grades that pypdf can glue onto the next code (+/- aren't
 # letters, so "B+CSC 221" never forms a single candidate prefix).
-_GLUEABLE_GRADES = ('NC', 'CR', 'WU', 'RD', 'RP', 'A', 'B', 'C', 'D', 'F', 'W', 'I')
+_GLUEABLE_GRADES = ('NC', 'CR', 'WU', 'RD', 'RP', 'A', 'B', 'C', 'D', 'F', 'W', 'I', 'T')
 
 
 def _known_prefixes(full_text):
@@ -320,15 +321,23 @@ def _regex_parse_sections(full_text):
         s = line.strip()
         if not s:
             continue
-        if any(marker in s for marker in _GE_MARKERS):
+        # Headings are only looked for BEFORE the line's first course row: a
+        # course title can contain a heading phrase ("HIS 101 US History"),
+        # and treating that as a heading switched off table parsing, dropping
+        # that row and every row after it until the next table header.
+        first_row = _COURSE_ROW.search(s)
+        head = s[:first_row.start()] if first_row else s
+        if any(marker in head for marker in _GE_MARKERS):
             current_section = 'GE'
             in_table = False
-            continue
-        for marker, tag in _SECTION_MAP.items():
-            if marker in s:
-                current_section = tag
-                in_table = False
-                break
+            if not first_row:
+                continue
+        else:
+            for marker, tag in _SECTION_MAP.items():
+                if marker in head:
+                    current_section = tag
+                    in_table = False
+                    break
         if _TABLE_HDR.search(s):
             in_table = True
             # Don't `continue` here — pypdf sometimes glues the header onto
@@ -374,7 +383,7 @@ def _normalize_code(raw):
     return f'{m.group(1).upper()} {m.group(2).upper()}' if m else None
 
 
-_GLUED_GRADE_BEFORE = re.compile(r'(?:^|[^A-Za-z])(?:NC|CR|WU|RD|RP|[A-DF][+-]?|W|I)$')
+_GLUED_GRADE_BEFORE = re.compile(rf'(?:^|[^A-Za-z])(?:{_GRADE_SRC})$')
 
 
 def _code_occurrences(code, full_text, prefixes=None):

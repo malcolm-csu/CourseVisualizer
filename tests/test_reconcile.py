@@ -74,3 +74,54 @@ def test_blank_grade_does_not_steal_compact_next_code():
     line = "MAT 271 Discrete Math 3.00 Spring 2025 CSC321 Next 3.00 Fall 2023 B+ CSC 101 X 3.00 Fall 2022 A"
     rows = _rows(line)
     assert rows[0][0] == "MAT 271" and rows[0][4] == ""
+
+
+# ---------------------------------------------------------------------------
+# Transfer credit (grade T) and heading phrases inside course titles
+# ---------------------------------------------------------------------------
+
+def test_transfer_grade_t_is_captured_and_counted():
+    text = (
+        "Computer Science Lower Division\n"
+        "Course Description Units When Grade Status\n"
+        "MAT 191 Calculus I 5.00 Fall 2022 T"
+    )
+    sections = rc._regex_parse_sections(text)
+    assert [(r["code"], r["grade"]) for r in sections["CS_LD"]] == [("MAT 191", "T")]
+    assert rc.completed_from_sections(sections) == ["MAT 191"]
+
+
+def test_transfer_grade_glued_onto_next_code():
+    # Real pypdf output: "...Fall 2022 TENG 110 ..." = grade T + ENG 110.
+    text = (
+        "Computer Science Lower Division\n"
+        "Course Description Units When Grade Status\n"
+        "ENG 100 Writing 3.00 Fall 2021 A\n"
+        "MAT 191 Calculus I 5.00 Fall 2022 TENG 110 Composition 3.00 Spring 2022 T"
+    )
+    rows = [(r["code"], r["grade"]) for r in rc._regex_parse_sections(text)["CS_LD"]]
+    assert rows == [("ENG 100", "A"), ("MAT 191", "T"), ("ENG 110", "T")]
+
+
+def test_course_title_with_heading_phrase_does_not_end_table():
+    text = (
+        "Computer Science Lower Division\n"
+        "Course Description Units When Grade Status\n"
+        "HIS 101 US History 3.00 Fall 2023 B\n"
+        "MAT 191 Calculus I 5.00 Spring 2024 A"
+    )
+    sections = rc._regex_parse_sections(text)
+    assert sorted(rc.completed_from_sections(sections)) == ["HIS 101", "MAT 191"]
+    assert "GE" not in sections
+
+
+def test_heading_glued_before_row_still_switches_section():
+    text = (
+        "Computer Science Lower Division\n"
+        "Course Description Units When Grade Status\n"
+        "CSC 121 Intro 3.00 Fall 2023 A\n"
+        "Courses Not UsedCourse Description Units When GradeStatusPHY 120 Physics 3.00 Spring 2025 B"
+    )
+    sections = rc._regex_parse_sections(text)
+    assert [r["code"] for r in sections["CS_LD"]] == ["CSC 121"]
+    assert [r["code"] for r in sections["Not_Used"]] == ["PHY 120"]
