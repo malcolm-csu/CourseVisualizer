@@ -50,7 +50,7 @@ Both wrapper scripts set `PYTHONPATH` to `lib/python3.13/site-packages/` (the em
 python3 -m pytest tests/ -v
 ```
 
-`pytest.ini` puts both the repo root and the embedded venv (`lib/python3.13/site-packages`) on `sys.path`, so this works without manually exporting `PYTHONPATH`. `tests/test_visualize_courses.py` covers the pure parsing/graph functions in `visualize_courses.py` (format detectors, `_parse_navigate`/`_parse_tabular`, `_normalize_degree`, `can_take_course`, `calculate_needed_courses`, `expand_with_equivalents`) — every fixture supplies a degree and at least one completed course so `_llm_parse_student` never fires and tests stay network-free. There's no test coverage yet for `reconcile.py` or the HTML/JS template output; those still need manual verification (see README/CLI usage above).
+`pytest.ini` puts both the repo root and the embedded venv (`lib/python3.13/site-packages`) on `sys.path`, so this works without manually exporting `PYTHONPATH`. `tests/test_visualize_courses.py` covers the pure parsing/graph functions in `visualize_courses.py` (format detectors, `_parse_navigate`/`_parse_tabular`, `_normalize_degree`, `can_take_course`, `calculate_needed_courses`, `expand_with_equivalents`) — every fixture supplies a degree and at least one completed course so `_llm_parse_student` never fires and tests stay network-free. `tests/test_reconcile.py` covers the PeopleSoft regex row reader (`_iter_course_rows` / `_regex_parse_sections`), `tests/test_reconcile_llm_validation.py` covers the LLM-output checks (`validate_llm_sections`, `_grade_on_row`, `_code_occurrences`), and `tests/test_llm_student_validation.py` covers `_codes_in_text` on `_llm_parse_student` (Ollama mocked) — all synthetic text, network-free. There's still no test coverage for `reconcile()` itself or the HTML/JS template output; those need manual verification (see README/CLI usage above).
 
 `tests/test_real_data_smoke.py` runs the same offline parsing path against `./test_data/*.txt` — real (gitignored) student exports collected over time, used as a regression corpus. The whole module `skipif`s when `test_data/` doesn't exist, so it's a no-op on any machine without that data (including CI/fresh clones). It monkeypatches `_llm_parse_student` to a no-op so it never touches the network, then: (1) asserts `parse_student_file` doesn't crash on any file in the corpus, and (2) checks two corpus-wide tripwire counts (total completed-course entries extracted, and how many files resolve name+ID+degree without the LLM) against a recorded baseline — cheap insurance against a regex/detector change silently zeroing out extraction across many files at once, without asserting exact output for any single (messy, real-world) file.
 
@@ -117,14 +117,24 @@ Both `visualize_courses.py` and `reconcile.py` independently define `OLLAMA_BASE
 
 ## Reconcile: Ollama LLM Integration
 
-`reconcile.py` uses Ollama as the primary PDF section extractor — more robust than regex across degree formats:
+`reconcile.py` uses the regex extractor as the baseline and Ollama only to find rows the regex missed. The LLM is never trusted on its own:
 
 ```python
 OLLAMA_BASE_URL = os.environ.get('OLLAMA_BASE_URL', 'http://100.123.42.33:11434')
 OLLAMA_MODEL    = os.environ.get('OLLAMA_MODEL',    'qwen2.5:7b-instruct-q4_K_M')
 ```
 
-`_llm_parse_sections(full_text)` — POSTs raw PDF text to `/api/chat`, asks for JSON array of `{code, grade, term, section}`. Returns `None` on any failure, triggering `_regex_parse_sections()` fallback. Identity (name/ID/degree) is always extracted by regex regardless.
+`_llm_parse_sections(full_text)` — POSTs raw PDF text to `/api/chat`, asks for JSON array of `{code, grade, term, section}`. Returns `None` on any failure. Identity (name/ID/degree) is always extracted by regex regardless.
+
+`parse_peoplesoft_pdf_detailed()` always runs `_regex_parse_sections()`, then passes any LLM output through `validate_llm_sections()` (`parse_peoplesoft_pdf()` is the same thing minus the report, keeping its 5-tuple signature):
+- Regex rows are always kept and are authoritative for grade, term, and section. An LLM row disagreeing with one is reported (`grade_conflicts` / `section_conflicts`), never applied.
+- An LLM row whose code isn't in the PDF text (`_code_occurrences`) is rejected; so is any non-string code/grade (`rejected_malformed`).
+- An LLM-only row is accepted only if its grade is in that row's **grade column** (`_grade_on_row`: the complete token right after the units and "When" columns, same line, via `_GRADE_COLUMN`, which shares `_TERM_SRC`/`_GRADE_SRC` with `_COURSE_ROW`). Title words, a later row's grade, "CR" for "C", or the "C" of a following "CSC 221" can't verify it.
+- If validation itself raises, the regex result is used (`mode: regex_only`). A one-line summary of what was confirmed/added/rejected prints to stderr.
+
+pypdf gluing cases both the parser and the checker handle (all with real occurrences in `test_data/`): a real grade glued onto the next code (`"...Fall 2024 ACSC 321"`), the table header glued onto the first row (`"...GradeStatusCSC 321"`), and an ungraded row followed by the next code, where `_COURSE_ROW`'s optional grade would otherwise swallow the "C" of "CSC" as grade C (`_iter_course_rows` drops it using `_known_prefixes()`, the subject prefixes seen in that document). A glued grade on a prefix that never appears unglued in the document can't be told apart from a real prefix and is rejected, which is the safe direction. On the 5 real PDFs: 48 graded regex rows, and `_grade_on_row` independently verifies all 48.
+
+`_llm_parse_student()` (generic fallback in `visualize_courses.py`) keeps only course codes that appear in the source text (`_codes_in_text`; tolerant of case, padded spaces/tabs/dash, and 1–4 digit numbers for other institutions' codes like `MATH 31` / `ENGL 1A`, but never joining across a newline).
 
 ## PeopleSoft PDF Section Detection (regex fallback)
 

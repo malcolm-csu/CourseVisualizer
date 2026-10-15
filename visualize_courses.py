@@ -264,8 +264,40 @@ No prose. No markdown. JSON only.
 Text:
 """
 
+def _codes_in_text(codes, text):
+    """Split LLM-returned course codes into (present, absent) in the source text.
+
+    Codes are normalized ("csc115" / "CSC-115" → "CSC 115") and matched with
+    or without the space, so "CSC115" in the source still supports "CSC 115".
+    """
+    present, absent = [], []
+    for raw in codes:
+        # 1-4 digit numbers: other institutions' codes ("MATH 31", "ENGL 1A")
+        # pass through ingest_student --force-llm unchanged, so the shape check
+        # stays loose — the source-presence check below is what matters.
+        m = re.match(r'^([A-Za-z]{2,6})\s*-?\s*(\d{1,4}[A-Za-z0-9]*)$', raw.strip())
+        if not m:
+            absent.append(raw)
+            continue
+        prefix, num = m.group(1).upper(), m.group(2).upper()
+        # Any run of spaces/tabs (tabular exports pad columns), optional dash;
+        # never a newline, so "...CSC\n121..." on separate lines doesn't count.
+        pat = rf'(?<![A-Za-z]){re.escape(prefix)}[ \t]*-?[ \t]*{re.escape(num)}(?![0-9A-Za-z])'
+        code = f'{prefix} {num}'
+        if re.search(pat, text, re.IGNORECASE):
+            if code not in present:
+                present.append(code)
+        else:
+            absent.append(raw)
+    return present, absent
+
+
 def _llm_parse_student(text):
-    """Ask Ollama to extract student info from arbitrary text. Returns tuple or None."""
+    """Ask Ollama to extract student info from arbitrary text. Returns tuple or None.
+
+    Course codes the model returns are kept only if they appear in `text` —
+    a hallucinated or misread code never becomes a "completed" course.
+    """
     payload = json.dumps({
         'model':    OLLAMA_MODEL,
         'messages': [{'role': 'user', 'content': _LLM_STUDENT_PROMPT + text[:8000]}],
@@ -287,9 +319,16 @@ def _llm_parse_student(text):
         name      = str(d.get('name', '') or '')
         sid       = str(d.get('id',   '') or '')
         degree    = str(d.get('degree','') or '').strip().upper()
-        completed = [str(c).strip() for c in d.get('completed', []) if str(c).strip()]
+        raw_codes = d.get('completed', [])
+        if not isinstance(raw_codes, list):
+            raw_codes = []
+        completed, dropped = _codes_in_text(
+            [str(c).strip() for c in raw_codes if str(c).strip()], text)
         print(f'  [Ollama] parsed: {name or "(no name)"}, degree={degree or "?"}, '
               f'{len(completed)} courses', file=sys.stderr)
+        if dropped:
+            print(f'  [Ollama] dropped {len(dropped)} course code(s) not found in the '
+                  f'source text: {", ".join(dropped)}', file=sys.stderr)
         return name, sid, degree, completed
     except Exception as e:
         print(f'  [Ollama] student parse failed: {e}', file=sys.stderr)

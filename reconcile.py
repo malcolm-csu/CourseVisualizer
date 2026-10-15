@@ -124,13 +124,20 @@ def parse_navigate_detail(path):
 # ---------------------------------------------------------------------------
 
 _TABLE_HDR = re.compile(r'Course\s+Description\s+Units\s+When\s+Grade')
+# "When" column: a specific term, or a generic "offered in" list. Shared by
+# _COURSE_ROW and _grade_on_row so the parser and the LLM-grade check agree
+# on where the grade column is.
+_TERM_SRC = (r'(?:Fall|Spring|Summer|Winter)(?:,\s*(?:Fall|Spring|Summer|Winter))*\s*\d{0,4}'
+             r'|Infrequently offered|[A-Z][a-z]+ \d{4}')
+# Multi-letter grades must come first: with [A-DF] first, "CR" (credit)
+# matched as just "C".
+_GRADE_SRC = r'NC|CR|WU|RD|RP|[A-DF][+-]?|W|I'
 _COURSE_ROW = re.compile(
     r'([A-Z]{2,5} \d{3}[A-Z0-9]*)\s+'         # course code
     r'(.+?)\s+'                               # title
     r'(\d+\.\d{2})\s+'                       # units
-    r'((?:Fall|Spring|Summer|Winter)(?:,\s*(?:Fall|Spring|Summer|Winter))*\s*\d{0,4}'
-    r'|Infrequently offered|[A-Z][a-z]+ \d{4})'  # specific term, or a generic "offered in" list
-    r'(?:\s+([A-DF][+-]?|NC|CR|W[U]?|I|RD|RP))?'  # optional grade
+    rf'({_TERM_SRC})'                         # when
+    rf'(?:\s+({_GRADE_SRC}))?'                # optional grade
 )
 _SECTION_MAP = {
     # Computer Science
@@ -262,8 +269,50 @@ def _llm_parse_sections(full_text):
         return None
 
 
+_PREFIX_CANDIDATE = re.compile(r'(?:(?<=\s)|^)([A-Z]{2,5}) ?\d{3}', re.MULTILINE)
+# Letter-only grades that pypdf can glue onto the next code (+/- aren't
+# letters, so "B+CSC 221" never forms a single candidate prefix).
+_GLUEABLE_GRADES = ('NC', 'CR', 'WU', 'RD', 'RP', 'A', 'B', 'C', 'D', 'F', 'W', 'I')
+
+
+def _known_prefixes(full_text):
+    """Subject prefixes ("CSC", "MAT") that start course codes in this document.
+
+    A candidate like "ACSC" or "CRCSC" is a grade glued onto the next code
+    ("...Fall 2024 ACSC 311") — dropped when it starts with a grade and the
+    rest is itself a candidate prefix.
+    """
+    cands = set(_PREFIX_CANDIDATE.findall(full_text))
+    return {p for p in cands
+            if not any(p.startswith(g) and p[len(g):] in cands for g in _GLUEABLE_GRADES)}
+
+
+def _iter_course_rows(line, prefixes):
+    """Yield (code, title, units, term, grade) for every course row in `line`.
+
+    _COURSE_ROW's optional grade can swallow the first letter of the NEXT
+    row's code: on an ungraded row followed by "CSC 321 ...", the "C" of CSC
+    becomes grade C — marking an untaken course complete — and the next row
+    is then misread as "SC 321". When the captured grade is really the start
+    of a known-prefix course code, drop the grade and resume scanning at it.
+    """
+    pos = 0
+    while True:
+        m = _COURSE_ROW.search(line, pos)
+        if not m:
+            return
+        grade = m.group(5) or ''
+        if grade and _starts_known_code(line, m.start(5), prefixes):
+            yield m.group(1), m.group(2), m.group(3), m.group(4), ''
+            pos = m.start(5)
+            continue
+        yield m.group(1), m.group(2), m.group(3), m.group(4), grade
+        pos = m.end()
+
+
 def _regex_parse_sections(full_text):
     """Regex-based major-section extractor (fallback). Returns sections dict."""
+    prefixes = _known_prefixes(full_text)
     sections = {}
     current_section = None
     in_table = False
@@ -295,19 +344,184 @@ def _regex_parse_sections(full_text):
             # crammed together with no delimiter beyond whitespace (pypdf
             # drops the line breaks between some table rows), so scan for
             # every match rather than assuming one row per line.
-            for m in _COURSE_ROW.finditer(s):
-                code, title, units, term, grade = (
-                    m.group(1), m.group(2), m.group(3), m.group(4), m.group(5) or ''
-                )
+            for code, title, units, term, grade in _iter_course_rows(s, prefixes):
                 sections.setdefault(current_section, []).append({
                     'code':    code,
                     'title':   title.strip(),
                     'units':   float(units),
-                    'term':    term,
+                    'term':    term.strip(),
                     'grade':   grade,
                     'section': current_section,
                 })
     return sections
+
+
+# ---------------------------------------------------------------------------
+# LLM output validation — the LLM may only ADD rows the regex missed, and only
+# rows whose code (and grade, if any) are visibly present in the PDF text.
+# ---------------------------------------------------------------------------
+
+_CODE_NORM = re.compile(r'^([A-Za-z]{2,5})\s*-?\s*(\d{3}[A-Za-z0-9]*)$')
+_ANY_CODE = re.compile(r'[A-Z]{2,5} ?\d{3}')
+_UNITS_TOKEN = re.compile(r'\d+\.\d{2}')
+# How far past a code occurrence a row's grade can plausibly sit.
+_ROW_WINDOW_CHARS = 300
+
+
+def _normalize_code(raw):
+    """'csc115' / 'CSC-115' / 'CSC 115' → 'CSC 115'; None if not code-shaped."""
+    m = _CODE_NORM.match((raw or '').strip())
+    return f'{m.group(1).upper()} {m.group(2).upper()}' if m else None
+
+
+_GLUED_GRADE_BEFORE = re.compile(r'(?:^|[^A-Za-z])(?:NC|CR|WU|RD|RP|[A-DF][+-]?|W|I)$')
+
+
+def _code_occurrences(code, full_text, prefixes=None):
+    """End offsets of every occurrence of `code` (with or without the space).
+
+    A code normally can't follow a letter ("SC 221" is not in "CSC 221"). The
+    exceptions are pypdf gluing: a grade ("...Fall 2023 ACSC 221") or the
+    table header ("...GradeStatusCSC 221") right before the code. Both are
+    allowed only when the code's prefix is a known prefix in this document,
+    so a made-up "SC 221" can't hide inside a real "CSC 221".
+    """
+    prefix, num = code.split(' ', 1)
+    if prefixes is None:
+        prefixes = _known_prefixes(full_text)
+    pat = re.compile(rf'{re.escape(prefix)} ?{re.escape(num)}(?![0-9A-Za-z])')
+    ends = []
+    for m in pat.finditer(full_text):
+        i = m.start()
+        standalone = i == 0 or not full_text[i - 1].isalpha()
+        glued = prefix in prefixes and (
+            _GLUED_GRADE_BEFORE.search(full_text[max(0, i - 4):i])
+            or full_text[i - 1].islower()     # table header glued on: "...GradeStatusCSC 321"
+        )
+        if standalone or glued:
+            ends.append(m.end())
+    return ends
+
+
+# The grade column: right after the units and "When" columns, on the same
+# line, as a complete token. Anchored so nothing later in the text — the next
+# row's title ("A Survey of..."), its grade — can stand in for it.
+_GRADE_COLUMN = re.compile(rf'\s+(?:{_TERM_SRC})[ \t]+({_GRADE_SRC})(?![A-Za-z+\-])')
+
+
+def _starts_known_code(s, i, prefixes):
+    """True if a known-prefix course code ("CSC 221" or compact "CSC221") starts at s[i]."""
+    for p in prefixes:
+        if s.startswith(p, i):
+            j = i + len(p) + (1 if s[i + len(p):i + len(p) + 1] == ' ' else 0)
+            if s[j:j + 3].isdigit():
+                return True
+    return False
+
+
+def _grade_on_row(code, grade, full_text, prefixes=None):
+    """True if `grade` is in the grade column of one of `code`'s rows.
+
+    The row ends where the next known-prefix course code starts — not where
+    a code-shaped string starts, since pypdf can glue a real grade onto the
+    next code ("...Fall 2023 ACSC 221": grade A, next code CSC 221). Within
+    the row, the grade must be the complete token immediately after the
+    units and "When" columns on the same line (_GRADE_COLUMN): title words
+    ("A Survey of..."), a later row's grade, "CR" (for "C"), or the "C" of a
+    following "CSC 221" can't verify it.
+    """
+    if prefixes is None:
+        prefixes = _known_prefixes(full_text)
+    for end in _code_occurrences(code, full_text, prefixes):
+        window = full_text[end:end + _ROW_WINDOW_CHARS]
+        boundary = len(window)
+        for m in _ANY_CODE.finditer(window):
+            # A glued grade is at most 2 letters ("A", "CR") before the code.
+            k = next((k for k in range(3) if _starts_known_code(window, m.start() + k, prefixes)),
+                     None)
+            if k is not None:
+                boundary = m.start() + k
+                break
+        row = window[:boundary]
+        units = _UNITS_TOKEN.search(row)
+        if not units:
+            continue
+        col = _GRADE_COLUMN.match(row, units.end())
+        if col and col.group(1) == grade:
+            return True
+    return False
+
+
+def validate_llm_sections(llm_sections, regex_sections, full_text):
+    """Merge LLM-extracted rows into the regex result, accepting only what the
+    PDF text supports. Returns (sections, report).
+
+    Rules:
+      - Regex rows are always kept and are authoritative for grade, term, and
+        section; the LLM never overrides them (disagreements are reported).
+      - An LLM row whose code doesn't appear in the PDF text is rejected.
+      - An LLM-only row (code the regex didn't find) is accepted only if its
+        grade, when non-blank, appears on that code's row in the text.
+    """
+    merged = {sec: [dict(r) for r in rows] for sec, rows in regex_sections.items()}
+    regex_by_code = {}
+    for sec, rows in regex_sections.items():
+        for r in rows:
+            regex_by_code.setdefault(r['code'], []).append(r)
+
+    report = {
+        'confirmed': [], 'accepted_new': [], 'rejected_code_not_in_pdf': [],
+        'rejected_grade_unverified': [], 'grade_conflicts': [], 'section_conflicts': [],
+        'rejected_malformed': [],
+    }
+    seen_new = set()
+    prefixes = _known_prefixes(full_text)
+    for sec, rows in (llm_sections or {}).items():
+        for r in rows if isinstance(rows, list) else []:
+            raw_code = r.get('code') if isinstance(r, dict) else None
+            raw_grade = r.get('grade') if isinstance(r, dict) else None
+            # The LLM's JSON is untrusted: anything not string-shaped is
+            # rejected rather than coerced ("grade": 4 is not a grade).
+            if not isinstance(raw_code, str) or not isinstance(raw_grade, (str, type(None))):
+                report['rejected_malformed'].append(repr(r)[:80])
+                continue
+            code = _normalize_code(raw_code)
+            grade = (raw_grade or '').strip().upper()
+            if not code or not _code_occurrences(code, full_text, prefixes):
+                report['rejected_code_not_in_pdf'].append(r.get('code', ''))
+                continue
+            if code in regex_by_code:
+                reg = regex_by_code[code]
+                if not any(x['grade'] == grade for x in reg):
+                    report['grade_conflicts'].append(
+                        {'code': code, 'llm': grade, 'regex': [x['grade'] for x in reg]})
+                elif not any(x['section'] == sec for x in reg):
+                    report['section_conflicts'].append(
+                        {'code': code, 'llm': sec, 'regex': [x['section'] for x in reg]})
+                else:
+                    report['confirmed'].append(code)
+                continue
+            if grade and not _grade_on_row(code, grade, full_text, prefixes):
+                report['rejected_grade_unverified'].append({'code': code, 'grade': grade})
+                continue
+            if (code, grade) in seen_new:
+                continue
+            seen_new.add((code, grade))
+            merged.setdefault(sec, []).append({
+                'code': code, 'title': r.get('title', ''), 'units': 0.0,
+                'term': r.get('term', ''), 'grade': grade, 'section': sec,
+            })
+            report['accepted_new'].append(code)
+    return merged, report
+
+
+def _report_summary(report):
+    return (f"{len(report['confirmed'])} confirmed, {len(report['accepted_new'])} added, "
+            f"{len(report['rejected_code_not_in_pdf'])} rejected (code not in PDF), "
+            f"{len(report['rejected_grade_unverified'])} rejected (grade not on row), "
+            f"{len(report['rejected_malformed'])} rejected (malformed), "
+            f"{len(report['grade_conflicts'])} grade + {len(report['section_conflicts'])} "
+            f"section conflicts (regex kept)")
 
 
 def parse_peoplesoft_pdf(path):
@@ -315,7 +529,19 @@ def parse_peoplesoft_pdf(path):
 
     sections: dict mapping section_name → list of course record dicts
         Each record: code, title, units, term, grade, section
-    Tries Ollama LLM for section extraction first; falls back to regex.
+    See parse_peoplesoft_pdf_detailed() for how regex and LLM are combined.
+    """
+    return parse_peoplesoft_pdf_detailed(path)[:5]
+
+
+def parse_peoplesoft_pdf_detailed(path):
+    """Return (name, sid, degree, catalog_year, sections, report).
+
+    Regex extraction always runs and is the baseline. The Ollama LLM, when
+    reachable, can only add rows the regex missed, after
+    validate_llm_sections() checks them against the PDF text. `report` lists
+    what was confirmed, added, rejected, and where the two disagreed
+    (report['mode'] is 'regex+llm' or 'regex_only').
     """
     reader = pypdf.PdfReader(path)
     pages_text = [page.extract_text() or '' for page in reader.pages]
@@ -343,16 +569,27 @@ def parse_peoplesoft_pdf(path):
                     catalog_year = m2.group(1)
                 break
 
-    # Section extraction — LLM primary, regex fallback
+    # Section extraction — regex baseline, LLM additions validated against it
+    regex_sections = _regex_parse_sections(full_text)
     print('  [PDF] trying Ollama section extraction...', file=sys.stderr)
-    sections = _llm_parse_sections(full_text)
-    if sections:
-        print(f'  [PDF] Ollama OK — {sum(len(v) for v in sections.values())} courses', file=sys.stderr)
+    llm_sections = _llm_parse_sections(full_text)
+    if llm_sections:
+        try:
+            sections, report = validate_llm_sections(llm_sections, regex_sections, full_text)
+        except Exception as e:  # noqa: BLE001 — never lose the regex baseline to bad LLM output
+            print(f'  [PDF] LLM validation failed ({e}) — regex extraction only',
+                  file=sys.stderr)
+            sections, report = regex_sections, {'mode': 'regex_only'}
+        else:
+            report['mode'] = 'regex+llm'
+            print(f'  [PDF] Ollama rows checked against PDF text: {_report_summary(report)}',
+                  file=sys.stderr)
     else:
-        print('  [PDF] falling back to regex section extraction', file=sys.stderr)
-        sections = _regex_parse_sections(full_text)
+        sections = regex_sections
+        report = {'mode': 'regex_only'}
+        print('  [PDF] Ollama unavailable — regex extraction only', file=sys.stderr)
 
-    return name, sid, degree, catalog_year, sections
+    return name, sid, degree, catalog_year, sections, report
 
 
 def completed_from_sections(sections):
